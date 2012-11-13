@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.as3coreaddendum.system.comparators"><apiName>org.as3coreaddendum.system.comparators</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.system.comparators:NumberComparator"><apiName>NumberComparator</apiName><shortdesc>
+	 A comparator for Number objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>Number</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c:NumberComparator = new NumberComparator();
+	 
+	 c.compare(0, 0);              // 0
+	 c.compare(1, 1);              // 0
+	 c.compare(0, 1);              // -1
+	 c.compare(94, 56);            // 1
+	 c.compare(-38, -27);          // -1
+	 c.compare(2.5, 2.5);          // 0
+	 c.compare(2.54, 2.54);        // 0
+	 c.compare(2.54, 2.56);        // -1
+	 c.compare(2.567, 2.567);      // 0
+	 c.compare(2.5678, 2.5677);    // 1
+	 c.compare(2.5678, 2.5674);    // 1
+	 c.compare(2.5674, 2.5678);    // -1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c1:NumberComparator = new NumberComparator(true, 1);
+	 
+	 c1.compare(2.5, 2.5);          // 0
+	 c1.compare(2.54, 2.54);        // 0
+	 c1.compare(2.54, 2.56);        // -1
+	 c1.compare(2.567, 2.567);      // 0
+	 c1.compare(2.5678, 2.5677);    // 0
+	 c1.compare(2.5678, 2.5674);    // 0
+	 c1.compare(2.5674, 2.5678);    // 0
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c2:NumberComparator = new NumberComparator(true, 2);
+	 
+	 c2.compare(2.5, 2.5);          // 0
+	 c2.compare(2.54, 2.54);        // 0
+	 c2.compare(2.54, 2.56);        // -1
+	 c2.compare(2.567, 2.567);      // 0
+	 c2.compare(2.5678, 2.5677);    // 0
+	 c2.compare(2.5678, 2.5674);    // 0
+	 c2.compare(2.5674, 2.5678);    // 0
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c3:NumberComparator = new NumberComparator(true, 3);
+	 
+	 c3.compare(2.5, 2.5);          // 0
+	 c3.compare(2.54, 2.54);        // 0
+	 c3.compare(2.54, 2.56);        // -1
+	 c3.compare(2.567, 2.567);      // 0
+	 c3.compare(2.5678, 2.5677);    // 0
+	 c3.compare(2.5678, 2.5674);    // 1
+	 c3.compare(2.5674, 2.5678);    // -1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c4:NumberComparator = new NumberComparator(true, 4);
+	 
+	 c4.compare(2.5, 2.5);          // 0
+	 c4.compare(2.54, 2.54);        // 0
+	 c4.compare(2.54, 2.56);        // -1
+	 c4.compare(2.567, 2.567);      // 0
+	 c4.compare(2.5678, 2.5677);    // 1
+	 c4.compare(2.5678, 2.5674);    // 1
+	 c4.compare(2.5674, 2.5678);    // -1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:NumberComparator:NumberComparator"><apiName>NumberComparator</apiName><shortdesc>
+		 Constructor, creates a new NumberComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	if <codeph>useDecimalPlaces</codeph> argument is sent <codeph>false</codeph> but some value is sent to <codeph>decimalPlaces</codeph> argument.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiException><apiDesc>		if the <codeph>decimalPlaces</codeph> argument is out of the 0-20 range.
+		 </apiDesc><apiItemName>RangeError</apiItemName><apiOperationClassifier>RangeError</apiOperationClassifier></apiException><apiParam><apiItemName>useDecimalPlaces</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	Indicates if both numbers should be rounded by the <codeph>decimalPlaces</codeph> property.
+		 </apiDesc></apiParam><apiParam><apiItemName>decimalPlaces</apiItemName><apiType value="int"/><apiData>0</apiData><apiDesc>	The number of decimal places to be considered in the comparison. Must be an integer between 0 and 20.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>NumberComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:NumberComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>if any of the arguments is not of type <codeph>Number</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:NumberComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:NumberComparator:decimalPlaces:get"><apiName>decimalPlaces</apiName><shortdesc>
+		 Defines the number of decimal places to be considered in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/><apiException><apiDesc>if is assigned a value out of the 0-20 range.
+		 </apiDesc><apiItemName>RangeError</apiItemName><apiOperationClassifier>RangeError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the number of decimal places to be considered in the comparison. Must be an integer between 0 and 20.
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:NumberComparator:useDecimalPlaces:get"><apiName>useDecimalPlaces</apiName><shortdesc>
+		 Defines if both numbers should be rounded by the decimalPlaces property.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 Defines if both numbers should be rounded by the <codeph>decimalPlaces</codeph> property.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:BooleanComparator"><apiName>BooleanComparator</apiName><shortdesc>
+	 A comparator for Boolean objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>Boolean</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.BooleanComparator;
+	 
+	 var b1:BooleanComparator = new BooleanComparator(BooleanComparison.TRUE_FIRST);
+	 
+	 b1.compare(true, false);    // -1
+	 b1.compare(false, true);    // 1
+	 
+	 var b2:BooleanComparator = new BooleanComparator(BooleanComparison.FALSE_FIRST);
+	 
+	 b2.compare(true, false);    // 1
+	 b2.compare(false, true);    // -1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:BooleanComparator:BooleanComparator"><apiName>BooleanComparator</apiName><shortdesc>
+		 Constructor, creates a new BooleanComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If the 'comparison' argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiParam><apiItemName>comparison</apiItemName><apiOperationClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiOperationClassifier><apiDesc>	Indicates which type of comparison will be used.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>BooleanComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#BooleanComparison"><linktext>BooleanComparison</linktext></link></related-links></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:BooleanComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments are not of type <codeph>Boolean</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>	The first <codeph>Boolean</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>	The second <codeph>Boolean</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:BooleanComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:BooleanComparator:comparison:get"><apiName>comparison</apiName><shortdesc>
+		 Defines the type of comparison to be used.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiValueClassifier><apiException><apiDesc>If is assigned a <codeph>null</codeph> value.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the type of comparison to be used.
+		 </apiDesc></apiValueDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#BooleanComparison"><linktext>BooleanComparison</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:IndexComparator"><apiName>IndexComparator</apiName><shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IIndexable interface, comparing the index property.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IIndexable</codeph> interface, comparing the <codeph>index</codeph> property.
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link><link href="org.as3coreaddendum.system.xml#IIndexable"><linktext>IIndexable</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:IndexComparator:IndexComparator"><apiName>IndexComparator</apiName><shortdesc>
+		 Constructor, creates a new IndexComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>IndexComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:IndexComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments does not implements the <codeph>IIndexable</codeph> interface.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:PropertyComparator"><apiName>PropertyComparator</apiName><shortdesc>
+	 This comparator uses the received comparator object to compare the values recovered from the property of each of the two objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This comparator uses the received <codeph>comparator</codeph> object to compare the values recovered from the <codeph>property</codeph> of each of the two objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 import org.as3coreaddendum.system.comparators.PropertyComparator;
+	 
+	 var a:Object = { id: 1, name: "TestA" };
+	 var b:Object = { id: 0, name: "TestB" };
+	 var c:Object = { id: 2, name: "TestC" };
+	  
+	 var p1:PropertyComparator = new PropertyComparator("id", new NumberComparator());
+	 
+	 p1.compare(a, a)    // 0
+	 p1.compare(a, b)    // 1
+	 p1.compare(b, a)    // -1
+	 p1.compare(b, c)    // -1
+	 p1.compare(c, a)    // 1
+	 
+	 var p2:PropertyComparator = new PropertyComparator("name", new AlphabeticComparator());
+	  
+	 p2.compare(a, a)    // 0
+	 p2.compare(a, b)    // -1
+	 p2.compare(b, a)    // 1
+	 p2.compare(b, c)    // -1
+	 p2.compare(c, a)    // 1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:PropertyComparator:PropertyComparator"><apiName>PropertyComparator</apiName><shortdesc>
+		 Constructor, creates a new PropertyComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>if the <codeph>property</codeph> argument is <codeph>null</codeph> or an empty <codeph>String</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiException><apiDesc>if the <codeph>comparator</codeph> argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiParam><apiItemName>property</apiItemName><apiType value="String"/><apiDesc>	The name of the property to be recovered and compared between the objects.
+		 </apiDesc></apiParam><apiParam><apiItemName>comparator</apiItemName><apiOperationClassifier>org.as3coreaddendum.system:IComparator</apiOperationClassifier><apiDesc>	The comparator object used in the comparison.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PropertyComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:PropertyComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the values recovered from the properties of each of the two objects.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>if any argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first property is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>	The first object which has the property recovered to be compared. Can be an instance of any custom class.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>	The second object which has the property recovered to be compared. Can be an instance of any custom class.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the values recovered from the properties of each of the two objects.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:PropertyComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:PropertyComparator:comparator:get"><apiName>comparator</apiName><shortdesc>
+		 Defines the comparator object used in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system:IComparator</apiValueClassifier><apiException><apiDesc>if is assigned a <codeph>null</codeph> value.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the comparator object used in the comparison.
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:PropertyComparator:property:get"><apiName>property</apiName><shortdesc>
+		 Defines the name of the property to be recovered and compared between the objects.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/><apiException><apiDesc>if is assigned a <codeph>null</codeph> value or an empty <codeph>String</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the name of the property to be recovered and compared between the objects.
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:StringComparator"><apiName>StringComparator</apiName><shortdesc>
+	 A comparator for String objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>String</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.StringComparator;
+	 
+	 var c1:StringComparator = new StringComparator();
+	 
+	 c1.compare("comparison", "between");    // 1
+	 c1.compare("between", "comparison");    // -1
+	 c1.compare("between", "strings");       // 1
+	 c1.compare("strings", "between");       // -1
+	 c1.compare("STRINGS", "strings");       // 1
+	 c1.compare("strings", "Strings");       // -1
+	 c1.compare("strings", "strings");       // 0
+	 
+	 var c2:StringComparator = new StringComparator(false);
+	 
+	 c2.compare("STRINGS", "strings");    // 0
+	 c2.compare("strings", "Strings");    // 0
+	 c2.compare("between", "strings");    // 1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:StringComparator:StringComparator"><apiName>StringComparator</apiName><shortdesc>
+		 Constructor, creates a new StringComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>stringCase</apiItemName><apiOperationClassifier>org.as3coreaddendum.system:StringCase</apiOperationClassifier><apiDesc>	Indicates whether case sensitivity is considered or not in the comparison.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>StringComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:StringComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>	The first <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>	The second <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:StringComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:StringComparator:stringCase:get"><apiName>stringCase</apiName><shortdesc>
+		 Defines whether case is considered in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system:StringCase</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines whether case is considered in the comparison.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:BooleanComparison"><apiName>BooleanComparison</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for the BooleanComparator.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for the <codeph>BooleanComparator</codeph>.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:BooleanComparison:BooleanComparison"><apiName>BooleanComparison</apiName><shortdesc>
+		 Constructor, creates a new BooleanComparison object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new BooleanComparison object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system.comparators:BooleanComparison:FALSE_FIRST"><apiName>FALSE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return false first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return <codeph>false</codeph> first.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:BooleanComparison:TRUE_FIRST"><apiName>TRUE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return true first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return <codeph>true</codeph> first.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:AlphabeticalComparison"><apiName>AlphabeticalComparison</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for the AlphabeticalComparator.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for the <codeph>AlphabeticalComparator</codeph>.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:AlphabeticalComparison"><apiName>AlphabeticalComparison</apiName><shortdesc>
+		 Constructor, creates a new AlphabeticalComparison object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new AlphabeticalComparison object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:CASE_INSENSITIVE"><apiName>CASE_INSENSITIVE</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should ignore case.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should ignore case.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:LOWER_CASE_FIRST"><apiName>LOWER_CASE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return lower case first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return lower case first.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:UPPER_CASE_FIRST"><apiName>UPPER_CASE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return upper case first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return upper case first.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:AlphabeticalComparator"><apiName>AlphabeticalComparator</apiName><shortdesc>
+	 A comparator for alphabetic order of String objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for alphabetic order of <codeph>String</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 
+	 var c1:AlphabeticComparator = new AlphabeticComparator(AlphabeticComparison.LOWER_CASE_FIRST);
+	 
+	 c1.compare("a", "a")                      // 0
+	 c1.compare("a", "b")                      // -1
+	 c1.compare("b", "a")                      // 1
+	 c1.compare("a", "A")                      // -1
+	 c1.compare("A", "a")                      // 1
+	 c1.compare("comparison", "comparison")    // 0
+	 c1.compare("comparison", "comParison")    // -1
+	 c1.compare("comParison", "comparison")    // 1
+	 c1.compare("comparison", "Comparison")    // -1
+	 c1.compare("Comparison", "comparison")    // 1
+	 c1.compare("between", "strings")          // -1
+	 c1.compare("between", "Strings")          // -1
+	 c1.compare("Between", "strings")          // -1
+	 c1.compare("Between", "Strings")          // -1
+	 c1.compare("between", "between")          // 0
+	 c1.compare("between", "betweena")         // -1
+	 c1.compare("betweena", "betweenA")        // -1
+	 c1.compare("betweenA", "betweena")        // 1
+	 c1.compare("TestA", "TestB")              // -1
+	 c1.compare("TestB", "TestA")              // 1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 
+	 var c2:AlphabeticComparator = new AlphabeticComparator(AlphabeticComparison.UPPER_CASE_FIRST);
+	 
+	 c2.compare("a", "a")                      // 0
+	 c2.compare("a", "b")                      // -1
+	 c2.compare("b", "a")                      // 1
+	 c2.compare("a", "A")                      // 1
+	 c2.compare("A", "a")                      // -1
+	 c2.compare("comparison", "comparison")    // 0
+	 c2.compare("comparison", "comParison")    // 1
+	 c2.compare("comParison", "comparison")    // -1
+	 c2.compare("comparison", "Comparison")    // 1
+	 c2.compare("Comparison", "comparison")    // -1
+	 c2.compare("between", "strings")          // -1
+	 c2.compare("between", "Strings")          // -1
+	 c2.compare("Between", "strings")          // -1
+	 c2.compare("Between", "Strings")          // -1
+	 c2.compare("between", "between")          // 0
+	 c2.compare("between", "betweena")         // -1
+	 c2.compare("betweena", "betweenA")        // 1
+	 c2.compare("betweenA", "betweena")        // -1
+	 c2.compare("TestA", "TestB")              // -1
+	 c2.compare("TestB", "TestA")              // 1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 
+	 var c3:AlphabeticComparator = new AlphabeticComparator(AlphabeticalComparison.CASE_INSENSITIVE);
+	 
+	 c3.compare("a", "a")                      // 0
+	 c3.compare("a", "b")                      // -1
+	 c3.compare("b", "a")                      // 1
+	 c3.compare("a", "A")                      // 0
+	 c3.compare("A", "a")                      // 0
+	 c3.compare("comparison", "comparison")    // 0
+	 c3.compare("comparison", "comParison")    // 0
+	 c3.compare("comParison", "comparison")    // 0
+	 c3.compare("comparison", "Comparison")    // 0
+	 c3.compare("Comparison", "comparison")    // 0
+	 c3.compare("between", "strings")          // -1
+	 c3.compare("between", "Strings")          // -1
+	 c3.compare("Between", "strings")          // -1
+	 c3.compare("Between", "Strings")          // -1
+	 c3.compare("between", "between")          // 0
+	 c3.compare("between", "betweena")         // -1
+	 c3.compare("betweena", "betweenA")        // 0
+	 c3.compare("betweenA", "betweena")        // 0
+	 c3.compare("TestA", "TestB")              // -1
+	 c3.compare("TestB", "TestA")              // 1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#AlphabeticalComparison"><linktext>AlphabeticalComparison</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:AlphabeticalComparator"><apiName>AlphabeticalComparator</apiName><shortdesc>
+		 Constructor, creates a new AlphabeticComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If the 'comparison' argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiParam><apiItemName>comparison</apiItemName><apiOperationClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiOperationClassifier><apiDesc>	Indicates which type of comparison will be used.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>AlphabeticComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#AlphabeticalComparison"><linktext>AlphabeticalComparison</linktext></link></related-links></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:comparison:get"><apiName>comparison</apiName><shortdesc>
+		 Defines the type of comparison to be used.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier><apiException><apiDesc>If is assigned a <codeph>null</codeph> value.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the type of comparison to be used.
+		 </apiDesc></apiValueDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#AlphabeticalComparison"><linktext>AlphabeticalComparison</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:PriorityIndexComparator"><apiName>PriorityIndexComparator</apiName><shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IPriority and org.as3coreaddendum.system.IIndexable interfaces, comparing the priority and index properties.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IPriority</codeph> and <codeph>org.as3coreaddendum.system.IIndexable</codeph> interfaces, comparing the <codeph>priority</codeph> and <codeph>index</codeph> properties.
+	 <p>This comparator is util when you want to sort the objects by priority, but if the priority of the two objects are equal, the <codeph>index</codeph> property of the objects are compared to decide wich object comes before.</p>
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link><link href="org.as3coreaddendum.system.xml#IIndexable"><linktext>IIndexable</linktext></link><link href="org.as3coreaddendum.system.xml#IPriority"><linktext>IPriority</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:PriorityIndexComparator:PriorityIndexComparator"><apiName>PriorityIndexComparator</apiName><shortdesc>
+		 Constructor, creates a new PriorityIndexComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PriorityIndexComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:PriorityIndexComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments does not implements the <codeph>IPriority</codeph> or <codeph>IIndexable</codeph> interfaces.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer or a positive integer as the priority of the first argument is greater than or less than the second. If the priority of the arguments are equal, returns a negative integer, zero, or a positive integer as the index of the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:PriorityComparator"><apiName>PriorityComparator</apiName><shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IPriority interface, comparing the priority property.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IPriority</codeph> interface, comparing the <codeph>priority</codeph> property.
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link><link href="org.as3coreaddendum.system.xml#IPriority"><linktext>IPriority</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:PriorityComparator:PriorityComparator"><apiName>PriorityComparator</apiName><shortdesc>
+		 Constructor, creates a new PriorityComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PriorityComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:PriorityComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments does not implements the <codeph>IPriority</codeph> interface.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the priority of the first argument is greater than, equal to, or less than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:DateComparator"><apiName>DateComparator</apiName><shortdesc>
+	 A comparator for Date objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>Date</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.DateComparator;
+	 
+	 var c:DateComparator = new DateComparator();
+	 
+	 var d1:Date = new Date(2010, 04, 09);
+	 var d2:Date = new Date(2010, 04, 10);
+	 var d3:Date = new Date(2009, 04, 10);
+	 var d4:Date = new Date(1980, 01, 15);
+	 
+	 c.compare(d1, d1)    // 0
+	 c.compare(d1, d2)    // -1
+	 c.compare(d2, d1)    // 1
+	 c.compare(d2, d3)    // 1
+	 c.compare(d3, d2)    // -1
+	 c.compare(d1, d4)    // 1
+	 c.compare(d4, d1)    // -1
+	 
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:DateComparator:DateComparator"><apiName>DateComparator</apiName><shortdesc>
+		 Constructor, creates a new StringComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>StringComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:DateComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments is not of type <codeph>Date</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Date</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Date</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage>

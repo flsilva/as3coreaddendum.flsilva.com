@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="Enum,org.as3coreaddendum.system.Enum,CEIL,FLOOR,INSENSITIVE,NONE,ROUND,SENSITIVE,comparator,index,isInitialized,name,options,ordinal,priority,type,clone,compare,compareTo,compareTo,dispose,equals,equals,initialize,sort,toSource,toSource,toString,valueOf"><title>org.as3coreaddendum.system.Enum</title><script src="../../../AC_OETags.js" type="text/javascript"></script></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Enum - AS3CoreAddendum API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">AS3CoreAddendum API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?org/as3coreaddendum/system/Enum.html&amp;org/as3coreaddendum/system/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Enum</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#includeExamplesSummary">Examples</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Enum"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,true,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">org.as3coreaddendum.system</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Enum</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Enum  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr><tr><td class="classHeaderTableLabel">Implements</td><td> <a href="../../../org/as3coreaddendum/system/IComparable.html">IComparable</a>,  <a href="../../../org/as3coreaddendum/system/IEquatable.html">IEquatable</a>,  <a href="../../../org/as3coreaddendum/system/ISerializable.html">ISerializable</a></td></tr><tr><td class="classHeaderTableLabel">Subclasses</td><td> <a href="../../../org/as3coreaddendum/system/comparators/AlphabeticalComparison.html">AlphabeticalComparison</a>,  <a href="../../../org/as3coreaddendum/system/comparators/BooleanComparison.html">BooleanComparison</a>,  <a href="../../../org/as3coreaddendum/system/NumericRounding.html">NumericRounding</a>,  <a href="../../../org/as3coreaddendum/system/StringCase.html">StringCase</a></td></tr></table><p></p><p></p><p></p>
+	 This is the base class for implementation of enumeration objects.
+	 <p>This class shouldn't be instantiated directly, rather than enumeration classes must extend this class.</p>
+	              <p>
+                  <b>What is an Enumerated Type?</b>
+               </p>
+	              <p>An Enumerated Type is a data type that consists of a pre-defined set of values. Each enumerator (constant) is a value.
+	 An Enumerated Type groups a set of interrelated logical values.</p>
+	              <p>Actionscript 3.0 doesn't implements Enumerated types. Rather, its uses a class with only constants to define a set of interrelated logical values.</p>
+	              <p>One example is the <code>flash.display.StageAlign</code> class. It is the set of logical values acceptable for the <code>flash.display.Stage.align</code> property.</p>
+	              <p>But even without the support of Actionscript 3.0 for Enumerated types you can simulate this functionality extending this Enum class.</p>
+	 
+	              <p>
+                  <b>Why use an Enumerated Type rather than a class with constants?</b>
+               </p>
+	              <p>Following the example above, if you open the Actionscript 3.0 Language Reference and quickly look at the class <code>flash.display.Stage</code> and see the <code>align</code> property, you will note that its type is <code>String</code>.
+	 So you cannot immediatly know what values you can assign to it. Only after discovering that there is a class <code>flash.display.StageAlign</code> you note that these are the acceptable values.
+	 So this is the first problem with this approach.</p>
+	              <p>The second problem is that you really can assign any <code>String</code> to the <code>align</code> property.
+	 Nothing guarantees you will pass the values that are actually in the <code>flash.display.StageAlign</code> class.
+	 Nor will there be any error at compile time that say that something is wrong.</p>
+	              <p>But if instead of using this approach was used Enumeration types, these two problems would become two good points.</p>
+	              <p>First, looking at the Actionscript 3.0 Language Reference you would see that the property <code>align</code> is of the type <code>StageAlign</code>.
+	 Automatically you check this class and see how to use it to assign a value for the <code>align</code> property.</p>
+	              <p>Even better, if you make a mistake the compiler will warn you.
+	 You will no longer able to send an invalid value for the property.</p>
+	              <p>But even with this approach remains a problem to be solved. The client of your code can still create instances of your Enumerated Type and use them when needed.
+	 In most cases this is undesirable, because you have already defined the set of acceptable values through constants in its Enumerated Type.</p>
+	              <p>To resolve this problem exists a solution: the type-safe enum pattern. It is described with an example at the end of the page.</p>
+	              <p>You can also check the class NumericRounding listed in the section "See also" below.</p>
+	              <p>So to summarize the benefits of using Enumerated types: they make your code (or API) more readable and safe.</p>
+	 
+	           <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="../../../org/as3coreaddendum/errors/InvalidEnumArgumentError.html" target="">InvalidEnumArgumentError</a><br/><a href="IComparable.html" target="">IComparable</a><br/><a href="IEquatable.html" target="">IEquatable</a><br/><a href="ISerializable.html" target="">ISerializable</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#name" class="signatureLink">name</a> : String<div class="summaryTableDescription">[read-only] 
+		 The name of this enum constant exactly as supplied by the constructor.</div></td><td class="summaryTableOwnerCol">Enum</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ordinal" class="signatureLink">ordinal</a> : int<div class="summaryTableDescription">[read-only] 
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).</div></td><td class="summaryTableOwnerCol">Enum</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Enum()" class="signatureLink">Enum</a>(name:String, ordinal:int)</div><div class="summaryTableDescription">
+		 Constructor, creates a new Enum object.</div></td><td class="summaryTableOwnerCol">Enum</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#compareTo()" class="signatureLink">compareTo</a>(o:*):int</div><div class="summaryTableDescription">
+		 Compares this enum with the specified object for order.</div></td><td class="summaryTableOwnerCol">Enum</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#equals()" class="signatureLink">equals</a>(other:*):Boolean</div><div class="summaryTableDescription">
+		 Compares the target object for equality with this object.</div></td><td class="summaryTableOwnerCol">Enum</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toSource()" class="signatureLink">toSource</a>():String</div><div class="summaryTableDescription">
+		 
+		 Returns the source code String representation of the object.</div></td><td class="summaryTableOwnerCol">Enum</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#toString()" class="signatureLink">toString</a>():String</div><div class="summaryTableDescription">
+		 Returns the name of this enum constant, as contained in the declaration.</div></td><td class="summaryTableOwnerCol">Enum</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#valueOf()" class="signatureLink">valueOf</a>():int</div><div class="summaryTableDescription">
+		 Returns the primitive value of the object.</div></td><td class="summaryTableOwnerCol">Enum</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="name"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">name</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>name:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The name of this enum constant exactly as supplied by the constructor.
+		 <p><b>Most programmers should use the <code>toString()</code> method in preference to this one, as the <code>toString()</code> method may return a more user-friendly name.</b> This property is designed primarily for use in specialized situations where correctness depends on getting the exact name.</p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get name():String</code><br/></div><a name="propertyDetail"></a><a name="ordinal"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ordinal</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>ordinal:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get ordinal():int</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="Enum()"></a><a name="Enum(String,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">Enum</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Enum(name:String, ordinal:int)</code><p></p><p>
+		 Constructor, creates a new Enum object.
+		 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">name</span>:String</code> &mdash; 			The name of this enumeration constant.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">ordinal</span>:int</code> &mdash; 		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>ArgumentError </code> &mdash; 	If the <code>name</code> argument is <code>null</code> or an empty <code>String</code>.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20"></td><td><code>IllegalOperationError </code> &mdash; 	If this class is instantiated directly, in other words, if there is <b>not</b> another class extending this class.
+		 </td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="compareTo()"></a><a name="compareTo(any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">compareTo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function compareTo(o:*):int</code><p></p><p></p><p>
+		 Compares this enum with the specified object for order.
+		 <p>Enum constants are only comparable to other enum constants of the same enum type. The natural order implemented by this method is the order in which the constants are declared.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">o</span>:*</code> &mdash; The target object to be compared.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+		 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>ArgumentError </code> &mdash; If the type of the argument <code>o</code> is other than this exactly enum type instance.
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="IComparable.html" target="">IComparable</a></div></div><a name="equals()"></a><a name="equals(any)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">equals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function equals(other:*):Boolean</code><p></p><p></p><p>
+		 Compares the target object for equality with this object.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">other</span>:*</code> &mdash; The object to be compared for equality with this object.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; <code>true</code> if the specified object is equal to this enum constant.
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="IEquatable.html" target="">IEquatable</a></div></div><a name="toSource()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">toSource</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toSource():String</code><p></p><p></p><p>
+		 
+		 Returns the source code <code>String</code> representation of the object.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; The source code <code>String</code> representation of the object.
+ 		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="ISerializable.html" target="">ISerializable</a></div></div><a name="toString()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function toString():String</code><p></p><p></p><p>
+		 Returns the name of this enum constant, as contained in the declaration.
+		 <p>This method may be overridden, though it typically isn't necessary or desirable. An enum type should override this method when a more "programmer-friendly" string form exists.</p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; The name of this enum constant.
+ 		 </td></tr></table></div><a name="valueOf()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">valueOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function valueOf():int</code><p></p><p></p><p>
+		 Returns the primitive value of the object.
+		 <p>This method is called automatically by the Flash Player every time an arithmetic operation occur. Thus, it's possible to perform these operations to check the position between two or more enum constants.</p>
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; The primitive value of the object. In this case, the <code>ordinal</code> value.
+ 		 </td></tr></table></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">
+	 
+	 <b>Simple Enumerated Type</b>
+	 <p>Suppose that we have an API that make loading of files.
+	 The acceptable file types that the API can load can be defined by an Enumerated Type.
+	 In this example the name of the Enumerated Type will be FileType. Note that you don't need to use the suffix "Enum" in its name.</p>
+	 <p>Then we define the types that the API can load. In this example the API can load just image, swf and mp3 files.
+	 So we have just three constants, one to each file type.</p>
+	 <p>When we want to load a file, we use the appropriate constant to tell the API what type of file will be loaded.
+	 If you need a file type that doesn't exists in the Enumerated Type, this means that the API doesn't support that file type.</p>
+	 
+	 <div class="listing" version="3.0"><pre>
+     import org.as3coreaddendum.system.Enum;
+     
+     public class FileType extends Enum
+     {
+     
+          public static const IMAGE   :FileType = new FileType("Image", 0);
+          public static const SWF     :FileType = new FileType("SWF", 1);
+          public static const MP3     :FileType = new FileType("MP3", 2);
+     
+          public function FileType(name:String, ordinal:int)
+          {
+               super(name, ordinal);
+          }
+     }
+     </pre></div>
+	 
+	 <b>Type-safe Enumerated Type</b>
+	 <p>In the above example, if the user of the API need to load a file type that doesn't exists in the Enumerated Type, it could instantiate a new object FileType with the desired type, as in the example below:</p>
+	 <div class="listing" version="3.0"><pre>
+     import FileType;
+     
+     var videoFileType:FileType = new FileType("Video", 3);
+     </pre></div>
+	 
+	 <p>This behavior would be wrong, but still allowed by the technical point of view.
+	 This would create the illusion that the user can create new types at runtime and send them to the API.</p>
+	 <p>To prevent this mistake, we can implement a pattern named type-safe enum.
+	 This pattern will prevents the user create new types, throwing a runtime error.</p>
+	 <p>There are some ways to do this, we will see just one below:</p>
+	 
+	 <div class="listing" version="3.0"><pre>
+     import org.as3coreaddendum.system.Enum;
+     
+     public class FileType extends Enum
+     {
+     
+          public static const IMAGE   :FileType = new FileType("Image", 0);
+          public static const SWF     :FileType = new FileType("SWF", 1);
+          public static const MP3     :FileType = new FileType("MP3", 2);
+     
+          private static var _created:Boolean = false;
+     
+          {
+               _created = true;
+          }
+     
+          public function FileType(name:String, ordinal:int)
+          {
+               super(name, ordinal);
+               if (_created) throw new IllegalOperationError("The set of acceptable values by this Enumerated Type has already been created internally.");
+          }
+     }
+     </pre></div>
+	 
+	 <p>What happens above is that when the FileType is loaded in the Flash Player memory at runtime, first all the static members are initialized.
+	 After that the <i>static code block</i> is executed:</p>
+	 
+	 <div class="listing" version="3.0"><pre>
+     {
+          _created = true;
+     }
+     </pre></div>
+	 
+	 <p>So first all the constants are initialized with the FileType instances because the <code>_created</code> static variable is <code>false</code> and then immediately after that the <code>_created</code> is set to <code>true</code>.
+	 Thus no more instances can be created.</p>
+	 <p>Your Enumerated Type is safe to be used only with the set of values pre-defined by you.</p>
+	 
+	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright 2010-2011 Flavio Silva - http://flsilva.com</footer><br/>Tue Sep 13 2011, 12:51 PM -03:00  </center></div></body></html><!--Copyright 2010-2011 Flavio Silva - http://flsilva.com<br/>Tue Sep 13 2011, 12:51 PM -03:00  -->

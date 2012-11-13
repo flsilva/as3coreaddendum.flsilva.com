@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.as3coreaddendum.events"><apiName>org.as3coreaddendum.events</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.events:PriorityEvent"><apiName>PriorityEvent</apiName><shortdesc>
+	 This event should be dispatched by objects that implement org.as3coreaddendum.system.IPriority interface and had its "priority" setter invoked.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This event should be dispatched by objects that implement <codeph>org.as3coreaddendum.system.IPriority</codeph> interface and had its "priority" setter invoked.
+	 This way the object will inform that its priority was changed.
+	 <p>But if the object does not implement <codeph>flash.events.IEventDispatcher</codeph> interface, that's ok to not dispatch this event.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.events:PriorityEvent:PriorityEvent"><apiName>PriorityEvent</apiName><shortdesc>
+		 Constructor, creates a new PriorityEvent object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>			The type of the event, accessible as <codeph>Event.type</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>priority</apiItemName><apiType value="int"/><apiDesc>		The new priority value.
+		 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>		Determines whether the Event object participates in the bubbling stage of the event flow. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	Determines whether the Event object can be canceled. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PriorityEvent</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.events:PriorityEvent:clone"><apiName>clone</apiName><shortdesc>
+		 Duplicates the instance of PriorityEvent object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiDesc>A new PriorityEvent object that is identical to the original.
+		 </apiDesc><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
+		 Duplicates the instance of PriorityEvent object.
+		 <p>Returns a new PriorityEvent object that is a copy of the original instance of the PriorityEvent object. You do not normally call <codeph>clone()</codeph>; the <codeph>EventDispatcher</codeph> class calls it automatically when you redispatch an event—that is, when you call <codeph>dispatchEvent(event)</codeph> from a handler that is handling event.</p>
+		 <p>The new PriorityEvent object includes all the properties of the original.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.events:PriorityEvent:CHANGED"><apiName>CHANGED</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.as3coreaddendum.events.PriorityEvent.CHANGED</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.events:PriorityEvent:priority:get"><apiName>priority</apiName><shortdesc>
+		 description
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 description
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.events:IndexEvent"><apiName>IndexEvent</apiName><shortdesc>
+	 This event should be dispatched by objects that implement org.as3coreaddendum.system.IIndex interface and had its "index" setter invoked.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This event should be dispatched by objects that implement <codeph>org.as3coreaddendum.system.IIndex</codeph> interface and had its "index" setter invoked.
+	 This way the object will inform that its index was changed.
+	 <p>But if the object does not implement <codeph>flash.events.IEventDispatcher</codeph> interface, that's ok to not dispatch this event.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.events:IndexEvent:IndexEvent"><apiName>IndexEvent</apiName><shortdesc>
+		 Constructor, creates a new IndexEvent object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>			The type of the event, accessible as <codeph>Event.type</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/><apiDesc>		The new index value.
+		 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>		Determines whether the Event object participates in the bubbling stage of the event flow. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	Determines whether the Event object can be canceled. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>IndexEvent</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.events:IndexEvent:clone"><apiName>clone</apiName><shortdesc>
+		 Duplicates the instance of IndexEvent object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiDesc>A new IndexEvent object that is identical to the original.
+		 </apiDesc><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
+		 Duplicates the instance of IndexEvent object.
+		 <p>Returns a new IndexEvent object that is a copy of the original instance of the IndexEvent object. You do not normally call <codeph>clone()</codeph>; the <codeph>EventDispatcher</codeph> class calls it automatically when you redispatch an event—that is, when you call <codeph>dispatchEvent(event)</codeph> from a handler that is handling event.</p>
+		 <p>The new IndexEvent object includes all the properties of the original.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.events:IndexEvent:CHANGED"><apiName>CHANGED</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.as3coreaddendum.events.IndexEvent.CHANGED</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.events:IndexEvent:index:get"><apiName>index</apiName><shortdesc>
+		 description
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 description
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

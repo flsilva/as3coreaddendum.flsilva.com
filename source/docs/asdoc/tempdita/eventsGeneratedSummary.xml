@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allClasses>
+   <apiPackage id="org.as3coreaddendum.display">
+      <apiName>org.as3coreaddendum.display</apiName>
+      <apiClassifier id="org.as3coreaddendum.display:IDisplayObjectContainer">
+         <apiName>IDisplayObjectContainer</apiName>
+         <shortdesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.display:IInteractiveObject</apiBaseInterface>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+	 <p>This interface simulates a native <codeph>DisplayObjectContainer</codeph> interface, specifying all methods and properties of the <codeph>DisplayObjectContainer</codeph> class for pure Flash Player 10.</p>
+	           <p>For more information see the ActionScript 3.0 Language Reference.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.display:IDisplayObject">
+         <apiName>IDisplayObject</apiName>
+         <shortdesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>flash.events:IEventDispatcher</apiBaseInterface>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+	 <p>This interface simulates a native <codeph>DisplayObject</codeph> interface, specifying all methods and properties of the <codeph>DisplayObject</codeph> class for pure Flash Player 10.</p>
+	           <p>For more information see the ActionScript 3.0 Language Reference.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.display:IInteractiveObject">
+         <apiName>IInteractiveObject</apiName>
+         <shortdesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.display:IDisplayObject</apiBaseInterface>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+	 <p>This interface simulates a native <codeph>InteractiveObject</codeph> interface, specifying all properties of the <codeph>InteractiveObject</codeph> class for pure Flash Player 10.</p>
+	           <p>For more information see the ActionScript 3.0 Language Reference.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.as3coreaddendum.errors">
+      <apiName>org.as3coreaddendum.errors</apiName>
+      <apiClassifier id="org.as3coreaddendum.errors:UnsupportedOperationError">
+         <apiName>UnsupportedOperationError</apiName>
+         <shortdesc>
+	 The error that is thrown to indicate that the requested operation is not supported.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown to indicate that the requested operation is not supported.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.errors:NullPointerError">
+         <apiName>NullPointerError</apiName>
+         <shortdesc>
+	 The error that is thrown to indicate that null was received when an object was required.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown to indicate that <codeph>null</codeph> was received when an object was required.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.errors:CloneNotSupportedError">
+         <apiName>CloneNotSupportedError</apiName>
+         <shortdesc>
+	 The error that is thrown to indicate that an object could not or should not be cloned.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown to indicate that an object could not or should not be cloned. 
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.errors:InvalidEnumArgumentError">
+         <apiName>InvalidEnumArgumentError</apiName>
+         <shortdesc>
+	 The error that is thrown to indicate that you pass an invalid enumeration value to a method or when setting a property.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown to indicate that you pass an invalid enumeration value to a method or when setting a property.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.errors:ClassCastError">
+         <apiName>ClassCastError</apiName>
+         <shortdesc>
+	 The error that is thrown to indicate that another type of class was expected.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown to indicate that another type of class was expected.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.errors:ObjectDisposedError">
+         <apiName>ObjectDisposedError</apiName>
+         <shortdesc>
+	 The error that is thrown when an operation is performed on a disposed object that implements the org.as3coreaddendum.system.IDisposable interface.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown when an operation is performed on a disposed object that implements the org.as3coreaddendum.system.IDisposable interface.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.errors:IllegalStateError">
+         <apiName>IllegalStateError</apiName>
+         <shortdesc>
+	 The error that is thrown to indicate that an object entered into an illegal state.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>Error</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The error that is thrown to indicate that an object entered into an illegal state.
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.as3coreaddendum.events">
+      <apiName>org.as3coreaddendum.events</apiName>
+      <apiClassifier id="org.as3coreaddendum.events:PriorityEvent">
+         <apiName>PriorityEvent</apiName>
+         <shortdesc>
+	 This event should be dispatched by objects that implement org.as3coreaddendum.system.IPriority interface and had its "priority" setter invoked.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This event should be dispatched by objects that implement <codeph>org.as3coreaddendum.system.IPriority</codeph> interface and had its "priority" setter invoked.
+	 This way the object will inform that its priority was changed.
+	 <p>But if the object does not implement <codeph>flash.events.IEventDispatcher</codeph> interface, that's ok to not dispatch this event.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.events:IndexEvent">
+         <apiName>IndexEvent</apiName>
+         <shortdesc>
+	 This event should be dispatched by objects that implement org.as3coreaddendum.system.IIndex interface and had its "index" setter invoked.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>flash.events:Event</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This event should be dispatched by objects that implement <codeph>org.as3coreaddendum.system.IIndex</codeph> interface and had its "index" setter invoked.
+	 This way the object will inform that its index was changed.
+	 <p>But if the object does not implement <codeph>flash.events.IEventDispatcher</codeph> interface, that's ok to not dispatch this event.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.as3coreaddendum.system.comparators">
+      <apiName>org.as3coreaddendum.system.comparators</apiName>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:NumberComparator">
+         <apiName>NumberComparator</apiName>
+         <shortdesc>
+	 A comparator for Number objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for <codeph>Number</codeph> objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:BooleanComparator">
+         <apiName>BooleanComparator</apiName>
+         <shortdesc>
+	 A comparator for Boolean objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for <codeph>Boolean</codeph> objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:IndexComparator">
+         <apiName>IndexComparator</apiName>
+         <shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IIndexable interface, comparing the index property.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IIndexable</codeph> interface, comparing the <codeph>index</codeph> property.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:PropertyComparator">
+         <apiName>PropertyComparator</apiName>
+         <shortdesc>
+	 This comparator uses the received comparator object to compare the values recovered from the property of each of the two objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This comparator uses the received <codeph>comparator</codeph> object to compare the values recovered from the <codeph>property</codeph> of each of the two objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:StringComparator">
+         <apiName>StringComparator</apiName>
+         <shortdesc>
+	 A comparator for String objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for <codeph>String</codeph> objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:BooleanComparison">
+         <apiName>BooleanComparison</apiName>
+         <shortdesc>
+	 The enumeration class that defines the acceptable values for the BooleanComparator.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The enumeration class that defines the acceptable values for the <codeph>BooleanComparator</codeph>.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:AlphabeticalComparison">
+         <apiName>AlphabeticalComparison</apiName>
+         <shortdesc>
+	 The enumeration class that defines the acceptable values for the AlphabeticalComparator.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The enumeration class that defines the acceptable values for the <codeph>AlphabeticalComparator</codeph>.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:AlphabeticalComparator">
+         <apiName>AlphabeticalComparator</apiName>
+         <shortdesc>
+	 A comparator for alphabetic order of String objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for alphabetic order of <codeph>String</codeph> objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:PriorityIndexComparator">
+         <apiName>PriorityIndexComparator</apiName>
+         <shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IPriority and org.as3coreaddendum.system.IIndexable interfaces, comparing the priority and index properties.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IPriority</codeph> and <codeph>org.as3coreaddendum.system.IIndexable</codeph> interfaces, comparing the <codeph>priority</codeph> and <codeph>index</codeph> properties.
+	 <p>This comparator is util when you want to sort the objects by priority, but if the priority of the two objects are equal, the <codeph>index</codeph> property of the objects are compared to decide wich object comes before.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:PriorityComparator">
+         <apiName>PriorityComparator</apiName>
+         <shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IPriority interface, comparing the priority property.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IPriority</codeph> interface, comparing the <codeph>priority</codeph> property.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system.comparators:DateComparator">
+         <apiName>DateComparator</apiName>
+         <shortdesc>
+	 A comparator for Date objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparator for <codeph>Date</codeph> objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+   <apiPackage id="org.as3coreaddendum.system">
+      <apiName>org.as3coreaddendum.system</apiName>
+      <apiClassifier id="org.as3coreaddendum.system:StringCase">
+         <apiName>StringCase</apiName>
+         <shortdesc>
+	 The enumeration class that defines the acceptable values for string case.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The enumeration class that defines the acceptable values for string case.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IEquatable">
+         <apiName>IEquatable</apiName>
+         <shortdesc>
+	 This interface defines that a class can evaluate equality of instances.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This interface defines that a class can evaluate equality of instances.
+	 <p>A class that implements this interface provides an arbitrary evaluation of equality with another object.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:ISortable">
+         <apiName>ISortable</apiName>
+         <shortdesc>
+	 A class that implements this interface indicates that it can be sorted by the sort() method.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A class that implements this interface indicates that it can be sorted by the <codeph>sort()</codeph> method.
+	 <p>Usually the classes that implement this interface are collections of some sort.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:NumericRounding">
+         <apiName>NumericRounding</apiName>
+         <shortdesc>
+	 The enumeration class that defines the acceptable values for numeric rounding.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 The enumeration class that defines the acceptable values for numeric rounding.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:ISerializable">
+         <apiName>ISerializable</apiName>
+         <shortdesc>
+	 Allows an object to control its own serialization.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Allows an object to control its own serialization.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IComparable">
+         <apiName>IComparable</apiName>
+         <shortdesc>
+	 This interface imposes a total ordering on the objects of each class that implements it.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This interface imposes a total ordering on the objects of each class that implements it.
+	 This ordering is referred to as the class's <i>natural ordering</i>, and the class's compareTo method is referred to as its <i>natural comparison method</i>.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:ICloneable">
+         <apiName>ICloneable</apiName>
+         <shortdesc>
+	 A class that implements this interface indicates that it can be cloned by the clone() method.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A class that implements this interface indicates that it can be cloned by the <codeph>clone()</codeph> method.
+	 <p>The implementation of the <codeph>clone()</codeph> method should return a shallow copy of the object, copying every possible property.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IDisposable">
+         <apiName>IDisposable</apiName>
+         <shortdesc>
+	 This interface exposes a way to tell to an object that it is no longer needed.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This interface exposes a way to tell to an object that it is no longer needed.
+	 <p>When the <codeph>dispose()</codeph> method is invoked on an object, it should stop all its processes and kill all its references to another objects, explicitly controlling the lifecycle of all its dependencies.
+	 If the dependency also implements this interface, its <codeph>dispose()</codeph> method should be called by this object.</p>
+	           <p>If the object has a parent class (base class) and the parent class also implements this interface, the <codeph>dispose()</codeph> method of the parent class should be called, propagating this action through the hierarchy of parents.</p>
+	           <p>If the <codeph>dispose()</codeph> method is called more than once, the object should ignore all calls after the first one, without throwing an error.</p>
+	           <p>Since the <codeph>dispose()</codeph> method was called, the object just wait to be released from memory by the garbage collection process.</p>
+	           <p>The object should throw the org.as3coreaddendum.errors.ObjectDisposedError if some method is called after the <codeph>dispose()</codeph> method was called, indicating an illegal operation.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IComparator">
+         <apiName>IComparator</apiName>
+         <shortdesc>
+	 A comparison function, which imposes a total ordering on some collection of objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 A comparison function, which imposes a <i>total ordering</i> on some collection of objects.
+	 
+	 </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IIndexable">
+         <apiName>IIndexable</apiName>
+         <shortdesc>
+	 This interface defines a contract for objects that contains an index.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This interface defines a contract for objects that contains an index.
+	 <p>It can be used, for example, by objects that can be found or sorted by its index.</p>
+	           <p>If the object also implements <codeph>flash.events.IEventDispatcher</codeph> interface, it is highly recommended that the object dispatches <codeph>org.as3coreaddendum.events.IndexEvent</codeph> when its <codeph>index</codeph> setter is invoked.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:Enum">
+         <apiName>Enum</apiName>
+         <shortdesc>
+	 This is the base class for implementation of enumeration objects.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseInterface>org.as3coreaddendum.system:IComparable</apiBaseInterface>
+               <apiBaseInterface>org.as3coreaddendum.system:IEquatable</apiBaseInterface>
+               <apiBaseInterface>org.as3coreaddendum.system:ISerializable</apiBaseInterface>
+               <apiBaseClassifier>Object</apiBaseClassifier>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This is the base class for implementation of enumeration objects.
+	 <p>This class shouldn't be instantiated directly, rather than enumeration classes must extend this class.</p>
+	           <p>
+               <b>What is an Enumerated Type?</b>
+            </p>
+	           <p>An Enumerated Type is a data type that consists of a pre-defined set of values. Each enumerator (constant) is a value.
+	 An Enumerated Type groups a set of interrelated logical values.</p>
+	           <p>Actionscript 3.0 doesn't implements Enumerated types. Rather, its uses a class with only constants to define a set of interrelated logical values.</p>
+	           <p>One example is the <codeph>flash.display.StageAlign</codeph> class. It is the set of logical values acceptable for the <codeph>flash.display.Stage.align</codeph> property.</p>
+	           <p>But even without the support of Actionscript 3.0 for Enumerated types you can simulate this functionality extending this Enum class.</p>
+	 
+	           <p>
+               <b>Why use an Enumerated Type rather than a class with constants?</b>
+            </p>
+	           <p>Following the example above, if you open the Actionscript 3.0 Language Reference and quickly look at the class <codeph>flash.display.Stage</codeph> and see the <codeph>align</codeph> property, you will note that its type is <codeph>String</codeph>.
+	 So you cannot immediatly know what values you can assign to it. Only after discovering that there is a class <codeph>flash.display.StageAlign</codeph> you note that these are the acceptable values.
+	 So this is the first problem with this approach.</p>
+	           <p>The second problem is that you really can assign any <codeph>String</codeph> to the <codeph>align</codeph> property.
+	 Nothing guarantees you will pass the values that are actually in the <codeph>flash.display.StageAlign</codeph> class.
+	 Nor will there be any error at compile time that say that something is wrong.</p>
+	           <p>But if instead of using this approach was used Enumeration types, these two problems would become two good points.</p>
+	           <p>First, looking at the Actionscript 3.0 Language Reference you would see that the property <codeph>align</codeph> is of the type <codeph>StageAlign</codeph>.
+	 Automatically you check this class and see how to use it to assign a value for the <codeph>align</codeph> property.</p>
+	           <p>Even better, if you make a mistake the compiler will warn you.
+	 You will no longer able to send an invalid value for the property.</p>
+	           <p>But even with this approach remains a problem to be solved. The client of your code can still create instances of your Enumerated Type and use them when needed.
+	 In most cases this is undesirable, because you have already defined the set of acceptable values through constants in its Enumerated Type.</p>
+	           <p>To resolve this problem exists a solution: the type-safe enum pattern. It is described with an example at the end of the page.</p>
+	           <p>You can also check the class NumericRounding listed in the section "See also" below.</p>
+	           <p>So to summarize the benefits of using Enumerated types: they make your code (or API) more readable and safe.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IInitializable">
+         <apiName>IInitializable</apiName>
+         <shortdesc>
+	 Defines an interface to initialize the object.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 Defines an interface to initialize the object.
+	 <p>Classes that need to be initialized before being used can implement this interface to define an initialization pattern.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:ITypeable">
+         <apiName>ITypeable</apiName>
+         <shortdesc>
+	 This interface defines a contract for objects that specify a type.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This interface defines a contract for objects that specify a type. A type can be anything, e.g. a <codeph>Class</codeph>, a <codeph>Function</codeph>, etc.
+	 <p>It can be used, for example, by collections that restrict the type of its elements.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+      <apiClassifier id="org.as3coreaddendum.system:IPriority">
+         <apiName>IPriority</apiName>
+         <shortdesc>
+	 This interface defines a contract for objects that contains a priority.</shortdesc>
+         <apiClassifierDetail>
+            <apiClassifierDef>
+               <apiInterface/>
+               <apiAccess value="public"/>
+               <apiStatic/>
+               <apiBaseClassifier/>
+            </apiClassifierDef>
+         </apiClassifierDetail>
+         <apiDesc>
+	 This interface defines a contract for objects that contains a priority.
+	 <p>If the object also implements <codeph>flash.events.IEventDispatcher</codeph> interface, it is highly recommended that the object dispatches <codeph>org.as3coreaddendum.events.PriorityEvent</codeph> when its <codeph>priority</codeph> setter is invoked.</p>
+	 
+	        </apiDesc>
+      </apiClassifier>
+   </apiPackage>
+</allClasses>

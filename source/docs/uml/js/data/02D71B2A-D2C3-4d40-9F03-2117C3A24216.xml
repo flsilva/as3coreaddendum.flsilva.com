@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("1.1.1.2:1", "", "errors", "EARoot/EA1/EA1/EA1/EA2/EA16.htm", "175.png", "5", "0", "", "Logical diagram0","{3959623B-7411-45f9-82D3-5443E126EE20}");
+tocTab[tocTab.length] = new Array("1.1.1.2:2", "", "ClassCastError", "EARoot/EA1/EA1/EA1/EA2/EA18.htm", "5.png", "30", "0", "", "Class0","{65FD00C5-2DD9-449f-8108-4598A5DBB35B}");
+tocTab[tocTab.length] = new Array("1.1.1.2:3", "", "CloneNotSupportedError", "EARoot/EA1/EA1/EA1/EA2/EA19.htm", "5.png", "33", "0", "", "Class0","{E2DDA5AC-8F79-405a-A5E4-CC4A6105FDEE}");
+tocTab[tocTab.length] = new Array("1.1.1.2:4", "", "ConcurrentModificationError", "EARoot/EA1/EA1/EA1/EA2/EA20.htm", "5.png", "78", "0", "", "Class0","{EE9916E0-63EA-46f1-AC53-7D761D329DB8}");
+tocTab[tocTab.length] = new Array("1.1.1.2:5", "", "IllegalStateError", "EARoot/EA1/EA1/EA1/EA2/EA21.htm", "5.png", "34", "0", "", "Class0","{13CD3466-F7BB-4c65-A5BD-765DA3091700}");
+tocTab[tocTab.length] = new Array("1.1.1.2:6", "", "IndexOutOfBoundsError", "EARoot/EA1/EA1/EA1/EA2/EA22.htm", "5.png", "77", "0", "", "Class0","{97D92508-B146-4520-963E-2C80059F9B7A}");
+tocTab[tocTab.length] = new Array("1.1.1.2:7", "", "InvalidEnumArgumentError", "EARoot/EA1/EA1/EA1/EA2/EA23.htm", "5.png", "58", "0", "", "Class0","{36165361-EF4D-4fd1-A4F7-4E7891401C86}");
+tocTab[tocTab.length] = new Array("1.1.1.2:8", "", "NoSuchElementError", "EARoot/EA1/EA1/EA1/EA2/EA24.htm", "5.png", "76", "0", "", "Class0","{2D65EBE0-7F47-42d3-9B80-4E1D79F9E591}");
+tocTab[tocTab.length] = new Array("1.1.1.2:9", "", "NullPointerError", "EARoot/EA1/EA1/EA1/EA2/EA25.htm", "5.png", "31", "0", "", "Class0","{C3B222A5-8204-4066-9982-7C5A7668558D}");
+tocTab[tocTab.length] = new Array("1.1.1.2:10", "", "ObjectDisposedError", "EARoot/EA1/EA1/EA1/EA2/EA26.htm", "5.png", "62", "0", "", "Class0","{2EE59917-3A20-46e9-BFE8-390E7F624DBC}");
+tocTab[tocTab.length] = new Array("1.1.1.2:11", "", "UnsupportedOperationError", "EARoot/EA1/EA1/EA1/EA2/EA27.htm", "5.png", "73", "0", "", "Class0","{5174E5ED-2443-48e8-8CFD-33187E40081C}");

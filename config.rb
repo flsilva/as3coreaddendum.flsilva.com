@@ -11,6 +11,9 @@
 #   config.output_style = :compact
 # end
 
+require "slim"
+require "zurb-foundation"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -38,7 +41,8 @@
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
+activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -56,10 +60,12 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+
+  activate :gzip
 
   # Enable cache buster
   # activate :cache_buster
@@ -69,8 +75,9 @@ configure :build do
 
   # Compress PNGs after build
   # First: gem install middleman-smusher
-  # require "middleman-smusher"
-  # activate :smusher
+  require "middleman-smusher"
+  activate :smusher
+  activate :asset_hash
 
   # Or use a different image path
   # set :http_path, "/Content/images/"

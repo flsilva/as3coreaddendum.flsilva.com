@@ -1,0 +1,2592 @@
+<asdoc>
+
+<interfaceRec name='IPriority' fullname='org.as3coreaddendum.system:IPriority' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IPriority.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This interface defines a contract for objects that contains a priority.
+
+	 <p>If the object also implements <code>flash.events.IEventDispatcher</code> interface, it is highly recommended that the object dispatches <code>org.as3coreaddendum.events.PriorityEvent</code> when its <code>priority</code> setter is invoked.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='priority' fullname='org.as3coreaddendum.system:IPriority/org.as3coreaddendum.system:IPriority:priority/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+
+		 Defines the priority of the object.
+
+		 ]]></description>
+</method>
+<method name='priority' fullname='org.as3coreaddendum.system:IPriority/org.as3coreaddendum.system:IPriority:priority/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+</method>
+<interfaceRec name='ITypeable' fullname='org.as3coreaddendum.system:ITypeable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\ITypeable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This interface defines a contract for objects that specify a type. A type can be anything, e.g. a <code>Class</code>, a <code>Function</code>, etc.
+
+	 <p>It can be used, for example, by collections that restrict the type of its elements.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='type' fullname='org.as3coreaddendum.system:ITypeable/org.as3coreaddendum.system:ITypeable:type/get' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 Defines the type.
+
+		 ]]></description>
+</method>
+<method name='type' fullname='org.as3coreaddendum.system:ITypeable/org.as3coreaddendum.system:ITypeable:type/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='*' param_defaults='undefined' result_type='void'>
+</method>
+<interfaceRec name='IDisposable' fullname='org.as3coreaddendum.system:IDisposable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IDisposable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This interface exposes a way to tell to an object that it is no longer needed.
+
+	 <p>When the <code>dispose()</code> method is invoked on an object, it should stop all its processes and kill all its references to another objects, explicitly controlling the lifecycle of all its dependencies.
+
+	 If the dependency also implements this interface, its <code>dispose()</code> method should be called by this object.</p>
+
+	 <p>If the object has a parent class (base class) and the parent class also implements this interface, the <code>dispose()</code> method of the parent class should be called, propagating this action through the hierarchy of parents.</p>
+
+	 <p>If the <code>dispose()</code> method is called more than once, the object should ignore all calls after the first one, without throwing an error.</p>
+
+	 <p>Since the <code>dispose()</code> method was called, the object just wait to be released from memory by the garbage collection process.</p>
+
+	 <p>The object should throw the org.as3coreaddendum.errors.ObjectDisposedError if some method is called after the <code>dispose()</code> method was called, indicating an illegal operation.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.errors.ObjectDisposedError	ObjectDisposedError
+
+	 ]]></see>
+</interfaceRec>
+<method name='dispose' fullname='org.as3coreaddendum.system:IDisposable/org.as3coreaddendum.system:IDisposable:dispose' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 Dispose the object to be garbage collected.
+
+		 ]]></description>
+</method>
+<interfaceRec name='IInitializable' fullname='org.as3coreaddendum.system:IInitializable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IInitializable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Defines an interface to initialize the object.
+
+	 <p>Classes that need to be initialized before being used can implement this interface to define an initialization pattern.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='initialize' fullname='org.as3coreaddendum.system:IInitializable/org.as3coreaddendum.system:IInitializable:initialize' isStatic='false' isFinal='false' isOverride='false'  result_type='void'>
+<description><![CDATA[
+
+		 Initializes this object.
+
+		 ]]></description>
+</method>
+<method name='isInitialized' fullname='org.as3coreaddendum.system:IInitializable/org.as3coreaddendum.system:IInitializable:isInitialized/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 Defines if the object is initialized or not.
+
+		 ]]></description>
+</method>
+<interfaceRec name='ICloneable' fullname='org.as3coreaddendum.system:ICloneable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\ICloneable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A class that implements this interface indicates that it can be cloned by the <code>clone()</code> method.
+
+	 <p>The implementation of the <code>clone()</code> method should return a shallow copy of the object, copying every possible property.</p>
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</interfaceRec>
+<method name='clone' fullname='org.as3coreaddendum.system:ICloneable/org.as3coreaddendum.system:ICloneable:clone' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+		 Creates and return a shallow copy of the object.
+		 
+		 ]]></description>
+<return><![CDATA[A new object that is a shallow copy of this instance.
+
+		 ]]></return>
+<throws><![CDATA[org.as3coreaddendum.errors.CloneNotSupportedError If this object should not be cloned.
+
+ 		 ]]></throws>
+</method>
+<interfaceRec name='IComparable' fullname='org.as3coreaddendum.system:IComparable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IComparable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This interface imposes a total ordering on the objects of each class that implements it.
+
+	 This ordering is referred to as the class's <em>natural ordering</em>, and the class's compareTo method is referred to as its <em>natural comparison method</em>.
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</interfaceRec>
+<method name='compareTo' fullname='org.as3coreaddendum.system:IComparable/org.as3coreaddendum.system:IComparable:compareTo' isStatic='false' isFinal='false' isOverride='false'  param_names='o' param_types='*' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+
+		 Compares this object with the specified object for order.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o
+
+		 ]]></param>
+<return><![CDATA[a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+
+		 ]]></return>
+<throws><![CDATA[org.as3coreaddendum.errors.ClassCastError if the specified object's type prevents it from being compared to this object.
+		 ]]></throws>
+</method>
+<interfaceRec name='IEquatable' fullname='org.as3coreaddendum.system:IEquatable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IEquatable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This interface defines that a class can evaluate equality of instances.
+	 <p>A class that implements this interface provides an arbitrary evaluation of equality with another object.</p>
+
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</interfaceRec>
+<method name='equals' fullname='org.as3coreaddendum.system:IEquatable/org.as3coreaddendum.system:IEquatable:equals' isStatic='false' isFinal='false' isOverride='false'  param_names='other' param_types='*' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Performs an arbitrary, specific evaluation of equality between this object and the <code>other</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[other 	The object to be compared for equality.
+
+		 ]]></param>
+<return><![CDATA[<code>true</code> if the arbitrary evaluation considers the objects equal.
+		 ]]></return>
+</method>
+<interfaceRec name='IIndexable' fullname='org.as3coreaddendum.system:IIndexable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IIndexable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This interface defines a contract for objects that contains an index.
+
+	 <p>It can be used, for example, by objects that can be found or sorted by its index.</p>
+
+	 <p>If the object also implements <code>flash.events.IEventDispatcher</code> interface, it is highly recommended that the object dispatches <code>org.as3coreaddendum.events.IndexEvent</code> when its <code>index</code> setter is invoked.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='index' fullname='org.as3coreaddendum.system:IIndexable/org.as3coreaddendum.system:IIndexable:index/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+
+		 Defines the index of the object.
+
+		 ]]></description>
+</method>
+<method name='index' fullname='org.as3coreaddendum.system:IIndexable/org.as3coreaddendum.system:IIndexable:index/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+</method>
+<interfaceRec name='IComparator' fullname='org.as3coreaddendum.system:IComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\IComparator.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparison function, which imposes a <em>total ordering</em> on some collection of objects.
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</interfaceRec>
+<method name='compare' fullname='org.as3coreaddendum.system:IComparator/org.as3coreaddendum.system:IComparator:compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Compares its two arguments for order. Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1 			the first object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2			the second object to be compared. 
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second. 
+		 ]]></return>
+</method>
+<interfaceRec name='ISerializable' fullname='org.as3coreaddendum.system:ISerializable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\ISerializable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 Allows an object to control its own serialization.
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</interfaceRec>
+<method name='toSource' fullname='org.as3coreaddendum.system:ISerializable/org.as3coreaddendum.system:ISerializable:toSource' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Returns the source code <code>String</code> representation of the object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[The source code <code>String</code> representation of the object.
+
+ 		 ]]></return>
+</method>
+<interfaceRec name='ISortable' fullname='org.as3coreaddendum.system:ISortable' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\ISortable.as' namespace='org.as3coreaddendum.system' access='public' baseClasses='Object' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A class that implements this interface indicates that it can be sorted by the <code>sort()</code> method.
+
+	 <p>Usually the classes that implement this interface are collections of some sort.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='sort' fullname='org.as3coreaddendum.system:ISortable/org.as3coreaddendum.system:ISortable:sort' isStatic='false' isFinal='false' isOverride='false'  param_names='compare;options' param_types='Function;uint' param_defaults='null;0' result_type='Array'>
+<description><![CDATA[
+
+		 Sorts the objects within this class.
+
+		 <p>By default, <code>Array.sort()</code> works in the following way:</p>
+
+		 <p>
+
+		 <ul>
+
+		 <li>Sorting is case-sensitive (Z precedes a).</li>
+
+		 <li>Sorting is ascending (a precedes b).</li>
+
+		 <li>The array is modified to reflect the sort order; multiple elements that have identical sort fields are placed consecutively in the sorted array in no particular order.</li>
+
+		 <li>All elements, regardless of data type, are sorted as if they were strings, so 100 precedes 99, because "1" is a lower string value than "9".</li>
+
+		 </ul>
+
+		 </p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[compare 	A comparison function used to determine the sorting order of elements in an array. For more info see <code>IComparator.compare</code>.
+
+		 ]]></param>
+<param><![CDATA[options 	One or more numbers or defined constants, separated by the | (bitwise OR) operator, that change the behavior of the sort from the default.
+
+		 The following values are acceptable for <code>options</code>:
+
+		 <ul>
+
+		 <li>1 or Array.CASEINSENSITIVE</li>
+
+		 <li>2 or Array.DESCENDING</li>
+
+		 <li>4 or Array.UNIQUESORT</li>
+
+		 <li>8 or Array.RETURNINDEXEDARRAY</li>
+
+		 <li>16 or Array.NUMERIC</li>
+
+		 </ul>
+
+		 ]]></param>
+<return><![CDATA[The return value depends on whether you pass any arguments, as described in the following list:
+
+		 <ul>
+
+		 <li>If you specify a value of 4 or Array.UNIQUESORT for the <code>options</code> argument and two or more elements being sorted have identical sort fields, returns a value of 0 and does not modify the array.</li>
+
+		 <li>If you specify a value of 8 or Array.RETURNINDEXEDARRAY for the options parameter, an array is returned that reflects the results of the sort and the array is not modified.</li>
+
+		 <li>Otherwise, nothing is returned and the array is modified to reflect the sort order.</li>
+
+		 </ul>
+
+		 ]]></return>
+<see><![CDATA[IComparator#compare() IComparator.compare()
+
+		 ]]></see>
+</method>
+<method name='comparator' fullname='org.as3coreaddendum.system:ISortable/org.as3coreaddendum.system:ISortable:comparator/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.as3coreaddendum.system:IComparator'>
+<description><![CDATA[
+
+		 Defines the <code>IComparator</code> object to be used in the comparison.
+
+		 ]]></description>
+</method>
+<method name='options' fullname='org.as3coreaddendum.system:ISortable/org.as3coreaddendum.system:ISortable:options/get' isStatic='false' isFinal='false' isOverride='false'  result_type='uint'>
+<description><![CDATA[
+
+		 Defines the options to be used automatically to sort.
+
+		 ]]></description>
+</method>
+<method name='comparator' fullname='org.as3coreaddendum.system:ISortable/org.as3coreaddendum.system:ISortable:comparator/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.as3coreaddendum.system:IComparator' param_defaults='undefined' result_type='void'>
+</method>
+<method name='options' fullname='org.as3coreaddendum.system:ISortable/org.as3coreaddendum.system:ISortable:options/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='uint' param_defaults='undefined' result_type='void'>
+</method>
+<classRec name='Enum' fullname='org.as3coreaddendum.system:Enum' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\Enum.as' namespace='org.as3coreaddendum.system' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparable;org.as3coreaddendum.system:IEquatable;org.as3coreaddendum.system:ISerializable' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This is the base class for implementation of enumeration objects.
+
+	 <p>This class shouldn't be instantiated directly, rather than enumeration classes must extend this class.</p>
+
+	 <p><b>What is an Enumerated Type?</b></p>
+	 <p>An Enumerated Type is a data type that consists of a pre-defined set of values. Each enumerator (constant) is a value.
+
+	 An Enumerated Type groups a set of interrelated logical values.</p>
+
+	 <p>Actionscript 3.0 doesn't implements Enumerated types. Rather, its uses a class with only constants to define a set of interrelated logical values.</p>
+
+	 <p>One example is the <code>flash.display.StageAlign</code> class. It is the set of logical values acceptable for the <code>flash.display.Stage.align</code> property.</p>
+
+	 <p>But even without the support of Actionscript 3.0 for Enumerated types you can simulate this functionality extending this Enum class.</p>
+
+	 
+
+	 <p><b>Why use an Enumerated Type rather than a class with constants?</b></p>
+
+	 <p>Following the example above, if you open the Actionscript 3.0 Language Reference and quickly look at the class <code>flash.display.Stage</code> and see the <code>align</code> property, you will note that its type is <code>String</code>.
+
+	 So you cannot immediatly know what values you can assign to it. Only after discovering that there is a class <code>flash.display.StageAlign</code> you note that these are the acceptable values.
+
+	 So this is the first problem with this approach.</p>
+
+	 <p>The second problem is that you really can assign any <code>String</code> to the <code>align</code> property.
+
+	 Nothing guarantees you will pass the values that are actually in the <code>flash.display.StageAlign</code> class.
+
+	 Nor will there be any error at compile time that say that something is wrong.</p>
+
+	 <p>But if instead of using this approach was used Enumeration types, these two problems would become two good points.</p>
+
+	 <p>First, looking at the Actionscript 3.0 Language Reference you would see that the property <code>align</code> is of the type <code>StageAlign</code>.
+
+	 Automatically you check this class and see how to use it to assign a value for the <code>align</code> property.</p>
+
+	 <p>Even better, if you make a mistake the compiler will warn you.
+
+	 You will no longer able to send an invalid value for the property.</p>
+
+	 <p>But even with this approach remains a problem to be solved. The client of your code can still create instances of your Enumerated Type and use them when needed.
+
+	 In most cases this is undesirable, because you have already defined the set of acceptable values through constants in its Enumerated Type.</p>
+
+	 <p>To resolve this problem exists a solution: the type-safe enum pattern. It is described with an example at the end of the page.</p>
+
+	 <p>You can also check the class NumericRounding listed in the section "See also" below.</p>
+
+	 <p>So to summarize the benefits of using Enumerated types: they make your code (or API) more readable and safe.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <b>Simple Enumerated Type</b>
+
+	 <p>Suppose that we have an API that make loading of files.
+
+	 The acceptable file types that the API can load can be defined by an Enumerated Type.
+
+	 In this example the name of the Enumerated Type will be FileType. Note that you don't need to use the suffix "Enum" in its name.</p>
+
+	 <p>Then we define the types that the API can load. In this example the API can load just image, swf and mp3 files.
+
+	 So we have just three constants, one to each file type.</p>
+
+	 <p>When we want to load a file, we use the appropriate constant to tell the API what type of file will be loaded.
+
+	 If you need a file type that doesn't exists in the Enumerated Type, this means that the API doesn't support that file type.</p>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.Enum;
+
+	 
+
+	 public class FileType extends Enum
+
+	 {
+
+	 
+
+	      public static const IMAGE   :FileType = new FileType("Image", 0);
+
+	      public static const SWF     :FileType = new FileType("SWF", 1);
+
+	      public static const MP3     :FileType = new FileType("MP3", 2);
+
+	 
+
+	      public function FileType(name:String, ordinal:int)
+
+	      {
+
+	           super(name, ordinal);
+
+	      }
+
+	 }
+
+	 </listing>
+
+	 
+
+	 <b>Type-safe Enumerated Type</b>
+
+	 <p>In the above example, if the user of the API need to load a file type that doesn't exists in the Enumerated Type, it could instantiate a new object FileType with the desired type, as in the example below:</p>
+
+	 <listing version="3.0">
+
+	 import FileType;
+
+	 
+
+	 var videoFileType:FileType = new FileType("Video", 3);
+
+	 </listing>
+
+	 
+
+	 <p>This behavior would be wrong, but still allowed by the technical point of view.
+
+	 This would create the illusion that the user can create new types at runtime and send them to the API.</p>
+
+	 <p>To prevent this mistake, we can implement a pattern named type-safe enum.
+
+	 This pattern will prevents the user create new types, throwing a runtime error.</p>
+
+	 <p>There are some ways to do this, we will see just one below:</p>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.Enum;
+
+	 
+
+	 public class FileType extends Enum
+
+	 {
+
+	 
+
+	      public static const IMAGE   :FileType = new FileType("Image", 0);
+
+	      public static const SWF     :FileType = new FileType("SWF", 1);
+
+	      public static const MP3     :FileType = new FileType("MP3", 2);
+
+	 
+
+	      private static var _created:Boolean = false;
+
+	 
+
+	      {
+
+	           _created = true;
+
+	      }
+
+	 
+
+	      public function FileType(name:String, ordinal:int)
+
+	      {
+
+	           super(name, ordinal);
+
+	           if (_created) throw new IllegalOperationError("The set of acceptable values by this Enumerated Type has already been created internally.");
+
+	      }
+
+	 }
+
+	 </listing>
+
+	 
+
+	 <p>What happens above is that when the FileType is loaded in the Flash Player memory at runtime, first all the static members are initialized.
+
+	 After that the <em>static code block</em> is executed:</p>
+
+	 
+
+	 <listing version="3.0">
+
+	 {
+
+	      _created = true;
+
+	 }
+
+	 </listing>
+
+	 
+
+	 <p>So first all the constants are initialized with the FileType instances because the <code>_created</code> static variable is <code>false</code> and then immediately after that the <code>_created</code> is set to <code>true</code>.
+
+	 Thus no more instances can be created.</p>
+
+	 <p>Your Enumerated Type is safe to be used only with the set of values pre-defined by you.</p>
+
+	 
+
+	 ]]></example>
+<see><![CDATA[org.as3coreaddendum.errors.InvalidEnumArgumentError InvalidEnumArgumentError
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.IComparable IComparable
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.IEquatable IEquatable
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.ISerializable ISerializable
+
+	 ]]></see>
+</classRec>
+<method name='Enum' fullname='org.as3coreaddendum.system:Enum/Enum' isStatic='false' isFinal='false' isOverride='false'  param_names='name;ordinal' param_types='String;int' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new Enum object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[name 			The name of this enumeration constant.
+
+		 ]]></param>
+<param><![CDATA[ordinal 		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+
+		 ]]></param>
+<throws><![CDATA[ArgumentError 	If the <code>name</code> argument is <code>null</code> or an empty <code>String</code>.
+
+		 ]]></throws>
+<throws><![CDATA[IllegalOperationError 	If this class is instantiated directly, in other words, if there is <b>not</b> another class extending this class.
+
+		 ]]></throws>
+</method>
+<method name='compareTo' fullname='org.as3coreaddendum.system:Enum/compareTo' isStatic='false' isFinal='false' isOverride='false'  param_names='o' param_types='*' param_defaults='undefined' result_type='int'>
+<description><![CDATA[
+
+		 Compares this enum with the specified object for order.
+
+		 <p>Enum constants are only comparable to other enum constants of the same enum type. The natural order implemented by this method is the order in which the constants are declared.</p>
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o	The target object to be compared.
+
+		 ]]></param>
+<return><![CDATA[a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+
+		 ]]></return>
+<see><![CDATA[org.as3coreaddendum.system.IComparable	IComparable
+
+		 ]]></see>
+<throws><![CDATA[ArgumentError If the type of the argument <code>o</code> is other than this exactly enum type instance.
+
+		 ]]></throws>
+</method>
+<method name='equals' fullname='org.as3coreaddendum.system:Enum/equals' isStatic='false' isFinal='false' isOverride='false'  param_names='other' param_types='*' param_defaults='undefined' result_type='Boolean'>
+<description><![CDATA[
+
+		 Compares the target object for equality with this object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[other	The object to be compared for equality with this object.
+
+		 ]]></param>
+<return><![CDATA[<code>true</code> if the specified object is equal to this enum constant.
+
+		 ]]></return>
+<see><![CDATA[org.as3coreaddendum.system.IEquatable	IEquatable 
+		 ]]></see>
+</method>
+<method name='getClassName' fullname='org.as3coreaddendum.system:Enum/private:getClassName' isStatic='false' isFinal='false' isOverride='false'  param_names='o' param_types='*' param_defaults='undefined' result_type='String'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='getClassPath' fullname='org.as3coreaddendum.system:Enum/private:getClassPath' isStatic='false' isFinal='false' isOverride='false'  param_names='o' param_types='*' param_defaults='undefined' result_type='String'>
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</method>
+<method name='toSource' fullname='org.as3coreaddendum.system:Enum/toSource' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 
+
+		 Returns the source code <code>String</code> representation of the object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[The source code <code>String</code> representation of the object.
+
+ 		 ]]></return>
+<see><![CDATA[org.as3coreaddendum.system.ISerializable	ISerializable
+ 		 ]]></see>
+</method>
+<method name='toString' fullname='org.as3coreaddendum.system:Enum/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+		 Returns the name of this enum constant, as contained in the declaration.
+
+		 <p>This method may be overridden, though it typically isn't necessary or desirable. An enum type should override this method when a more "programmer-friendly" string form exists.</p>
+		 
+		 ]]></description>
+<return><![CDATA[The name of this enum constant.
+ 		 ]]></return>
+</method>
+<method name='valueOf' fullname='org.as3coreaddendum.system:Enum/valueOf' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+		 Returns the primitive value of the object.
+
+		 <p>This method is called automatically by the Flash Player every time an arithmetic operation occur. Thus, it's possible to perform these operations to check the position between two or more enum constants.</p>
+		 
+		 ]]></description>
+<return><![CDATA[The primitive value of the object. In this case, the <code>ordinal</code> value.
+ 		 ]]></return>
+</method>
+<method name='name' fullname='org.as3coreaddendum.system:Enum/name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 The name of this enum constant exactly as supplied by the constructor.
+
+		 <p><b>Most programmers should use the <code>toString()</code> method in preference to this one, as the <code>toString()</code> method may return a more user-friendly name.</b> This property is designed primarily for use in specialized situations where correctness depends on getting the exact name.</p>
+
+		 ]]></description>
+</method>
+<method name='ordinal' fullname='org.as3coreaddendum.system:Enum/ordinal/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).
+
+		 ]]></description>
+</method>
+<field name='_name' fullname='org.as3coreaddendum.system:Enum/private:_name' type='String' isStatic='false' isConst='false' >
+</field>
+<field name='_ordinal' fullname='org.as3coreaddendum.system:Enum/private:_ordinal' type='int' isStatic='false' isConst='false' >
+</field>
+<classRec name='StringCase' fullname='org.as3coreaddendum.system:StringCase' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\StringCase.as' namespace='org.as3coreaddendum.system' access='public' baseclass='org.as3coreaddendum.system:Enum' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The enumeration class that defines the acceptable values for string case.
+
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='StringCase' fullname='org.as3coreaddendum.system:StringCase/StringCase' isStatic='false' isFinal='false' isOverride='false'  param_names='name;ordinal' param_types='String;int' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>StringCase</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[name 			The name of this enumeration constant.
+
+		 ]]></param>
+<param><![CDATA[ordinal 		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+
+		 ]]></param>
+<throws><![CDATA[IllegalOperationError 	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+
+		 ]]></throws>
+</method>
+<field name='INSENSITIVE' fullname='org.as3coreaddendum.system:StringCase/INSENSITIVE' type='org.as3coreaddendum.system:StringCase' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant that indicates that any logic performed against a given <code>String</code> should ignore its case.
+
+		 ]]></description>
+</field>
+<field name='SENSITIVE' fullname='org.as3coreaddendum.system:StringCase/SENSITIVE' type='org.as3coreaddendum.system:StringCase' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant that indicates that any logic performed against a given <code>String</code> should consider its case.
+
+		 ]]></description>
+</field>
+<field name='_created' fullname='org.as3coreaddendum.system:StringCase/private:_created' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='NumericRounding' fullname='org.as3coreaddendum.system:NumericRounding' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\NumericRounding.as' namespace='org.as3coreaddendum.system' access='public' baseclass='org.as3coreaddendum.system:Enum' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The enumeration class that defines the acceptable values for numeric rounding.
+
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='NumericRounding' fullname='org.as3coreaddendum.system:NumericRounding/NumericRounding' isStatic='false' isFinal='false' isOverride='false'  param_names='name;ordinal' param_types='String;int' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new NumericRounding object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[name 			The name of this enumeration constant.
+
+		 ]]></param>
+<param><![CDATA[ordinal 		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+
+		 ]]></param>
+<throws><![CDATA[IllegalOperationError 	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+
+		 ]]></throws>
+</method>
+<field name='CEIL' fullname='org.as3coreaddendum.system:NumericRounding/CEIL' type='org.as3coreaddendum.system:NumericRounding' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant that indicates that a numeric value should be rounded up.
+
+		 ]]></description>
+</field>
+<field name='FLOOR' fullname='org.as3coreaddendum.system:NumericRounding/FLOOR' type='org.as3coreaddendum.system:NumericRounding' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant that indicates that a numeric value should be rounded down.
+
+		 ]]></description>
+</field>
+<field name='NONE' fullname='org.as3coreaddendum.system:NumericRounding/NONE' type='org.as3coreaddendum.system:NumericRounding' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant that indicates that a numeric value should not be rounded.
+
+		 ]]></description>
+</field>
+<field name='ROUND' fullname='org.as3coreaddendum.system:NumericRounding/ROUND' type='org.as3coreaddendum.system:NumericRounding' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant that indicates that a numeric value should be rounded down or up, whichever is closer.
+
+		 ]]></description>
+</field>
+<field name='_created' fullname='org.as3coreaddendum.system:NumericRounding/private:_created' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='PriorityComparator' fullname='org.as3coreaddendum.system.comparators:PriorityComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\PriorityComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for objects that implements the <code>org.as3coreaddendum.system.IPriority</code> interface, comparing the <code>priority</code> property.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.system.IComparator IComparator
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.IPriority IPriority
+
+	 ]]></see>
+</classRec>
+<method name='PriorityComparator' fullname='org.as3coreaddendum.system.comparators:PriorityComparator/PriorityComparator' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>PriorityComparator</code> object.
+
+		 ]]></description>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:PriorityComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1	The first <code>Number</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2	The second <code>Number</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the priority of the first argument is greater than, equal to, or less than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments does not implements the <code>IPriority</code> interface.
+
+		 ]]></throws>
+</method>
+<classRec name='IndexComparator' fullname='org.as3coreaddendum.system.comparators:IndexComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\IndexComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for objects that implements the <code>org.as3coreaddendum.system.IIndexable</code> interface, comparing the <code>index</code> property.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.system.IComparator IComparator
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.IIndexable IIndexable
+
+	 ]]></see>
+</classRec>
+<method name='IndexComparator' fullname='org.as3coreaddendum.system.comparators:IndexComparator/IndexComparator' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>IndexComparator</code> object.
+
+		 ]]></description>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:IndexComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1	The first <code>Number</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2	The second <code>Number</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments does not implements the <code>IIndexable</code> interface.
+
+		 ]]></throws>
+</method>
+<field name='_numberComparator' fullname='org.as3coreaddendum.system.comparators:IndexComparator/private:_numberComparator' type='org.as3coreaddendum.system.comparators:NumberComparator' isStatic='false' isConst='false' >
+</field>
+<classRec name='AlphabeticalComparator' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\AlphabeticalComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for alphabetic order of <code>String</code> objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+
+	 
+
+	 var c1:AlphabeticComparator = new AlphabeticComparator(AlphabeticComparison.LOWER_CASE_FIRST);
+
+	 
+
+	 c1.compare("a", "a")                      // 0
+
+	 c1.compare("a", "b")                      // -1
+
+	 c1.compare("b", "a")                      // 1
+
+	 c1.compare("a", "A")                      // -1
+
+	 c1.compare("A", "a")                      // 1
+
+	 c1.compare("comparison", "comparison")    // 0
+
+	 c1.compare("comparison", "comParison")    // -1
+
+	 c1.compare("comParison", "comparison")    // 1
+
+	 c1.compare("comparison", "Comparison")    // -1
+
+	 c1.compare("Comparison", "comparison")    // 1
+
+	 c1.compare("between", "strings")          // -1
+
+	 c1.compare("between", "Strings")          // -1
+
+	 c1.compare("Between", "strings")          // -1
+
+	 c1.compare("Between", "Strings")          // -1
+
+	 c1.compare("between", "between")          // 0
+
+	 c1.compare("between", "betweena")         // -1
+
+	 c1.compare("betweena", "betweenA")        // -1
+
+	 c1.compare("betweenA", "betweena")        // 1
+
+	 c1.compare("TestA", "TestB")              // -1
+
+	 c1.compare("TestB", "TestA")              // 1
+
+	 </listing>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+
+	 
+
+	 var c2:AlphabeticComparator = new AlphabeticComparator(AlphabeticComparison.UPPER_CASE_FIRST);
+
+	 
+
+	 c2.compare("a", "a")                      // 0
+
+	 c2.compare("a", "b")                      // -1
+
+	 c2.compare("b", "a")                      // 1
+
+	 c2.compare("a", "A")                      // 1
+
+	 c2.compare("A", "a")                      // -1
+
+	 c2.compare("comparison", "comparison")    // 0
+
+	 c2.compare("comparison", "comParison")    // 1
+
+	 c2.compare("comParison", "comparison")    // -1
+
+	 c2.compare("comparison", "Comparison")    // 1
+
+	 c2.compare("Comparison", "comparison")    // -1
+
+	 c2.compare("between", "strings")          // -1
+
+	 c2.compare("between", "Strings")          // -1
+
+	 c2.compare("Between", "strings")          // -1
+
+	 c2.compare("Between", "Strings")          // -1
+
+	 c2.compare("between", "between")          // 0
+
+	 c2.compare("between", "betweena")         // -1
+
+	 c2.compare("betweena", "betweenA")        // 1
+
+	 c2.compare("betweenA", "betweena")        // -1
+
+	 c2.compare("TestA", "TestB")              // -1
+
+	 c2.compare("TestB", "TestA")              // 1
+
+	 </listing>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+
+	 
+
+	 var c3:AlphabeticComparator = new AlphabeticComparator(AlphabeticalComparison.CASE_INSENSITIVE);
+
+	 
+
+	 c3.compare("a", "a")                      // 0
+
+	 c3.compare("a", "b")                      // -1
+
+	 c3.compare("b", "a")                      // 1
+
+	 c3.compare("a", "A")                      // 0
+
+	 c3.compare("A", "a")                      // 0
+
+	 c3.compare("comparison", "comparison")    // 0
+
+	 c3.compare("comparison", "comParison")    // 0
+
+	 c3.compare("comParison", "comparison")    // 0
+
+	 c3.compare("comparison", "Comparison")    // 0
+
+	 c3.compare("Comparison", "comparison")    // 0
+
+	 c3.compare("between", "strings")          // -1
+
+	 c3.compare("between", "Strings")          // -1
+
+	 c3.compare("Between", "strings")          // -1
+
+	 c3.compare("Between", "Strings")          // -1
+
+	 c3.compare("between", "between")          // 0
+
+	 c3.compare("between", "betweena")         // -1
+
+	 c3.compare("betweena", "betweenA")        // 0
+
+	 c3.compare("betweenA", "betweena")        // 0
+
+	 c3.compare("TestA", "TestB")              // -1
+
+	 c3.compare("TestB", "TestA")              // 1
+
+	 </listing>
+
+	 
+
+	 ]]></example>
+<see><![CDATA[org.as3coreaddendum.system.comparators.AlphabeticalComparison AlphabeticalComparison
+
+	 ]]></see>
+</classRec>
+<method name='AlphabeticalComparator' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator/AlphabeticalComparator' isStatic='false' isFinal='false' isOverride='false'  param_names='comparison' param_types='org.as3coreaddendum.system.comparators:AlphabeticalComparison' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>AlphabeticComparator</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[comparison		Indicates which type of comparison will be used.
+
+		 ]]></param>
+<see><![CDATA[org.as3coreaddendum.system.comparators.AlphabeticalComparison AlphabeticalComparison
+
+		 ]]></see>
+<throws><![CDATA[ArgumentError 	If the 'comparison' argument is <code>null</code>.
+
+		 ]]></throws>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1	The first <code>String</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2	The second <code>String</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments is <code>null</code>.
+
+		 ]]></throws>
+</method>
+<method name='toString' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Returns the string representation of this object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[the string representation of the this object.
+
+		 ]]></return>
+</method>
+<method name='comparison' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator/comparison/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.as3coreaddendum.system.comparators:AlphabeticalComparison'>
+<description><![CDATA[
+
+		 Defines the type of comparison to be used.
+
+		 ]]></description>
+<see><![CDATA[org.as3coreaddendum.system.comparators.AlphabeticalComparison AlphabeticalComparison
+
+		 ]]></see>
+<throws><![CDATA[ArgumentError If is assigned a <code>null</code> value.
+
+		 ]]></throws>
+</method>
+<method name='comparison' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator/comparison/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.as3coreaddendum.system.comparators:AlphabeticalComparison' param_defaults='undefined' result_type='void'>
+</method>
+<field name='_comparison' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparator/private:_comparison' type='org.as3coreaddendum.system.comparators:AlphabeticalComparison' isStatic='false' isConst='false' >
+</field>
+<classRec name='BooleanComparator' fullname='org.as3coreaddendum.system.comparators:BooleanComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\BooleanComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for <code>Boolean</code> objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.BooleanComparator;
+
+	 
+
+	 var b1:BooleanComparator = new BooleanComparator(BooleanComparison.TRUE_FIRST);
+
+	 
+
+	 b1.compare(true, false);    // -1
+
+	 b1.compare(false, true);    // 1
+
+	 
+
+	 var b2:BooleanComparator = new BooleanComparator(BooleanComparison.FALSE_FIRST);
+
+	 
+
+	 b2.compare(true, false);    // 1
+
+	 b2.compare(false, true);    // -1
+
+	 </listing>
+
+	 
+
+	 ]]></example>
+</classRec>
+<method name='BooleanComparator' fullname='org.as3coreaddendum.system.comparators:BooleanComparator/BooleanComparator' isStatic='false' isFinal='false' isOverride='false'  param_names='comparison' param_types='org.as3coreaddendum.system.comparators:BooleanComparison' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>BooleanComparator</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[comparison		Indicates which type of comparison will be used.
+
+		 ]]></param>
+<see><![CDATA[org.as3coreaddendum.system.comparators.BooleanComparison BooleanComparison
+
+		 ]]></see>
+<throws><![CDATA[ArgumentError 	If the 'comparison' argument is <code>null</code>.
+
+		 ]]></throws>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:BooleanComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1 	The first <code>Boolean</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2 	The second <code>Boolean</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments are not of type <code>Boolean</code>.
+
+		 ]]></throws>
+</method>
+<method name='toString' fullname='org.as3coreaddendum.system.comparators:BooleanComparator/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Returns the string representation of this object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[the string representation of the this object.
+
+		 ]]></return>
+</method>
+<method name='comparison' fullname='org.as3coreaddendum.system.comparators:BooleanComparator/comparison/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.as3coreaddendum.system.comparators:BooleanComparison'>
+<description><![CDATA[
+
+		 Defines the type of comparison to be used.
+
+		 ]]></description>
+<see><![CDATA[org.as3coreaddendum.system.comparators.BooleanComparison BooleanComparison
+
+		 ]]></see>
+<throws><![CDATA[ArgumentError If is assigned a <code>null</code> value.
+
+		 ]]></throws>
+</method>
+<method name='comparison' fullname='org.as3coreaddendum.system.comparators:BooleanComparator/comparison/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.as3coreaddendum.system.comparators:BooleanComparison' param_defaults='undefined' result_type='void'>
+</method>
+<field name='_comparison' fullname='org.as3coreaddendum.system.comparators:BooleanComparator/private:_comparison' type='org.as3coreaddendum.system.comparators:BooleanComparison' isStatic='false' isConst='false' >
+</field>
+<classRec name='NumberComparator' fullname='org.as3coreaddendum.system.comparators:NumberComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\NumberComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for <code>Number</code> objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+
+	 
+
+	 var c:NumberComparator = new NumberComparator();
+
+	 
+
+	 c.compare(0, 0);              // 0
+
+	 c.compare(1, 1);              // 0
+
+	 c.compare(0, 1);              // -1
+
+	 c.compare(94, 56);            // 1
+
+	 c.compare(-38, -27);          // -1
+
+	 c.compare(2.5, 2.5);          // 0
+
+	 c.compare(2.54, 2.54);        // 0
+
+	 c.compare(2.54, 2.56);        // -1
+
+	 c.compare(2.567, 2.567);      // 0
+
+	 c.compare(2.5678, 2.5677);    // 1
+
+	 c.compare(2.5678, 2.5674);    // 1
+
+	 c.compare(2.5674, 2.5678);    // -1
+
+	 </listing>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+
+	 
+
+	 var c1:NumberComparator = new NumberComparator(true, 1);
+
+	 
+
+	 c1.compare(2.5, 2.5);          // 0
+
+	 c1.compare(2.54, 2.54);        // 0
+
+	 c1.compare(2.54, 2.56);        // -1
+
+	 c1.compare(2.567, 2.567);      // 0
+
+	 c1.compare(2.5678, 2.5677);    // 0
+
+	 c1.compare(2.5678, 2.5674);    // 0
+
+	 c1.compare(2.5674, 2.5678);    // 0
+
+	 </listing>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+
+	 
+
+	 var c2:NumberComparator = new NumberComparator(true, 2);
+
+	 
+
+	 c2.compare(2.5, 2.5);          // 0
+
+	 c2.compare(2.54, 2.54);        // 0
+
+	 c2.compare(2.54, 2.56);        // -1
+
+	 c2.compare(2.567, 2.567);      // 0
+
+	 c2.compare(2.5678, 2.5677);    // 0
+
+	 c2.compare(2.5678, 2.5674);    // 0
+
+	 c2.compare(2.5674, 2.5678);    // 0
+
+	 </listing>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+
+	 
+
+	 var c3:NumberComparator = new NumberComparator(true, 3);
+
+	 
+
+	 c3.compare(2.5, 2.5);          // 0
+
+	 c3.compare(2.54, 2.54);        // 0
+
+	 c3.compare(2.54, 2.56);        // -1
+
+	 c3.compare(2.567, 2.567);      // 0
+
+	 c3.compare(2.5678, 2.5677);    // 0
+
+	 c3.compare(2.5678, 2.5674);    // 1
+
+	 c3.compare(2.5674, 2.5678);    // -1
+
+	 </listing>
+
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+
+	 
+
+	 var c4:NumberComparator = new NumberComparator(true, 4);
+
+	 
+
+	 c4.compare(2.5, 2.5);          // 0
+
+	 c4.compare(2.54, 2.54);        // 0
+
+	 c4.compare(2.54, 2.56);        // -1
+
+	 c4.compare(2.567, 2.567);      // 0
+
+	 c4.compare(2.5678, 2.5677);    // 1
+
+	 c4.compare(2.5678, 2.5674);    // 1
+
+	 c4.compare(2.5674, 2.5678);    // -1
+
+	 </listing>
+
+	 
+
+	 ]]></example>
+<see><![CDATA[org.as3coreaddendum.system.IComparator IComparator
+
+	 ]]></see>
+</classRec>
+<method name='NumberComparator' fullname='org.as3coreaddendum.system.comparators:NumberComparator/NumberComparator' isStatic='false' isFinal='false' isOverride='false'  param_names='useDecimalPlaces;decimalPlaces' param_types='Boolean;int' param_defaults='false;0' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>NumberComparator</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[useDecimalPlaces 	Indicates if both numbers should be rounded by the <code>decimalPlaces</code> property.
+
+		 ]]></param>
+<param><![CDATA[decimalPlaces 	The number of decimal places to be considered in the comparison. Must be an integer between 0 and 20.
+
+		 ]]></param>
+<throws><![CDATA[ArgumentError 	if <code>useDecimalPlaces</code> argument is sent <code>false</code> but some value is sent to <code>decimalPlaces</code> argument.
+
+		 ]]></throws>
+<throws><![CDATA[RangeError 		if the <code>decimalPlaces</code> argument is out of the 0-20 range.
+
+		 ]]></throws>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:NumberComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1	The first <code>Number</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2	The second <code>Number</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError if any of the arguments is not of type <code>Number</code>.
+
+		 ]]></throws>
+</method>
+<method name='toString' fullname='org.as3coreaddendum.system.comparators:NumberComparator/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Returns the string representation of this object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[the string representation of the this object.
+
+		 ]]></return>
+</method>
+<method name='decimalPlaces' fullname='org.as3coreaddendum.system.comparators:NumberComparator/decimalPlaces/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+
+		 Defines the number of decimal places to be considered in the comparison. Must be an integer between 0 and 20.
+
+		 
+
+		 ]]></description>
+<throws><![CDATA[RangeError if is assigned a value out of the 0-20 range.
+
+		 ]]></throws>
+</method>
+<method name='useDecimalPlaces' fullname='org.as3coreaddendum.system.comparators:NumberComparator/useDecimalPlaces/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+<description><![CDATA[
+
+		 Defines if both numbers should be rounded by the <code>decimalPlaces</code> property.
+
+		 ]]></description>
+</method>
+<method name='decimalPlaces' fullname='org.as3coreaddendum.system.comparators:NumberComparator/decimalPlaces/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+</method>
+<method name='useDecimalPlaces' fullname='org.as3coreaddendum.system.comparators:NumberComparator/useDecimalPlaces/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+<field name='_decimalPlaces' fullname='org.as3coreaddendum.system.comparators:NumberComparator/private:_decimalPlaces' type='int' isStatic='false' isConst='false' >
+</field>
+<field name='_useDecimalPlaces' fullname='org.as3coreaddendum.system.comparators:NumberComparator/private:_useDecimalPlaces' type='Boolean' isStatic='false' isConst='false' >
+</field>
+<classRec name='StringComparator' fullname='org.as3coreaddendum.system.comparators:StringComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\StringComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for <code>String</code> objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.StringComparator;
+
+	 
+
+	 var c1:StringComparator = new StringComparator();
+
+	 
+
+	 c1.compare("comparison", "between");    // 1
+
+	 c1.compare("between", "comparison");    // -1
+
+	 c1.compare("between", "strings");       // 1
+
+	 c1.compare("strings", "between");       // -1
+
+	 c1.compare("STRINGS", "strings");       // 1
+
+	 c1.compare("strings", "Strings");       // -1
+
+	 c1.compare("strings", "strings");       // 0
+
+	 
+
+	 var c2:StringComparator = new StringComparator(false);
+
+	 
+
+	 c2.compare("STRINGS", "strings");    // 0
+
+	 c2.compare("strings", "Strings");    // 0
+
+	 c2.compare("between", "strings");    // 1
+
+	 </listing>
+
+	 
+
+	 ]]></example>
+</classRec>
+<method name='StringComparator' fullname='org.as3coreaddendum.system.comparators:StringComparator/StringComparator' isStatic='false' isFinal='false' isOverride='false'  param_names='stringCase' param_types='org.as3coreaddendum.system:StringCase' param_defaults='undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>StringComparator</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[stringCase 	Indicates whether case sensitivity is considered or not in the comparison.
+
+		 ]]></param>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:StringComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1 	The first <code>String</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2 	The second <code>String</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments is <code>null</code>.
+
+		 ]]></throws>
+</method>
+<method name='toString' fullname='org.as3coreaddendum.system.comparators:StringComparator/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Returns the string representation of this object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[the string representation of the this object.
+
+		 ]]></return>
+</method>
+<method name='stringCase' fullname='org.as3coreaddendum.system.comparators:StringComparator/stringCase/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.as3coreaddendum.system:StringCase'>
+<description><![CDATA[
+
+		 Defines whether case is considered in the comparison.
+
+		 ]]></description>
+</method>
+<method name='stringCase' fullname='org.as3coreaddendum.system.comparators:StringComparator/stringCase/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.as3coreaddendum.system:StringCase' param_defaults='undefined' result_type='void'>
+</method>
+<field name='_stringCase' fullname='org.as3coreaddendum.system.comparators:StringComparator/private:_stringCase' type='org.as3coreaddendum.system:StringCase' isStatic='false' isConst='false' >
+</field>
+<classRec name='DateComparator' fullname='org.as3coreaddendum.system.comparators:DateComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\DateComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for <code>Date</code> objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.DateComparator;
+
+	 
+
+	 var c:DateComparator = new DateComparator();
+
+	 
+
+	 var d1:Date = new Date(2010, 04, 09);
+
+	 var d2:Date = new Date(2010, 04, 10);
+
+	 var d3:Date = new Date(2009, 04, 10);
+
+	 var d4:Date = new Date(1980, 01, 15);
+
+	 
+
+	 c.compare(d1, d1)    // 0
+
+	 c.compare(d1, d2)    // -1
+
+	 c.compare(d2, d1)    // 1
+
+	 c.compare(d2, d3)    // 1
+
+	 c.compare(d3, d2)    // -1
+
+	 c.compare(d1, d4)    // 1
+
+	 c.compare(d4, d1)    // -1
+
+	 
+
+	 </listing>
+
+	 
+
+	 ]]></example>
+</classRec>
+<method name='DateComparator' fullname='org.as3coreaddendum.system.comparators:DateComparator/DateComparator' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>StringComparator</code> object.
+
+		 ]]></description>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:DateComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1	The first <code>Date</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2	The second <code>Date</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments is not of type <code>Date</code>.
+
+		 ]]></throws>
+</method>
+<field name='_numberComparator' fullname='org.as3coreaddendum.system.comparators:DateComparator/private:_numberComparator' type='org.as3coreaddendum.system.comparators:NumberComparator' isStatic='false' isConst='false' >
+</field>
+<classRec name='PriorityIndexComparator' fullname='org.as3coreaddendum.system.comparators:PriorityIndexComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\PriorityIndexComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 A comparator for objects that implements the <code>org.as3coreaddendum.system.IPriority</code> and <code>org.as3coreaddendum.system.IIndexable</code> interfaces, comparing the <code>priority</code> and <code>index</code> properties.
+
+	 <p>This comparator is util when you want to sort the objects by priority, but if the priority of the two objects are equal, the <code>index</code> property of the objects are compared to decide wich object comes before.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.system.IComparator IComparator
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.IIndexable IIndexable
+
+	 ]]></see>
+<see><![CDATA[org.as3coreaddendum.system.IPriority IPriority
+
+	 ]]></see>
+</classRec>
+<method name='PriorityIndexComparator' fullname='org.as3coreaddendum.system.comparators:PriorityIndexComparator/PriorityIndexComparator' isStatic='false' isFinal='false' isOverride='false'  result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>PriorityIndexComparator</code> object.
+
+		 ]]></description>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:PriorityIndexComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the two arguments.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1	The first <code>Number</code> object to be compared.
+
+		 ]]></param>
+<param><![CDATA[o2	The second <code>Number</code> object to be compared.
+
+		 ]]></param>
+<return><![CDATA[A negative integer or a positive integer as the priority of the first argument is greater than or less than the second. If the priority of the arguments are equal, returns a negative integer, zero, or a positive integer as the index of the first argument is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError 	if any of the arguments does not implements the <code>IPriority</code> or <code>IIndexable</code> interfaces.
+
+		 ]]></throws>
+</method>
+<field name='_numberComparator' fullname='org.as3coreaddendum.system.comparators:PriorityIndexComparator/private:_numberComparator' type='org.as3coreaddendum.system.comparators:NumberComparator' isStatic='false' isConst='false' >
+</field>
+<classRec name='PropertyComparator' fullname='org.as3coreaddendum.system.comparators:PropertyComparator' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\PropertyComparator.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='Object' interfaces='org.as3coreaddendum.system:IComparator' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This comparator uses the received <code>comparator</code> object to compare the values recovered from the <code>property</code> of each of the two objects.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<example><![CDATA[
+	 
+
+	 <listing version="3.0">
+
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+
+	 import org.as3coreaddendum.system.comparators.PropertyComparator;
+
+	 
+	 var a:Object = { id: 1, name: "TestA" };
+
+	 var b:Object = { id: 0, name: "TestB" };
+
+	 var c:Object = { id: 2, name: "TestC" };
+
+	  
+
+	 var p1:PropertyComparator = new PropertyComparator("id", new NumberComparator());
+
+	 
+
+	 p1.compare(a, a)    // 0
+
+	 p1.compare(a, b)    // 1
+
+	 p1.compare(b, a)    // -1
+
+	 p1.compare(b, c)    // -1
+
+	 p1.compare(c, a)    // 1
+
+	 
+	 var p2:PropertyComparator = new PropertyComparator("name", new AlphabeticComparator());
+
+	  
+
+	 p2.compare(a, a)    // 0
+
+	 p2.compare(a, b)    // -1
+
+	 p2.compare(b, a)    // 1
+
+	 p2.compare(b, c)    // -1
+
+	 p2.compare(c, a)    // 1
+
+	 </listing>
+
+	 
+
+	 ]]></example>
+</classRec>
+<method name='PropertyComparator' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/PropertyComparator' isStatic='false' isFinal='false' isOverride='false'  param_names='property;comparator' param_types='String;org.as3coreaddendum.system:IComparator' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>PropertyComparator</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[property 	The name of the property to be recovered and compared between the objects.
+
+		 ]]></param>
+<param><![CDATA[comparator 	The comparator object used in the comparison.
+
+		 ]]></param>
+<throws><![CDATA[ArgumentError if the <code>property</code> argument is <code>null</code> or an empty <code>String</code>.
+
+		 ]]></throws>
+<throws><![CDATA[ArgumentError if the <code>comparator</code> argument is <code>null</code>.
+
+		 ]]></throws>
+</method>
+<method name='compare' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/compare' isStatic='false' isFinal='false' isOverride='false'  param_names='o1;o2' param_types='*;*' param_defaults='undefined;undefined' result_type='int'>
+<description><![CDATA[
+
+		 Performs the comparison between the values recovered from the properties of each of the two objects.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[o1 	The first object which has the property recovered to be compared. Can be an instance of any custom class.
+
+		 ]]></param>
+<param><![CDATA[o2 	The second object which has the property recovered to be compared. Can be an instance of any custom class.
+
+		 ]]></param>
+<return><![CDATA[A negative integer, zero, or a positive integer as the first property is less than, equal to, or greater than the second.
+
+		 ]]></return>
+<throws><![CDATA[ArgumentError if any argument is <code>null</code>.
+
+		 ]]></throws>
+</method>
+<method name='toString' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/toString' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Returns the string representation of this object.
+
+		 
+
+		 ]]></description>
+<return><![CDATA[the string representation of the this object.
+
+		 ]]></return>
+</method>
+<method name='comparator' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/comparator/get' isStatic='false' isFinal='false' isOverride='false'  result_type='org.as3coreaddendum.system:IComparator'>
+<description><![CDATA[
+
+		 Defines the comparator object used in the comparison.
+
+		 
+
+		 ]]></description>
+<throws><![CDATA[ArgumentError if is assigned a <code>null</code> value.
+
+		 ]]></throws>
+</method>
+<method name='property' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/property/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+<description><![CDATA[
+
+		 Defines the name of the property to be recovered and compared between the objects.
+
+		 
+
+		 ]]></description>
+<throws><![CDATA[ArgumentError if is assigned a <code>null</code> value or an empty <code>String</code>.
+
+		 ]]></throws>
+</method>
+<method name='comparator' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/comparator/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='org.as3coreaddendum.system:IComparator' param_defaults='undefined' result_type='void'>
+</method>
+<method name='property' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/property/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<field name='_comparator' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/private:_comparator' type='org.as3coreaddendum.system:IComparator' isStatic='false' isConst='false' >
+</field>
+<field name='_property' fullname='org.as3coreaddendum.system.comparators:PropertyComparator/private:_property' type='String' isStatic='false' isConst='false' >
+</field>
+<classRec name='AlphabeticalComparison' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparison' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\AlphabeticalComparison.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='org.as3coreaddendum.system:Enum' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The enumeration class that defines the acceptable values for the <code>AlphabeticalComparator</code>.
+
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='AlphabeticalComparison' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparison/AlphabeticalComparison' isStatic='false' isFinal='false' isOverride='false'  param_names='name;ordinal' param_types='String;int' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new AlphabeticalComparison object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[name 			The name of this enumeration constant.
+
+		 ]]></param>
+<param><![CDATA[ordinal 		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+
+		 ]]></param>
+<throws><![CDATA[IllegalOperationError 	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+
+		 ]]></throws>
+</method>
+<field name='CASE_INSENSITIVE' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparison/CASE_INSENSITIVE' type='org.as3coreaddendum.system.comparators:AlphabeticalComparison' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant which indicates that the comparison should ignore case.
+
+		 ]]></description>
+</field>
+<field name='LOWER_CASE_FIRST' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparison/LOWER_CASE_FIRST' type='org.as3coreaddendum.system.comparators:AlphabeticalComparison' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant which indicates that the comparison should return lower case first.
+
+		 ]]></description>
+</field>
+<field name='UPPER_CASE_FIRST' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparison/UPPER_CASE_FIRST' type='org.as3coreaddendum.system.comparators:AlphabeticalComparison' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant which indicates that the comparison should return upper case first.
+
+		 ]]></description>
+</field>
+<field name='_created' fullname='org.as3coreaddendum.system.comparators:AlphabeticalComparison/private:_created' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='BooleanComparison' fullname='org.as3coreaddendum.system.comparators:BooleanComparison' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\system\comparators\BooleanComparison.as' namespace='org.as3coreaddendum.system.comparators' access='public' baseclass='org.as3coreaddendum.system:Enum' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The enumeration class that defines the acceptable values for the <code>BooleanComparator</code>.
+
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='BooleanComparison' fullname='org.as3coreaddendum.system.comparators:BooleanComparison/BooleanComparison' isStatic='false' isFinal='false' isOverride='false'  param_names='name;ordinal' param_types='String;int' param_defaults='undefined;undefined' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new BooleanComparison object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[name 			The name of this enumeration constant.
+
+		 ]]></param>
+<param><![CDATA[ordinal 		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+
+		 ]]></param>
+<throws><![CDATA[IllegalOperationError 	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+
+		 ]]></throws>
+</method>
+<field name='FALSE_FIRST' fullname='org.as3coreaddendum.system.comparators:BooleanComparison/FALSE_FIRST' type='org.as3coreaddendum.system.comparators:BooleanComparison' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant which indicates that the comparison should return <code>false</code> first.
+
+		 ]]></description>
+</field>
+<field name='TRUE_FIRST' fullname='org.as3coreaddendum.system.comparators:BooleanComparison/TRUE_FIRST' type='org.as3coreaddendum.system.comparators:BooleanComparison' isStatic='true' isConst='true' defaultValue='unknown' >
+<description><![CDATA[
+
+		 Defines the constant which indicates that the comparison should return <code>true</code> first.
+
+		 ]]></description>
+</field>
+<field name='_created' fullname='org.as3coreaddendum.system.comparators:BooleanComparison/private:_created' type='Boolean' isStatic='true' isConst='false' defaultValue='false' >
+<description><![CDATA[
+
+		 ]]></description>
+<private><![CDATA[]]></private>
+</field>
+<classRec name='CloneNotSupportedError' fullname='org.as3coreaddendum.errors:CloneNotSupportedError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\CloneNotSupportedError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown to indicate that an object could not or should not be cloned. 
+
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.system.ICloneable	ICloneable
+	 ]]></see>
+</classRec>
+<method name='CloneNotSupportedError' fullname='org.as3coreaddendum.errors:CloneNotSupportedError/CloneNotSupportedError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new CloneNotSupportedError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message 	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='InvalidEnumArgumentError' fullname='org.as3coreaddendum.errors:InvalidEnumArgumentError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\InvalidEnumArgumentError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown to indicate that you pass an invalid enumeration value to a method or when setting a property.
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.system.Enum	Enum
+	 ]]></see>
+</classRec>
+<method name='InvalidEnumArgumentError' fullname='org.as3coreaddendum.errors:InvalidEnumArgumentError/InvalidEnumArgumentError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new InvalidEnumArgumentError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message 	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='UnsupportedOperationError' fullname='org.as3coreaddendum.errors:UnsupportedOperationError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\UnsupportedOperationError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown to indicate that the requested operation is not supported.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='UnsupportedOperationError' fullname='org.as3coreaddendum.errors:UnsupportedOperationError/UnsupportedOperationError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new UnsupportedOperationError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='IllegalStateError' fullname='org.as3coreaddendum.errors:IllegalStateError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\IllegalStateError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown to indicate that an object entered into an illegal state.
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</classRec>
+<method name='IllegalStateError' fullname='org.as3coreaddendum.errors:IllegalStateError/IllegalStateError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new IllegalStateError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message 	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='ObjectDisposedError' fullname='org.as3coreaddendum.errors:ObjectDisposedError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\ObjectDisposedError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown when an operation is performed on a disposed object that implements the org.as3coreaddendum.system.IDisposable interface.
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+<see><![CDATA[org.as3coreaddendum.system.IDisposable	IDisposable
+
+	 ]]></see>
+</classRec>
+<method name='ObjectDisposedError' fullname='org.as3coreaddendum.errors:ObjectDisposedError/ObjectDisposedError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new ObjectDisposedError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='NullPointerError' fullname='org.as3coreaddendum.errors:NullPointerError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\NullPointerError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown to indicate that <code>null</code> was received when an object was required.
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</classRec>
+<method name='NullPointerError' fullname='org.as3coreaddendum.errors:NullPointerError/NullPointerError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new NullPointerError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message 	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='ClassCastError' fullname='org.as3coreaddendum.errors:ClassCastError' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\errors\ClassCastError.as' namespace='org.as3coreaddendum.errors' access='public' baseclass='Error' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 The error that is thrown to indicate that another type of class was expected.
+	 
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+	 ]]></author>
+</classRec>
+<method name='ClassCastError' fullname='org.as3coreaddendum.errors:ClassCastError/ClassCastError' isStatic='false' isFinal='false' isOverride='false'  param_names='message' param_types='String' param_defaults='null' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new ClassCastError instance.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[message 	A string associated with the error object.
+
+		 ]]></param>
+</method>
+<classRec name='IndexEvent' fullname='org.as3coreaddendum.events:IndexEvent' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\events\IndexEvent.as' namespace='org.as3coreaddendum.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This event should be dispatched by objects that implement <code>org.as3coreaddendum.system.IIndex</code> interface and had its "index" setter invoked.
+
+	 This way the object will inform that its index was changed.
+
+	 <p>But if the object does not implement <code>flash.events.IEventDispatcher</code> interface, that's ok to not dispatch this event.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='IndexEvent' fullname='org.as3coreaddendum.events:IndexEvent/IndexEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;index;bubbles;cancelable' param_types='String;int;Boolean;Boolean' param_defaults='undefined;undefined;false;false' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>IndexEvent</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[type 			The type of the event, accessible as <code>Event.type</code>.
+
+		 ]]></param>
+<param><![CDATA[index 		The new index value.
+
+		 ]]></param>
+<param><![CDATA[bubbles 		Determines whether the Event object participates in the bubbling stage of the event flow. The default value is <code>false</code>.
+
+		 ]]></param>
+<param><![CDATA[cancelable 	Determines whether the Event object can be canceled. The default value is <code>false</code>.
+
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.as3coreaddendum.events:IndexEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+
+		 Duplicates the instance of IndexEvent object.
+
+		 <p>Returns a new IndexEvent object that is a copy of the original instance of the IndexEvent object. You do not normally call <code>clone()</code>; the <code>EventDispatcher</code> class calls it automatically when you redispatch an event—that is, when you call <code>dispatchEvent(event)</code> from a handler that is handling event.</p>
+
+		 <p>The new IndexEvent object includes all the properties of the original.</p>
+
+		 
+
+		 ]]></description>
+<return><![CDATA[A new IndexEvent object that is identical to the original.
+
+		 ]]></return>
+</method>
+<method name='index' fullname='org.as3coreaddendum.events:IndexEvent/index/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+
+		 description
+
+		 ]]></description>
+</method>
+<field name='CHANGED' fullname='org.as3coreaddendum.events:IndexEvent/CHANGED' type='String' isStatic='true' isConst='true' defaultValue='org.as3coreaddendum.events.IndexEvent.CHANGED' >
+</field>
+<field name='_index' fullname='org.as3coreaddendum.events:IndexEvent/private:_index' type='int' isStatic='false' isConst='false' >
+<description><![CDATA[
+
+		 description
+
+		 ]]></description>
+</field>
+<classRec name='PriorityEvent' fullname='org.as3coreaddendum.events:PriorityEvent' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\events\PriorityEvent.as' namespace='org.as3coreaddendum.events' access='public' baseclass='flash.events:Event' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 This event should be dispatched by objects that implement <code>org.as3coreaddendum.system.IPriority</code> interface and had its "priority" setter invoked.
+
+	 This way the object will inform that its priority was changed.
+
+	 <p>But if the object does not implement <code>flash.events.IEventDispatcher</code> interface, that's ok to not dispatch this event.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</classRec>
+<method name='PriorityEvent' fullname='org.as3coreaddendum.events:PriorityEvent/PriorityEvent' isStatic='false' isFinal='false' isOverride='false'  param_names='type;priority;bubbles;cancelable' param_types='String;int;Boolean;Boolean' param_defaults='undefined;undefined;false;false' result_type='*'>
+<description><![CDATA[
+
+		 Constructor, creates a new <code>PriorityEvent</code> object.
+
+		 
+
+		 ]]></description>
+<param><![CDATA[type 			The type of the event, accessible as <code>Event.type</code>.
+
+		 ]]></param>
+<param><![CDATA[priority 		The new priority value.
+
+		 ]]></param>
+<param><![CDATA[bubbles 		Determines whether the Event object participates in the bubbling stage of the event flow. The default value is <code>false</code>.
+
+		 ]]></param>
+<param><![CDATA[cancelable 	Determines whether the Event object can be canceled. The default value is <code>false</code>.
+
+		 ]]></param>
+</method>
+<method name='clone' fullname='org.as3coreaddendum.events:PriorityEvent/clone' isStatic='false' isFinal='false' isOverride='true'  result_type='flash.events:Event'>
+<description><![CDATA[
+
+		 Duplicates the instance of PriorityEvent object.
+
+		 <p>Returns a new PriorityEvent object that is a copy of the original instance of the PriorityEvent object. You do not normally call <code>clone()</code>; the <code>EventDispatcher</code> class calls it automatically when you redispatch an event—that is, when you call <code>dispatchEvent(event)</code> from a handler that is handling event.</p>
+
+		 <p>The new PriorityEvent object includes all the properties of the original.</p>
+
+		 
+
+		 ]]></description>
+<return><![CDATA[A new PriorityEvent object that is identical to the original.
+
+		 ]]></return>
+</method>
+<method name='priority' fullname='org.as3coreaddendum.events:PriorityEvent/priority/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+<description><![CDATA[
+
+		 description
+
+		 ]]></description>
+</method>
+<field name='CHANGED' fullname='org.as3coreaddendum.events:PriorityEvent/CHANGED' type='String' isStatic='true' isConst='true' defaultValue='org.as3coreaddendum.events.PriorityEvent.CHANGED' >
+</field>
+<field name='_priority' fullname='org.as3coreaddendum.events:PriorityEvent/private:_priority' type='int' isStatic='false' isConst='false' >
+<description><![CDATA[
+
+		 description
+
+		 ]]></description>
+</field>
+<interfaceRec name='IDisplayObject' fullname='org.as3coreaddendum.display:IDisplayObject' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\display\IDisplayObject.as' namespace='org.as3coreaddendum.display' access='public' baseClasses='flash.events:IEventDispatcher' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+
+	 <p>This interface simulates a native <code>DisplayObject</code> interface, specifying all methods and properties of the <code>DisplayObject</code> class for pure Flash Player 10.</p>
+
+	 <p>For more information see the ActionScript 3.0 Language Reference.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='getBounds' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:getBounds' isStatic='false' isFinal='false' isOverride='false'  param_names='targetCoordinateSpace' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.geom:Rectangle'>
+</method>
+<method name='getRect' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:getRect' isStatic='false' isFinal='false' isOverride='false'  param_names='targetCoordinateSpace' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.geom:Rectangle'>
+</method>
+<method name='globalToLocal3D' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:globalToLocal3D' isStatic='false' isFinal='false' isOverride='false'  param_names='point' param_types='flash.geom:Point' param_defaults='undefined' result_type='flash.geom:Vector3D'>
+</method>
+<method name='globalToLocal' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:globalToLocal' isStatic='false' isFinal='false' isOverride='false'  param_names='point' param_types='flash.geom:Point' param_defaults='undefined' result_type='flash.geom:Point'>
+</method>
+<method name='hitTestObject' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:hitTestObject' isStatic='false' isFinal='false' isOverride='false'  param_names='obj' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='Boolean'>
+</method>
+<method name='hitTestPoint' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:hitTestPoint' isStatic='false' isFinal='false' isOverride='false'  param_names='x;y;shapeFlag' param_types='Number;Number;Boolean' param_defaults='undefined;undefined;false' result_type='Boolean'>
+</method>
+<method name='local3DToGlobal' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:local3DToGlobal' isStatic='false' isFinal='false' isOverride='false'  param_names='point3d' param_types='flash.geom:Vector3D' param_defaults='undefined' result_type='flash.geom:Point'>
+</method>
+<method name='localToGlobal' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:localToGlobal' isStatic='false' isFinal='false' isOverride='false'  param_names='point' param_types='flash.geom:Point' param_defaults='undefined' result_type='flash.geom:Point'>
+</method>
+<method name='accessibilityProperties' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:accessibilityProperties/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.accessibility:AccessibilityProperties'>
+</method>
+<method name='alpha' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:alpha/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='blendMode' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:blendMode/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+</method>
+<method name='filters' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:filters/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Array'>
+</method>
+<method name='height' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:height/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='loaderInfo' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:loaderInfo/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:LoaderInfo'>
+</method>
+<method name='mask' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:mask/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObject'>
+</method>
+<method name='mouseX' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:mouseX/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='mouseY' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:mouseY/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='name' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:name/get' isStatic='false' isFinal='false' isOverride='false'  result_type='String'>
+</method>
+<method name='opaqueBackground' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:opaqueBackground/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+</method>
+<method name='parent' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:parent/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObjectContainer'>
+</method>
+<method name='root' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:root/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:DisplayObject'>
+</method>
+<method name='rotationX' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotationX/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='rotationY' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotationY/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='rotationZ' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotationZ/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='rotation' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotation/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='scale9Grid' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scale9Grid/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.geom:Rectangle'>
+</method>
+<method name='scaleX' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scaleX/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='scaleY' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scaleY/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='scaleZ' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scaleZ/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='scrollRect' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scrollRect/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.geom:Rectangle'>
+</method>
+<method name='stage' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:stage/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.display:Stage'>
+</method>
+<method name='transform' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:transform/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.geom:Transform'>
+</method>
+<method name='visible' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:visible/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='width' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:width/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='x' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:x/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='y' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:y/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='z' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:z/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Number'>
+</method>
+<method name='accessibilityProperties' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:accessibilityProperties/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.accessibility:AccessibilityProperties' param_defaults='undefined' result_type='void'>
+</method>
+<method name='alpha' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:alpha/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='blendMode' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:blendMode/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='blendShader' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:blendShader/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.display:Shader' param_defaults='undefined' result_type='void'>
+</method>
+<method name='filters' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:filters/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Array' param_defaults='undefined' result_type='void'>
+</method>
+<method name='height' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:height/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='mask' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:mask/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='void'>
+</method>
+<method name='name' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:name/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='String' param_defaults='undefined' result_type='void'>
+</method>
+<method name='opaqueBackground' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:opaqueBackground/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Object' param_defaults='undefined' result_type='void'>
+</method>
+<method name='rotationX' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotationX/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='rotationY' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotationY/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='rotationZ' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotationZ/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='rotation' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:rotation/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='scale9Grid' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scale9Grid/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.geom:Rectangle' param_defaults='undefined' result_type='void'>
+</method>
+<method name='scaleX' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scaleX/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='scaleY' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scaleY/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='scaleZ' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scaleZ/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='scrollRect' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:scrollRect/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.geom:Rectangle' param_defaults='undefined' result_type='void'>
+</method>
+<method name='transform' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:transform/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.geom:Transform' param_defaults='undefined' result_type='void'>
+</method>
+<method name='visible' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:visible/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+<method name='width' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:width/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='x' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:x/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='y' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:y/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<method name='z' fullname='org.as3coreaddendum.display:IDisplayObject/org.as3coreaddendum.display:IDisplayObject:z/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Number' param_defaults='undefined' result_type='void'>
+</method>
+<interfaceRec name='IInteractiveObject' fullname='org.as3coreaddendum.display:IInteractiveObject' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\display\IInteractiveObject.as' namespace='org.as3coreaddendum.display' access='public' baseClasses='org.as3coreaddendum.display:IDisplayObject' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+
+	 <p>This interface simulates a native <code>InteractiveObject</code> interface, specifying all properties of the <code>InteractiveObject</code> class for pure Flash Player 10.</p>
+
+	 <p>For more information see the ActionScript 3.0 Language Reference.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='accessibilityImplementation' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:accessibilityImplementation/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.accessibility:AccessibilityImplementation'>
+</method>
+<method name='doubleClickEnabled' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:doubleClickEnabled/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='focusRect' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:focusRect/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Object'>
+</method>
+<method name='mouseEnabled' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:mouseEnabled/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='tabEnabled' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:tabEnabled/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='tabIndex' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:tabIndex/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+</method>
+<method name='accessibilityImplementation' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:accessibilityImplementation/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='flash.accessibility:AccessibilityImplementation' param_defaults='undefined' result_type='void'>
+</method>
+<method name='doubleClickEnabled' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:doubleClickEnabled/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+<method name='focusRect' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:focusRect/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Object' param_defaults='undefined' result_type='void'>
+</method>
+<method name='mouseEnabled' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:mouseEnabled/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+<method name='tabEnabled' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:tabEnabled/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+<method name='tabIndex' fullname='org.as3coreaddendum.display:IInteractiveObject/org.as3coreaddendum.display:IInteractiveObject:tabIndex/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='int' param_defaults='undefined' result_type='void'>
+</method>
+<interfaceRec name='IDisplayObjectContainer' fullname='org.as3coreaddendum.display:IDisplayObjectContainer' sourcefile='D:\Flavio\Programacao\Flash-Platform\Framework\as3coreaddendum\src\main\as3\org\as3coreaddendum\display\IDisplayObjectContainer.as' namespace='org.as3coreaddendum.display' access='public' baseClasses='org.as3coreaddendum.display:IInteractiveObject' isFinal='false' isDynamic='false' >
+<description><![CDATA[
+
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+
+	 <p>This interface simulates a native <code>DisplayObjectContainer</code> interface, specifying all methods and properties of the <code>DisplayObjectContainer</code> class for pure Flash Player 10.</p>
+
+	 <p>For more information see the ActionScript 3.0 Language Reference.</p>
+
+	 
+
+	 ]]></description>
+<author><![CDATA[Flávio Silva
+
+	 ]]></author>
+</interfaceRec>
+<method name='addChildAt' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:addChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='child;index' param_types='flash.display:DisplayObject;int' param_defaults='undefined;undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='addChild' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:addChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='areInaccessibleObjectsUnderPoint' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:areInaccessibleObjectsUnderPoint' isStatic='false' isFinal='false' isOverride='false'  param_names='point' param_types='flash.geom:Point' param_defaults='undefined' result_type='Boolean'>
+</method>
+<method name='contains' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:contains' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='Boolean'>
+</method>
+<method name='getChildAt' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:getChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='getChildByName' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:getChildByName' isStatic='false' isFinal='false' isOverride='false'  param_names='name' param_types='String' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='getChildIndex' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:getChildIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='int'>
+</method>
+<method name='getObjectsUnderPoint' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:getObjectsUnderPoint' isStatic='false' isFinal='false' isOverride='false'  param_names='point' param_types='flash.geom:Point' param_defaults='undefined' result_type='Array'>
+</method>
+<method name='removeChildAt' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:removeChildAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index' param_types='int' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='removeChild' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:removeChild' isStatic='false' isFinal='false' isOverride='false'  param_names='child' param_types='flash.display:DisplayObject' param_defaults='undefined' result_type='flash.display:DisplayObject'>
+</method>
+<method name='setChildIndex' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:setChildIndex' isStatic='false' isFinal='false' isOverride='false'  param_names='child;index' param_types='flash.display:DisplayObject;int' param_defaults='undefined;undefined' result_type='void'>
+</method>
+<method name='swapChildrenAt' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:swapChildrenAt' isStatic='false' isFinal='false' isOverride='false'  param_names='index1;index2' param_types='int;int' param_defaults='undefined;undefined' result_type='void'>
+</method>
+<method name='swapChildren' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:swapChildren' isStatic='false' isFinal='false' isOverride='false'  param_names='child1;child2' param_types='flash.display:DisplayObject;flash.display:DisplayObject' param_defaults='undefined;undefined' result_type='void'>
+</method>
+<method name='mouseChildren' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:mouseChildren/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='numChildren' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:numChildren/get' isStatic='false' isFinal='false' isOverride='false'  result_type='int'>
+</method>
+<method name='tabChildren' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:tabChildren/get' isStatic='false' isFinal='false' isOverride='false'  result_type='Boolean'>
+</method>
+<method name='textSnapshot' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:textSnapshot/get' isStatic='false' isFinal='false' isOverride='false'  result_type='flash.text:TextSnapshot'>
+</method>
+<method name='mouseChildren' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:mouseChildren/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+<method name='tabChildren' fullname='org.as3coreaddendum.display:IDisplayObjectContainer/org.as3coreaddendum.display:IDisplayObjectContainer:tabChildren/set' isStatic='false' isFinal='false' isOverride='false'  param_names='value' param_types='Boolean' param_defaults='undefined' result_type='void'>
+</method>
+</asdoc>

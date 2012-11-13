@@ -12,3 +12,8 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+# Linux
+.*
+!.gitignore
+*~

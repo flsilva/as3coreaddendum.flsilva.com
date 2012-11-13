@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="ISortable,org.as3coreaddendum.system.ISortable,CEIL,FLOOR,INSENSITIVE,NONE,ROUND,SENSITIVE,comparator,index,isInitialized,name,options,ordinal,priority,type,clone,compare,compareTo,compareTo,dispose,equals,equals,initialize,sort,toSource,toSource,toString,valueOf"><title>org.as3coreaddendum.system.ISortable</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'ISortable - AS3CoreAddendum API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">AS3CoreAddendum API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?org/as3coreaddendum/system/ISortable.html&amp;org/as3coreaddendum/system/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">ISortable</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("ISortable"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">org.as3coreaddendum.system</a></td></tr><tr><td class="classHeaderTableLabel">Interface</td><td class="classSignature">public  interface  ISortable</td></tr></table><p></p><p></p><p></p>
+	 A class that implements this interface indicates that it can be sorted by the <code>sort()</code> method.
+	 <p>Usually the classes that implement this interface are collections of some sort.</p>
+	 
+	           <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#comparator" class="signatureLink">comparator</a> : <a href="../../../org/as3coreaddendum/system/IComparator.html">IComparator</a><div class="summaryTableDescription">
+		 Defines the IComparator object to be used in the comparison.</div></td><td class="summaryTableOwnerCol">ISortable</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#options" class="signatureLink">options</a> : uint<div class="summaryTableDescription">
+		 Defines the options to be used automatically to sort.</div></td><td class="summaryTableOwnerCol">ISortable</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sort()" class="signatureLink">sort</a>(compare:Function = null, options:uint = 0):Array</div><div class="summaryTableDescription">
+		 Sorts the objects within this class.</div></td><td class="summaryTableOwnerCol">ISortable</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="comparator"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">comparator</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>comparator:<a href="../../../org/as3coreaddendum/system/IComparator.html">IComparator</a></code><p></p><p></p><p>
+		 Defines the <code>IComparator</code> object to be used in the comparison.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get comparator():<a href="../../../org/as3coreaddendum/system/IComparator.html">IComparator</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set comparator(value:<a href="../../../org/as3coreaddendum/system/IComparator.html">IComparator</a>):void</code><br/></div><a name="propertyDetail"></a><a name="options"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">options</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>options:uint</code><p></p><p></p><p>
+		 Defines the options to be used automatically to sort.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get options():uint</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set options(value:uint):void</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="sort()"></a><a name="sort(Function,uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sort</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function sort(compare:Function = null, options:uint = 0):Array</code><p></p><p></p><p>
+		 Sorts the objects within this class.
+		 <p>By default, <code>Array.sort()</code> works in the following way:</p>
+		 <p>
+		 <ul>
+		 <li>Sorting is case-sensitive (Z precedes a).</li>
+		 <li>Sorting is ascending (a precedes b).</li>
+		 <li>The array is modified to reflect the sort order; multiple elements that have identical sort fields are placed consecutively in the sorted array in no particular order.</li>
+		 <li>All elements, regardless of data type, are sorted as if they were strings, so 100 precedes 99, because "1" is a lower string value than "9".</li>
+		 </ul>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">compare</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; 	A comparison function used to determine the sorting order of elements in an array. For more info see <code>IComparator.compare</code>.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">options</span>:uint</code> (default = <code>0</code>)<code></code> &mdash; 	One or more numbers or defined constants, separated by the | (bitwise OR) operator, that change the behavior of the sort from the default.
+		 The following values are acceptable for <code>options</code>:
+		 <ul>
+		 <li>1 or Array.CASEINSENSITIVE</li>
+		 <li>2 or Array.DESCENDING</li>
+		 <li>4 or Array.UNIQUESORT</li>
+		 <li>8 or Array.RETURNINDEXEDARRAY</li>
+		 <li>16 or Array.NUMERIC</li>
+		 </ul>
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code> &mdash; The return value depends on whether you pass any arguments, as described in the following list:
+		 <ul>
+		 <li>If you specify a value of 4 or Array.UNIQUESORT for the <code>options</code> argument and two or more elements being sorted have identical sort fields, returns a value of 0 and does not modify the array.</li>
+		 <li>If you specify a value of 8 or Array.RETURNINDEXEDARRAY for the options parameter, an array is returned that reflects the results of the sort and the array is not modified.</li>
+		 <li>Otherwise, nothing is returned and the array is modified to reflect the sort order.</li>
+		 </ul>
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="IComparator.html#compare()" target="">IComparator.compare()</a></div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>Copyright 2010-2011 Flavio Silva - http://flsilva.com</footer><br/>Tue Sep 13 2011, 12:51 PM -03:00  </center></div></body></html><!--Copyright 2010-2011 Flavio Silva - http://flsilva.com<br/>Tue Sep 13 2011, 12:51 PM -03:00  -->

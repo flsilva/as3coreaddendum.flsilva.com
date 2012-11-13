@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="org.as3coreaddendum.system"><apiName>org.as3coreaddendum.system</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.system:StringCase"><apiName>StringCase</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for string case.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for string case.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system:StringCase:StringCase"><apiName>StringCase</apiName><shortdesc>
+		 Constructor, creates a new StringCase object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>StringCase</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system:StringCase:INSENSITIVE"><apiName>INSENSITIVE</apiName><shortdesc>
+		 Defines the constant that indicates that any logic performed against a given String should ignore its case.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:StringCase</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that any logic performed against a given <codeph>String</codeph> should ignore its case.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:StringCase:SENSITIVE"><apiName>SENSITIVE</apiName><shortdesc>
+		 Defines the constant that indicates that any logic performed against a given String should consider its case.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:StringCase</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that any logic performed against a given <codeph>String</codeph> should consider its case.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IEquatable"><apiName>IEquatable</apiName><shortdesc>
+	 This interface defines that a class can evaluate equality of instances.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines that a class can evaluate equality of instances.
+	 <p>A class that implements this interface provides an arbitrary evaluation of equality with another object.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IEquatable:org.as3coreaddendum.system:IEquatable:equals"><apiName>equals</apiName><shortdesc>
+		 Performs an arbitrary, specific evaluation of equality between this object and the other object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>true</codeph> if the arbitrary evaluation considers the objects equal.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>other</apiItemName><apiType value="any"/><apiDesc>	The object to be compared for equality.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs an arbitrary, specific evaluation of equality between this object and the <codeph>other</codeph> object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ISortable"><apiName>ISortable</apiName><shortdesc>
+	 A class that implements this interface indicates that it can be sorted by the sort() method.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 A class that implements this interface indicates that it can be sorted by the <codeph>sort()</codeph> method.
+	 <p>Usually the classes that implement this interface are collections of some sort.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:ISortable:org.as3coreaddendum.system:ISortable:sort"><apiName>sort</apiName><shortdesc>
+		 Sorts the objects within this class.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The return value depends on whether you pass any arguments, as described in the following list:
+		 <ul>
+		 <li>If you specify a value of 4 or Array.UNIQUESORT for the <codeph>options</codeph> argument and two or more elements being sorted have identical sort fields, returns a value of 0 and does not modify the array.</li>
+		 <li>If you specify a value of 8 or Array.RETURNINDEXEDARRAY for the options parameter, an array is returned that reflects the results of the sort and the array is not modified.</li>
+		 <li>Otherwise, nothing is returned and the array is modified to reflect the sort order.</li>
+		 </ul>
+		 </apiDesc><apiType value="Array"/></apiReturn><apiParam><apiItemName>compare</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>	A comparison function used to determine the sorting order of elements in an array. For more info see <codeph>IComparator.compare</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>options</apiItemName><apiType value="uint"/><apiData>0</apiData><apiDesc>	One or more numbers or defined constants, separated by the | (bitwise OR) operator, that change the behavior of the sort from the default.
+		 The following values are acceptable for <codeph>options</codeph>:
+		 <ul>
+		 <li>1 or Array.CASEINSENSITIVE</li>
+		 <li>2 or Array.DESCENDING</li>
+		 <li>4 or Array.UNIQUESORT</li>
+		 <li>8 or Array.RETURNINDEXEDARRAY</li>
+		 <li>16 or Array.NUMERIC</li>
+		 </ul>
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Sorts the objects within this class.
+		 <p>By default, <codeph>Array.sort()</codeph> works in the following way:</p>
+		 <p>
+		 <ul>
+		 <li>Sorting is case-sensitive (Z precedes a).</li>
+		 <li>Sorting is ascending (a precedes b).</li>
+		 <li>The array is modified to reflect the sort order; multiple elements that have identical sort fields are placed consecutively in the sorted array in no particular order.</li>
+		 <li>All elements, regardless of data type, are sorted as if they were strings, so 100 precedes 99, because "1" is a lower string value than "9".</li>
+		 </ul>
+		 </p>
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator/compare()"><linktext>IComparator.compare()</linktext></link></related-links></apiOperation><apiValue id="org.as3coreaddendum.system:ISortable:org.as3coreaddendum.system:ISortable:comparator:get"><apiName>comparator</apiName><shortdesc>
+		 Defines the IComparator object to be used in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system:IComparator</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the <codeph>IComparator</codeph> object to be used in the comparison.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:ISortable:org.as3coreaddendum.system:ISortable:options:get"><apiName>options</apiName><shortdesc>
+		 Defines the options to be used automatically to sort.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="uint"/></apiValueDef><apiDesc>
+		 Defines the options to be used automatically to sort.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:NumericRounding"><apiName>NumericRounding</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for numeric rounding.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for numeric rounding.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system:NumericRounding:NumericRounding"><apiName>NumericRounding</apiName><shortdesc>
+		 Constructor, creates a new NumericRounding object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new NumericRounding object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system:NumericRounding:CEIL"><apiName>CEIL</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should be rounded up.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should be rounded up.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:NumericRounding:FLOOR"><apiName>FLOOR</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should be rounded down.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should be rounded down.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:NumericRounding:NONE"><apiName>NONE</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should not be rounded.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should not be rounded.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:NumericRounding:ROUND"><apiName>ROUND</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should be rounded down or up, whichever is closer.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should be rounded down or up, whichever is closer.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ISerializable"><apiName>ISerializable</apiName><shortdesc>
+	 Allows an object to control its own serialization.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Allows an object to control its own serialization.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:ISerializable:org.as3coreaddendum.system:ISerializable:toSource"><apiName>toSource</apiName><shortdesc>
+		 Returns the source code String representation of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The source code <codeph>String</codeph> representation of the object.
+ 		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the source code <codeph>String</codeph> representation of the object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IComparable"><apiName>IComparable</apiName><shortdesc>
+	 This interface imposes a total ordering on the objects of each class that implements it.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface imposes a total ordering on the objects of each class that implements it.
+	 This ordering is referred to as the class's <i>natural ordering</i>, and the class's compareTo method is referred to as its <i>natural comparison method</i>.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IComparable:org.as3coreaddendum.system:IComparable:compareTo"><apiName>compareTo</apiName><shortdesc>
+		 Compares this object with the specified object for order.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>if the specified object's type prevents it from being compared to this object.
+		 </apiDesc><apiItemName>ClassCastError</apiItemName><apiOperationClassifier>org.as3coreaddendum.errors:ClassCastError</apiOperationClassifier></apiException><apiReturn><apiDesc>a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o</apiItemName><apiType value="any"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares this object with the specified object for order.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ICloneable"><apiName>ICloneable</apiName><shortdesc>
+	 A class that implements this interface indicates that it can be cloned by the clone() method.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 A class that implements this interface indicates that it can be cloned by the <codeph>clone()</codeph> method.
+	 <p>The implementation of the <codeph>clone()</codeph> method should return a shallow copy of the object, copying every possible property.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:ICloneable:org.as3coreaddendum.system:ICloneable:clone"><apiName>clone</apiName><shortdesc>
+		 Creates and return a shallow copy of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>If this object should not be cloned.
+ 		 </apiDesc><apiItemName>CloneNotSupportedError</apiItemName><apiOperationClassifier>org.as3coreaddendum.errors:CloneNotSupportedError</apiOperationClassifier></apiException><apiReturn><apiDesc>A new object that is a shallow copy of this instance.
+		 </apiDesc><apiType value="any"/></apiReturn></apiOperationDef><apiDesc>
+		 Creates and return a shallow copy of the object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IDisposable"><apiName>IDisposable</apiName><shortdesc>
+	 This interface exposes a way to tell to an object that it is no longer needed.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface exposes a way to tell to an object that it is no longer needed.
+	 <p>When the <codeph>dispose()</codeph> method is invoked on an object, it should stop all its processes and kill all its references to another objects, explicitly controlling the lifecycle of all its dependencies.
+	 If the dependency also implements this interface, its <codeph>dispose()</codeph> method should be called by this object.</p>
+	 <p>If the object has a parent class (base class) and the parent class also implements this interface, the <codeph>dispose()</codeph> method of the parent class should be called, propagating this action through the hierarchy of parents.</p>
+	 <p>If the <codeph>dispose()</codeph> method is called more than once, the object should ignore all calls after the first one, without throwing an error.</p>
+	 <p>Since the <codeph>dispose()</codeph> method was called, the object just wait to be released from memory by the garbage collection process.</p>
+	 <p>The object should throw the org.as3coreaddendum.errors.ObjectDisposedError if some method is called after the <codeph>dispose()</codeph> method was called, indicating an illegal operation.</p>
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.errors.xml#ObjectDisposedError"><linktext>ObjectDisposedError</linktext></link></related-links><apiOperation id="org.as3coreaddendum.system:IDisposable:org.as3coreaddendum.system:IDisposable:dispose"><apiName>dispose</apiName><shortdesc>
+		 Dispose the object to be garbage collected.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Dispose the object to be garbage collected.
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IComparator"><apiName>IComparator</apiName><shortdesc>
+	 A comparison function, which imposes a total ordering on some collection of objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 A comparison function, which imposes a <i>total ordering</i> on some collection of objects.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IComparator:org.as3coreaddendum.system:IComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Compares its two arguments for order.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second. 
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>			the first object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>		the second object to be compared. 
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares its two arguments for order. Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IIndexable"><apiName>IIndexable</apiName><shortdesc>
+	 This interface defines a contract for objects that contains an index.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines a contract for objects that contains an index.
+	 <p>It can be used, for example, by objects that can be found or sorted by its index.</p>
+	 <p>If the object also implements <codeph>flash.events.IEventDispatcher</codeph> interface, it is highly recommended that the object dispatches <codeph>org.as3coreaddendum.events.IndexEvent</codeph> when its <codeph>index</codeph> setter is invoked.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.system:IIndexable:org.as3coreaddendum.system:IIndexable:index:get"><apiName>index</apiName><shortdesc>
+		 Defines the index of the object.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines the index of the object.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:Enum"><apiName>Enum</apiName><shortdesc>
+	 This is the base class for implementation of enumeration objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparable</apiBaseInterface><apiBaseInterface>org.as3coreaddendum.system:IEquatable</apiBaseInterface><apiBaseInterface>org.as3coreaddendum.system:ISerializable</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This is the base class for implementation of enumeration objects.
+	 <p>This class shouldn't be instantiated directly, rather than enumeration classes must extend this class.</p>
+	 <p><b>What is an Enumerated Type?</b></p>
+	 <p>An Enumerated Type is a data type that consists of a pre-defined set of values. Each enumerator (constant) is a value.
+	 An Enumerated Type groups a set of interrelated logical values.</p>
+	 <p>Actionscript 3.0 doesn't implements Enumerated types. Rather, its uses a class with only constants to define a set of interrelated logical values.</p>
+	 <p>One example is the <codeph>flash.display.StageAlign</codeph> class. It is the set of logical values acceptable for the <codeph>flash.display.Stage.align</codeph> property.</p>
+	 <p>But even without the support of Actionscript 3.0 for Enumerated types you can simulate this functionality extending this Enum class.</p>
+	 
+	 <p><b>Why use an Enumerated Type rather than a class with constants?</b></p>
+	 <p>Following the example above, if you open the Actionscript 3.0 Language Reference and quickly look at the class <codeph>flash.display.Stage</codeph> and see the <codeph>align</codeph> property, you will note that its type is <codeph>String</codeph>.
+	 So you cannot immediatly know what values you can assign to it. Only after discovering that there is a class <codeph>flash.display.StageAlign</codeph> you note that these are the acceptable values.
+	 So this is the first problem with this approach.</p>
+	 <p>The second problem is that you really can assign any <codeph>String</codeph> to the <codeph>align</codeph> property.
+	 Nothing guarantees you will pass the values that are actually in the <codeph>flash.display.StageAlign</codeph> class.
+	 Nor will there be any error at compile time that say that something is wrong.</p>
+	 <p>But if instead of using this approach was used Enumeration types, these two problems would become two good points.</p>
+	 <p>First, looking at the Actionscript 3.0 Language Reference you would see that the property <codeph>align</codeph> is of the type <codeph>StageAlign</codeph>.
+	 Automatically you check this class and see how to use it to assign a value for the <codeph>align</codeph> property.</p>
+	 <p>Even better, if you make a mistake the compiler will warn you.
+	 You will no longer able to send an invalid value for the property.</p>
+	 <p>But even with this approach remains a problem to be solved. The client of your code can still create instances of your Enumerated Type and use them when needed.
+	 In most cases this is undesirable, because you have already defined the set of acceptable values through constants in its Enumerated Type.</p>
+	 <p>To resolve this problem exists a solution: the type-safe enum pattern. It is described with an example at the end of the page.</p>
+	 <p>You can also check the class NumericRounding listed in the section "See also" below.</p>
+	 <p>So to summarize the benefits of using Enumerated types: they make your code (or API) more readable and safe.</p>
+	 
+	 </apiDesc><example>
+	 
+	 <b>Simple Enumerated Type</b>
+	 <p>Suppose that we have an API that make loading of files.
+	 The acceptable file types that the API can load can be defined by an Enumerated Type.
+	 In this example the name of the Enumerated Type will be FileType. Note that you don't need to use the suffix "Enum" in its name.</p>
+	 <p>Then we define the types that the API can load. In this example the API can load just image, swf and mp3 files.
+	 So we have just three constants, one to each file type.</p>
+	 <p>When we want to load a file, we use the appropriate constant to tell the API what type of file will be loaded.
+	 If you need a file type that doesn't exists in the Enumerated Type, this means that the API doesn't support that file type.</p>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.Enum;
+	 
+	 public class FileType extends Enum
+	 {
+	 
+	      public static const IMAGE   :FileType = new FileType("Image", 0);
+	      public static const SWF     :FileType = new FileType("SWF", 1);
+	      public static const MP3     :FileType = new FileType("MP3", 2);
+	 
+	      public function FileType(name:String, ordinal:int)
+	      {
+	           super(name, ordinal);
+	      }
+	 }
+	 </codeblock>
+	 
+	 <b>Type-safe Enumerated Type</b>
+	 <p>In the above example, if the user of the API need to load a file type that doesn't exists in the Enumerated Type, it could instantiate a new object FileType with the desired type, as in the example below:</p>
+	 <codeblock rev="3.0">
+	 import FileType;
+	 
+	 var videoFileType:FileType = new FileType("Video", 3);
+	 </codeblock>
+	 
+	 <p>This behavior would be wrong, but still allowed by the technical point of view.
+	 This would create the illusion that the user can create new types at runtime and send them to the API.</p>
+	 <p>To prevent this mistake, we can implement a pattern named type-safe enum.
+	 This pattern will prevents the user create new types, throwing a runtime error.</p>
+	 <p>There are some ways to do this, we will see just one below:</p>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.Enum;
+	 
+	 public class FileType extends Enum
+	 {
+	 
+	      public static const IMAGE   :FileType = new FileType("Image", 0);
+	      public static const SWF     :FileType = new FileType("SWF", 1);
+	      public static const MP3     :FileType = new FileType("MP3", 2);
+	 
+	      private static var _created:Boolean = false;
+	 
+	      {
+	           _created = true;
+	      }
+	 
+	      public function FileType(name:String, ordinal:int)
+	      {
+	           super(name, ordinal);
+	           if (_created) throw new IllegalOperationError("The set of acceptable values by this Enumerated Type has already been created internally.");
+	      }
+	 }
+	 </codeblock>
+	 
+	 <p>What happens above is that when the FileType is loaded in the Flash Player memory at runtime, first all the static members are initialized.
+	 After that the <i>static code block</i> is executed:</p>
+	 
+	 <codeblock rev="3.0">
+	 {
+	      _created = true;
+	 }
+	 </codeblock>
+	 
+	 <p>So first all the constants are initialized with the FileType instances because the <codeph>_created</codeph> static variable is <codeph>false</codeph> and then immediately after that the <codeph>_created</codeph> is set to <codeph>true</codeph>.
+	 Thus no more instances can be created.</p>
+	 <p>Your Enumerated Type is safe to be used only with the set of values pre-defined by you.</p>
+	 
+	 </example></apiClassifierDetail><related-links><link href="org.as3coreaddendum.errors.xml#InvalidEnumArgumentError"><linktext>InvalidEnumArgumentError</linktext></link><link href="org.as3coreaddendum.system.xml#IComparable"><linktext>IComparable</linktext></link><link href="org.as3coreaddendum.system.xml#IEquatable"><linktext>IEquatable</linktext></link><link href="org.as3coreaddendum.system.xml#ISerializable"><linktext>ISerializable</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system:Enum:Enum"><apiName>Enum</apiName><shortdesc>
+		 Constructor, creates a new Enum object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If the <codeph>name</codeph> argument is <codeph>null</codeph> or an empty <codeph>String</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiException><apiDesc>	If this class is instantiated directly, in other words, if there is <b>not</b> another class extending this class.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new Enum object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system:Enum:compareTo"><apiName>compareTo</apiName><shortdesc>
+		 Compares this enum with the specified object for order.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>If the type of the argument <codeph>o</codeph> is other than this exactly enum type instance.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o</apiItemName><apiType value="any"/><apiDesc>The target object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares this enum with the specified object for order.
+		 <p>Enum constants are only comparable to other enum constants of the same enum type. The natural order implemented by this method is the order in which the constants are declared.</p>
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparable"><linktext>IComparable</linktext></link></related-links></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:equals"><apiName>equals</apiName><shortdesc>
+		 Compares the target object for equality with this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>true</codeph> if the specified object is equal to this enum constant.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>other</apiItemName><apiType value="any"/><apiDesc>The object to be compared for equality with this object.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares the target object for equality with this object.
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#IEquatable"><linktext>IEquatable</linktext></link></related-links></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:toSource"><apiName>toSource</apiName><shortdesc>
+		 
+		 Returns the source code String representation of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The source code <codeph>String</codeph> representation of the object.
+ 		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 Returns the source code <codeph>String</codeph> representation of the object.
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#ISerializable"><linktext>ISerializable</linktext></link></related-links></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the name of this enum constant, as contained in the declaration.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The name of this enum constant.
+ 		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the name of this enum constant, as contained in the declaration.
+		 <p>This method may be overridden, though it typically isn't necessary or desirable. An enum type should override this method when a more "programmer-friendly" string form exists.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:valueOf"><apiName>valueOf</apiName><shortdesc>
+		 Returns the primitive value of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The primitive value of the object. In this case, the <codeph>ordinal</codeph> value.
+ 		 </apiDesc><apiType value="int"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the primitive value of the object.
+		 <p>This method is called automatically by the Flash Player every time an arithmetic operation occur. Thus, it's possible to perform these operations to check the position between two or more enum constants.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system:Enum:name:get"><apiName>name</apiName><shortdesc>
+		 The name of this enum constant exactly as supplied by the constructor.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The name of this enum constant exactly as supplied by the constructor.
+		 <p><b>Most programmers should use the <codeph>toString()</codeph> method in preference to this one, as the <codeph>toString()</codeph> method may return a more user-friendly name.</b> This property is designed primarily for use in specialized situations where correctness depends on getting the exact name.</p>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:Enum:ordinal:get"><apiName>ordinal</apiName><shortdesc>
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IInitializable"><apiName>IInitializable</apiName><shortdesc>
+	 Defines an interface to initialize the object.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Defines an interface to initialize the object.
+	 <p>Classes that need to be initialized before being used can implement this interface to define an initialization pattern.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IInitializable:org.as3coreaddendum.system:IInitializable:initialize"><apiName>initialize</apiName><shortdesc>
+		 Initializes this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Initializes this object.
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system:IInitializable:org.as3coreaddendum.system:IInitializable:isInitialized:get"><apiName>isInitialized</apiName><shortdesc>
+		 Defines if the object is initialized or not.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 Defines if the object is initialized or not.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ITypeable"><apiName>ITypeable</apiName><shortdesc>
+	 This interface defines a contract for objects that specify a type.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines a contract for objects that specify a type. A type can be anything, e.g. a <codeph>Class</codeph>, a <codeph>Function</codeph>, etc.
+	 <p>It can be used, for example, by collections that restrict the type of its elements.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.system:ITypeable:org.as3coreaddendum.system:ITypeable:type:get"><apiName>type</apiName><shortdesc>
+		 Defines the type.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="any"/></apiValueDef><apiDesc>
+		 Defines the type.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IPriority"><apiName>IPriority</apiName><shortdesc>
+	 This interface defines a contract for objects that contains a priority.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines a contract for objects that contains a priority.
+	 <p>If the object also implements <codeph>flash.events.IEventDispatcher</codeph> interface, it is highly recommended that the object dispatches <codeph>org.as3coreaddendum.events.PriorityEvent</codeph> when its <codeph>priority</codeph> setter is invoked.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.system:IPriority:org.as3coreaddendum.system:IPriority:priority:get"><apiName>priority</apiName><shortdesc>
+		 Defines the priority of the object.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines the priority of the object.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>

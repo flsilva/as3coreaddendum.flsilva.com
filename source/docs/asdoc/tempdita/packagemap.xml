@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?><allClasses><apiPackage id="org.as3coreaddendum.display"><apiName>org.as3coreaddendum.display</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.display:IDisplayObjectContainer"><apiName>IDisplayObjectContainer</apiName><shortdesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.display:IInteractiveObject</apiBaseInterface><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+	 <p>This interface simulates a native <codeph>DisplayObjectContainer</codeph> interface, specifying all methods and properties of the <codeph>DisplayObjectContainer</codeph> class for pure Flash Player 10.</p>
+	 <p>For more information see the ActionScript 3.0 Language Reference.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:addChildAt"><apiName>addChildAt</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.display:DisplayObject"/></apiReturn><apiParam><apiItemName>child</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:addChild"><apiName>addChild</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.display:DisplayObject"/></apiReturn><apiParam><apiItemName>child</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:areInaccessibleObjectsUnderPoint"><apiName>areInaccessibleObjectsUnderPoint</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>point</apiItemName><apiType value="flash.geom:Point"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:contains"><apiName>contains</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>child</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:getChildAt"><apiName>getChildAt</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.display:DisplayObject"/></apiReturn><apiParam><apiItemName>index</apiItemName><apiType value="int"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:getChildByName"><apiName>getChildByName</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.display:DisplayObject"/></apiReturn><apiParam><apiItemName>name</apiItemName><apiType value="String"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:getChildIndex"><apiName>getChildIndex</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="int"/></apiReturn><apiParam><apiItemName>child</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:getObjectsUnderPoint"><apiName>getObjectsUnderPoint</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Array"/></apiReturn><apiParam><apiItemName>point</apiItemName><apiType value="flash.geom:Point"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:removeChildAt"><apiName>removeChildAt</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.display:DisplayObject"/></apiReturn><apiParam><apiItemName>index</apiItemName><apiType value="int"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:removeChild"><apiName>removeChild</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.display:DisplayObject"/></apiReturn><apiParam><apiItemName>child</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:setChildIndex"><apiName>setChildIndex</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>child</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:swapChildrenAt"><apiName>swapChildrenAt</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>index1</apiItemName><apiType value="int"/></apiParam><apiParam><apiItemName>index2</apiItemName><apiType value="int"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:swapChildren"><apiName>swapChildren</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn><apiParam><apiItemName>child1</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam><apiParam><apiItemName>child2</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:mouseChildren:get"><apiName>mouseChildren</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:numChildren:get"><apiName>numChildren</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:tabChildren:get"><apiName>tabChildren</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObjectContainer:org.as3coreaddendum.display:IDisplayObjectContainer:textSnapshot:get"><apiName>textSnapshot</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.text:TextSnapshot"/></apiValueDef></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.display:IDisplayObject"><apiName>IDisplayObject</apiName><shortdesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseInterface>flash.events:IEventDispatcher</apiBaseInterface><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+	 <p>This interface simulates a native <codeph>DisplayObject</codeph> interface, specifying all methods and properties of the <codeph>DisplayObject</codeph> class for pure Flash Player 10.</p>
+	 <p>For more information see the ActionScript 3.0 Language Reference.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:getBounds"><apiName>getBounds</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.geom:Rectangle"/></apiReturn><apiParam><apiItemName>targetCoordinateSpace</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:getRect"><apiName>getRect</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.geom:Rectangle"/></apiReturn><apiParam><apiItemName>targetCoordinateSpace</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:globalToLocal3D"><apiName>globalToLocal3D</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.geom:Vector3D"/></apiReturn><apiParam><apiItemName>point</apiItemName><apiType value="flash.geom:Point"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:globalToLocal"><apiName>globalToLocal</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.geom:Point"/></apiReturn><apiParam><apiItemName>point</apiItemName><apiType value="flash.geom:Point"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:hitTestObject"><apiName>hitTestObject</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>obj</apiItemName><apiType value="flash.display:DisplayObject"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:hitTestPoint"><apiName>hitTestPoint</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>x</apiItemName><apiType value="Number"/></apiParam><apiParam><apiItemName>y</apiItemName><apiType value="Number"/></apiParam><apiParam><apiItemName>shapeFlag</apiItemName><apiType value="Boolean"/><apiData>false</apiData></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:local3DToGlobal"><apiName>local3DToGlobal</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.geom:Point"/></apiReturn><apiParam><apiItemName>point3d</apiItemName><apiType value="flash.geom:Vector3D"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:localToGlobal"><apiName>localToGlobal</apiName><shortdesc/><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="flash.geom:Point"/></apiReturn><apiParam><apiItemName>point</apiItemName><apiType value="flash.geom:Point"/></apiParam></apiOperationDef></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:accessibilityProperties:get"><apiName>accessibilityProperties</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.accessibility:AccessibilityProperties"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:alpha:get"><apiName>alpha</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:blendMode:get"><apiName>blendMode</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:filters:get"><apiName>filters</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Array"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:height:get"><apiName>height</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:loaderInfo:get"><apiName>loaderInfo</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.display:LoaderInfo"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:mask:get"><apiName>mask</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.display:DisplayObject"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:mouseX:get"><apiName>mouseX</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:mouseY:get"><apiName>mouseY</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:name:get"><apiName>name</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:opaqueBackground:get"><apiName>opaqueBackground</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Object"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:parent:get"><apiName>parent</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.display:DisplayObjectContainer"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:root:get"><apiName>root</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.display:DisplayObject"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:rotationX:get"><apiName>rotationX</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:rotationY:get"><apiName>rotationY</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:rotationZ:get"><apiName>rotationZ</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:rotation:get"><apiName>rotation</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:scale9Grid:get"><apiName>scale9Grid</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.geom:Rectangle"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:scaleX:get"><apiName>scaleX</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:scaleY:get"><apiName>scaleY</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:scaleZ:get"><apiName>scaleZ</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:scrollRect:get"><apiName>scrollRect</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.geom:Rectangle"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:stage:get"><apiName>stage</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="flash.display:Stage"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:transform:get"><apiName>transform</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.geom:Transform"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:visible:get"><apiName>visible</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:width:get"><apiName>width</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:x:get"><apiName>x</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:y:get"><apiName>y</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:z:get"><apiName>z</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Number"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IDisplayObject:org.as3coreaddendum.display:IDisplayObject:blendShader:set"><apiName>blendShader</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="write"/><apiType value="flash.display:Shader"/></apiValueDef></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.display:IInteractiveObject"><apiName>IInteractiveObject</apiName><shortdesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.display:IDisplayObject</apiBaseInterface><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 When working on an architecture of interfaces for user-interface components, this interface may be desirable.
+	 <p>This interface simulates a native <codeph>InteractiveObject</codeph> interface, specifying all properties of the <codeph>InteractiveObject</codeph> class for pure Flash Player 10.</p>
+	 <p>For more information see the ActionScript 3.0 Language Reference.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.display:IInteractiveObject:org.as3coreaddendum.display:IInteractiveObject:accessibilityImplementation:get"><apiName>accessibilityImplementation</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="flash.accessibility:AccessibilityImplementation"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IInteractiveObject:org.as3coreaddendum.display:IInteractiveObject:doubleClickEnabled:get"><apiName>doubleClickEnabled</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IInteractiveObject:org.as3coreaddendum.display:IInteractiveObject:focusRect:get"><apiName>focusRect</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Object"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IInteractiveObject:org.as3coreaddendum.display:IInteractiveObject:mouseEnabled:get"><apiName>mouseEnabled</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IInteractiveObject:org.as3coreaddendum.display:IInteractiveObject:tabEnabled:get"><apiName>tabEnabled</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.display:IInteractiveObject:org.as3coreaddendum.display:IInteractiveObject:tabIndex:get"><apiName>tabIndex</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.as3coreaddendum.errors"><apiName>org.as3coreaddendum.errors</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.errors:UnsupportedOperationError"><apiName>UnsupportedOperationError</apiName><shortdesc>
+	 The error that is thrown to indicate that the requested operation is not supported.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown to indicate that the requested operation is not supported.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.errors:UnsupportedOperationError:UnsupportedOperationError"><apiName>UnsupportedOperationError</apiName><shortdesc>
+		 Constructor, creates a new UnsupportedOperationError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new UnsupportedOperationError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="org.as3coreaddendum.errors:NullPointerError"><apiName>NullPointerError</apiName><shortdesc>
+	 The error that is thrown to indicate that null was received when an object was required.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown to indicate that <codeph>null</codeph> was received when an object was required.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.errors:NullPointerError:NullPointerError"><apiName>NullPointerError</apiName><shortdesc>
+		 Constructor, creates a new NullPointerError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new NullPointerError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="org.as3coreaddendum.errors:CloneNotSupportedError"><apiName>CloneNotSupportedError</apiName><shortdesc>
+	 The error that is thrown to indicate that an object could not or should not be cloned.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown to indicate that an object could not or should not be cloned. 
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#ICloneable"><linktext>ICloneable</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.errors:CloneNotSupportedError:CloneNotSupportedError"><apiName>CloneNotSupportedError</apiName><shortdesc>
+		 Constructor, creates a new CloneNotSupportedError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new CloneNotSupportedError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="org.as3coreaddendum.errors:InvalidEnumArgumentError"><apiName>InvalidEnumArgumentError</apiName><shortdesc>
+	 The error that is thrown to indicate that you pass an invalid enumeration value to a method or when setting a property.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown to indicate that you pass an invalid enumeration value to a method or when setting a property.
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#Enum"><linktext>Enum</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.errors:InvalidEnumArgumentError:InvalidEnumArgumentError"><apiName>InvalidEnumArgumentError</apiName><shortdesc>
+		 Constructor, creates a new InvalidEnumArgumentError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new InvalidEnumArgumentError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="org.as3coreaddendum.errors:ClassCastError"><apiName>ClassCastError</apiName><shortdesc>
+	 The error that is thrown to indicate that another type of class was expected.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown to indicate that another type of class was expected.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.errors:ClassCastError:ClassCastError"><apiName>ClassCastError</apiName><shortdesc>
+		 Constructor, creates a new ClassCastError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new ClassCastError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="org.as3coreaddendum.errors:ObjectDisposedError"><apiName>ObjectDisposedError</apiName><shortdesc>
+	 The error that is thrown when an operation is performed on a disposed object that implements the org.as3coreaddendum.system.IDisposable interface.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown when an operation is performed on a disposed object that implements the org.as3coreaddendum.system.IDisposable interface.
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IDisposable"><linktext>IDisposable</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.errors:ObjectDisposedError:ObjectDisposedError"><apiName>ObjectDisposedError</apiName><shortdesc>
+		 Constructor, creates a new ObjectDisposedError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new ObjectDisposedError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier><apiClassifier id="org.as3coreaddendum.errors:IllegalStateError"><apiName>IllegalStateError</apiName><shortdesc>
+	 The error that is thrown to indicate that an object entered into an illegal state.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>Error</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The error that is thrown to indicate that an object entered into an illegal state.
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.errors:IllegalStateError:IllegalStateError"><apiName>IllegalStateError</apiName><shortdesc>
+		 Constructor, creates a new IllegalStateError instance.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>message</apiItemName><apiType value="String"/><apiData>null</apiData><apiDesc>	A string associated with the error object.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new IllegalStateError instance.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor></apiClassifier></apiPackage><apiPackage id="org.as3coreaddendum.events"><apiName>org.as3coreaddendum.events</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.events:PriorityEvent"><apiName>PriorityEvent</apiName><shortdesc>
+	 This event should be dispatched by objects that implement org.as3coreaddendum.system.IPriority interface and had its "priority" setter invoked.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This event should be dispatched by objects that implement <codeph>org.as3coreaddendum.system.IPriority</codeph> interface and had its "priority" setter invoked.
+	 This way the object will inform that its priority was changed.
+	 <p>But if the object does not implement <codeph>flash.events.IEventDispatcher</codeph> interface, that's ok to not dispatch this event.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.events:PriorityEvent:PriorityEvent"><apiName>PriorityEvent</apiName><shortdesc>
+		 Constructor, creates a new PriorityEvent object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>			The type of the event, accessible as <codeph>Event.type</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>priority</apiItemName><apiType value="int"/><apiDesc>		The new priority value.
+		 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>		Determines whether the Event object participates in the bubbling stage of the event flow. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	Determines whether the Event object can be canceled. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PriorityEvent</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.events:PriorityEvent:clone"><apiName>clone</apiName><shortdesc>
+		 Duplicates the instance of PriorityEvent object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiDesc>A new PriorityEvent object that is identical to the original.
+		 </apiDesc><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
+		 Duplicates the instance of PriorityEvent object.
+		 <p>Returns a new PriorityEvent object that is a copy of the original instance of the PriorityEvent object. You do not normally call <codeph>clone()</codeph>; the <codeph>EventDispatcher</codeph> class calls it automatically when you redispatch an event—that is, when you call <codeph>dispatchEvent(event)</codeph> from a handler that is handling event.</p>
+		 <p>The new PriorityEvent object includes all the properties of the original.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.events:PriorityEvent:CHANGED"><apiName>CHANGED</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.as3coreaddendum.events.PriorityEvent.CHANGED</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.events:PriorityEvent:priority:get"><apiName>priority</apiName><shortdesc>
+		 description
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 description
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.events:IndexEvent"><apiName>IndexEvent</apiName><shortdesc>
+	 This event should be dispatched by objects that implement org.as3coreaddendum.system.IIndex interface and had its "index" setter invoked.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>flash.events:Event</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This event should be dispatched by objects that implement <codeph>org.as3coreaddendum.system.IIndex</codeph> interface and had its "index" setter invoked.
+	 This way the object will inform that its index was changed.
+	 <p>But if the object does not implement <codeph>flash.events.IEventDispatcher</codeph> interface, that's ok to not dispatch this event.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.events:IndexEvent:IndexEvent"><apiName>IndexEvent</apiName><shortdesc>
+		 Constructor, creates a new IndexEvent object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>type</apiItemName><apiType value="String"/><apiDesc>			The type of the event, accessible as <codeph>Event.type</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>index</apiItemName><apiType value="int"/><apiDesc>		The new index value.
+		 </apiDesc></apiParam><apiParam><apiItemName>bubbles</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>		Determines whether the Event object participates in the bubbling stage of the event flow. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>cancelable</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	Determines whether the Event object can be canceled. The default value is <codeph>false</codeph>.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>IndexEvent</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.events:IndexEvent:clone"><apiName>clone</apiName><shortdesc>
+		 Duplicates the instance of IndexEvent object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiIsOverride/><apiReturn><apiDesc>A new IndexEvent object that is identical to the original.
+		 </apiDesc><apiType value="flash.events:Event"/></apiReturn></apiOperationDef><apiDesc>
+		 Duplicates the instance of IndexEvent object.
+		 <p>Returns a new IndexEvent object that is a copy of the original instance of the IndexEvent object. You do not normally call <codeph>clone()</codeph>; the <codeph>EventDispatcher</codeph> class calls it automatically when you redispatch an event—that is, when you call <codeph>dispatchEvent(event)</codeph> from a handler that is handling event.</p>
+		 <p>The new IndexEvent object includes all the properties of the original.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.events:IndexEvent:CHANGED"><apiName>CHANGED</apiName><shortdesc/><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>org.as3coreaddendum.events.IndexEvent.CHANGED</apiData><apiType value="String"/></apiValueDef></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.events:IndexEvent:index:get"><apiName>index</apiName><shortdesc>
+		 description
+		 </shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 description
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage><apiPackage id="org.as3coreaddendum.system.comparators"><apiName>org.as3coreaddendum.system.comparators</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.system.comparators:NumberComparator"><apiName>NumberComparator</apiName><shortdesc>
+	 A comparator for Number objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>Number</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c:NumberComparator = new NumberComparator();
+	 
+	 c.compare(0, 0);              // 0
+	 c.compare(1, 1);              // 0
+	 c.compare(0, 1);              // -1
+	 c.compare(94, 56);            // 1
+	 c.compare(-38, -27);          // -1
+	 c.compare(2.5, 2.5);          // 0
+	 c.compare(2.54, 2.54);        // 0
+	 c.compare(2.54, 2.56);        // -1
+	 c.compare(2.567, 2.567);      // 0
+	 c.compare(2.5678, 2.5677);    // 1
+	 c.compare(2.5678, 2.5674);    // 1
+	 c.compare(2.5674, 2.5678);    // -1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c1:NumberComparator = new NumberComparator(true, 1);
+	 
+	 c1.compare(2.5, 2.5);          // 0
+	 c1.compare(2.54, 2.54);        // 0
+	 c1.compare(2.54, 2.56);        // -1
+	 c1.compare(2.567, 2.567);      // 0
+	 c1.compare(2.5678, 2.5677);    // 0
+	 c1.compare(2.5678, 2.5674);    // 0
+	 c1.compare(2.5674, 2.5678);    // 0
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c2:NumberComparator = new NumberComparator(true, 2);
+	 
+	 c2.compare(2.5, 2.5);          // 0
+	 c2.compare(2.54, 2.54);        // 0
+	 c2.compare(2.54, 2.56);        // -1
+	 c2.compare(2.567, 2.567);      // 0
+	 c2.compare(2.5678, 2.5677);    // 0
+	 c2.compare(2.5678, 2.5674);    // 0
+	 c2.compare(2.5674, 2.5678);    // 0
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c3:NumberComparator = new NumberComparator(true, 3);
+	 
+	 c3.compare(2.5, 2.5);          // 0
+	 c3.compare(2.54, 2.54);        // 0
+	 c3.compare(2.54, 2.56);        // -1
+	 c3.compare(2.567, 2.567);      // 0
+	 c3.compare(2.5678, 2.5677);    // 0
+	 c3.compare(2.5678, 2.5674);    // 1
+	 c3.compare(2.5674, 2.5678);    // -1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 
+	 var c4:NumberComparator = new NumberComparator(true, 4);
+	 
+	 c4.compare(2.5, 2.5);          // 0
+	 c4.compare(2.54, 2.54);        // 0
+	 c4.compare(2.54, 2.56);        // -1
+	 c4.compare(2.567, 2.567);      // 0
+	 c4.compare(2.5678, 2.5677);    // 1
+	 c4.compare(2.5678, 2.5674);    // 1
+	 c4.compare(2.5674, 2.5678);    // -1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:NumberComparator:NumberComparator"><apiName>NumberComparator</apiName><shortdesc>
+		 Constructor, creates a new NumberComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	if <codeph>useDecimalPlaces</codeph> argument is sent <codeph>false</codeph> but some value is sent to <codeph>decimalPlaces</codeph> argument.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiException><apiDesc>		if the <codeph>decimalPlaces</codeph> argument is out of the 0-20 range.
+		 </apiDesc><apiItemName>RangeError</apiItemName><apiOperationClassifier>RangeError</apiOperationClassifier></apiException><apiParam><apiItemName>useDecimalPlaces</apiItemName><apiType value="Boolean"/><apiData>false</apiData><apiDesc>	Indicates if both numbers should be rounded by the <codeph>decimalPlaces</codeph> property.
+		 </apiDesc></apiParam><apiParam><apiItemName>decimalPlaces</apiItemName><apiType value="int"/><apiData>0</apiData><apiDesc>	The number of decimal places to be considered in the comparison. Must be an integer between 0 and 20.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>NumberComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:NumberComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>if any of the arguments is not of type <codeph>Number</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:NumberComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:NumberComparator:decimalPlaces:get"><apiName>decimalPlaces</apiName><shortdesc>
+		 Defines the number of decimal places to be considered in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/><apiException><apiDesc>if is assigned a value out of the 0-20 range.
+		 </apiDesc><apiItemName>RangeError</apiItemName><apiOperationClassifier>RangeError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the number of decimal places to be considered in the comparison. Must be an integer between 0 and 20.
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:NumberComparator:useDecimalPlaces:get"><apiName>useDecimalPlaces</apiName><shortdesc>
+		 Defines if both numbers should be rounded by the decimalPlaces property.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 Defines if both numbers should be rounded by the <codeph>decimalPlaces</codeph> property.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:BooleanComparator"><apiName>BooleanComparator</apiName><shortdesc>
+	 A comparator for Boolean objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>Boolean</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.BooleanComparator;
+	 
+	 var b1:BooleanComparator = new BooleanComparator(BooleanComparison.TRUE_FIRST);
+	 
+	 b1.compare(true, false);    // -1
+	 b1.compare(false, true);    // 1
+	 
+	 var b2:BooleanComparator = new BooleanComparator(BooleanComparison.FALSE_FIRST);
+	 
+	 b2.compare(true, false);    // 1
+	 b2.compare(false, true);    // -1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:BooleanComparator:BooleanComparator"><apiName>BooleanComparator</apiName><shortdesc>
+		 Constructor, creates a new BooleanComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If the 'comparison' argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiParam><apiItemName>comparison</apiItemName><apiOperationClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiOperationClassifier><apiDesc>	Indicates which type of comparison will be used.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>BooleanComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#BooleanComparison"><linktext>BooleanComparison</linktext></link></related-links></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:BooleanComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments are not of type <codeph>Boolean</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>	The first <codeph>Boolean</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>	The second <codeph>Boolean</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:BooleanComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:BooleanComparator:comparison:get"><apiName>comparison</apiName><shortdesc>
+		 Defines the type of comparison to be used.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiValueClassifier><apiException><apiDesc>If is assigned a <codeph>null</codeph> value.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the type of comparison to be used.
+		 </apiDesc></apiValueDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#BooleanComparison"><linktext>BooleanComparison</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:IndexComparator"><apiName>IndexComparator</apiName><shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IIndexable interface, comparing the index property.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IIndexable</codeph> interface, comparing the <codeph>index</codeph> property.
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link><link href="org.as3coreaddendum.system.xml#IIndexable"><linktext>IIndexable</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:IndexComparator:IndexComparator"><apiName>IndexComparator</apiName><shortdesc>
+		 Constructor, creates a new IndexComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>IndexComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:IndexComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments does not implements the <codeph>IIndexable</codeph> interface.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:PropertyComparator"><apiName>PropertyComparator</apiName><shortdesc>
+	 This comparator uses the received comparator object to compare the values recovered from the property of each of the two objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This comparator uses the received <codeph>comparator</codeph> object to compare the values recovered from the <codeph>property</codeph> of each of the two objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 import org.as3coreaddendum.system.comparators.NumberComparator;
+	 import org.as3coreaddendum.system.comparators.PropertyComparator;
+	 
+	 var a:Object = { id: 1, name: "TestA" };
+	 var b:Object = { id: 0, name: "TestB" };
+	 var c:Object = { id: 2, name: "TestC" };
+	  
+	 var p1:PropertyComparator = new PropertyComparator("id", new NumberComparator());
+	 
+	 p1.compare(a, a)    // 0
+	 p1.compare(a, b)    // 1
+	 p1.compare(b, a)    // -1
+	 p1.compare(b, c)    // -1
+	 p1.compare(c, a)    // 1
+	 
+	 var p2:PropertyComparator = new PropertyComparator("name", new AlphabeticComparator());
+	  
+	 p2.compare(a, a)    // 0
+	 p2.compare(a, b)    // -1
+	 p2.compare(b, a)    // 1
+	 p2.compare(b, c)    // -1
+	 p2.compare(c, a)    // 1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:PropertyComparator:PropertyComparator"><apiName>PropertyComparator</apiName><shortdesc>
+		 Constructor, creates a new PropertyComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>if the <codeph>property</codeph> argument is <codeph>null</codeph> or an empty <codeph>String</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiException><apiDesc>if the <codeph>comparator</codeph> argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiParam><apiItemName>property</apiItemName><apiType value="String"/><apiDesc>	The name of the property to be recovered and compared between the objects.
+		 </apiDesc></apiParam><apiParam><apiItemName>comparator</apiItemName><apiOperationClassifier>org.as3coreaddendum.system:IComparator</apiOperationClassifier><apiDesc>	The comparator object used in the comparison.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PropertyComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:PropertyComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the values recovered from the properties of each of the two objects.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>if any argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first property is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>	The first object which has the property recovered to be compared. Can be an instance of any custom class.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>	The second object which has the property recovered to be compared. Can be an instance of any custom class.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the values recovered from the properties of each of the two objects.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:PropertyComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:PropertyComparator:comparator:get"><apiName>comparator</apiName><shortdesc>
+		 Defines the comparator object used in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system:IComparator</apiValueClassifier><apiException><apiDesc>if is assigned a <codeph>null</codeph> value.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the comparator object used in the comparison.
+		 
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:PropertyComparator:property:get"><apiName>property</apiName><shortdesc>
+		 Defines the name of the property to be recovered and compared between the objects.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/><apiException><apiDesc>if is assigned a <codeph>null</codeph> value or an empty <codeph>String</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the name of the property to be recovered and compared between the objects.
+		 
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:StringComparator"><apiName>StringComparator</apiName><shortdesc>
+	 A comparator for String objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>String</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.StringComparator;
+	 
+	 var c1:StringComparator = new StringComparator();
+	 
+	 c1.compare("comparison", "between");    // 1
+	 c1.compare("between", "comparison");    // -1
+	 c1.compare("between", "strings");       // 1
+	 c1.compare("strings", "between");       // -1
+	 c1.compare("STRINGS", "strings");       // 1
+	 c1.compare("strings", "Strings");       // -1
+	 c1.compare("strings", "strings");       // 0
+	 
+	 var c2:StringComparator = new StringComparator(false);
+	 
+	 c2.compare("STRINGS", "strings");    // 0
+	 c2.compare("strings", "Strings");    // 0
+	 c2.compare("between", "strings");    // 1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:StringComparator:StringComparator"><apiName>StringComparator</apiName><shortdesc>
+		 Constructor, creates a new StringComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiParam><apiItemName>stringCase</apiItemName><apiOperationClassifier>org.as3coreaddendum.system:StringCase</apiOperationClassifier><apiDesc>	Indicates whether case sensitivity is considered or not in the comparison.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>StringComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:StringComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>	The first <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>	The second <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:StringComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:StringComparator:stringCase:get"><apiName>stringCase</apiName><shortdesc>
+		 Defines whether case is considered in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system:StringCase</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines whether case is considered in the comparison.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:BooleanComparison"><apiName>BooleanComparison</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for the BooleanComparator.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for the <codeph>BooleanComparator</codeph>.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:BooleanComparison:BooleanComparison"><apiName>BooleanComparison</apiName><shortdesc>
+		 Constructor, creates a new BooleanComparison object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new BooleanComparison object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system.comparators:BooleanComparison:FALSE_FIRST"><apiName>FALSE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return false first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return <codeph>false</codeph> first.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:BooleanComparison:TRUE_FIRST"><apiName>TRUE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return true first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:BooleanComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return <codeph>true</codeph> first.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:AlphabeticalComparison"><apiName>AlphabeticalComparison</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for the AlphabeticalComparator.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for the <codeph>AlphabeticalComparator</codeph>.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:AlphabeticalComparison"><apiName>AlphabeticalComparison</apiName><shortdesc>
+		 Constructor, creates a new AlphabeticalComparison object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new AlphabeticalComparison object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:CASE_INSENSITIVE"><apiName>CASE_INSENSITIVE</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should ignore case.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should ignore case.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:LOWER_CASE_FIRST"><apiName>LOWER_CASE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return lower case first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return lower case first.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparison:UPPER_CASE_FIRST"><apiName>UPPER_CASE_FIRST</apiName><shortdesc>
+		 Defines the constant which indicates that the comparison should return upper case first.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant which indicates that the comparison should return upper case first.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:AlphabeticalComparator"><apiName>AlphabeticalComparator</apiName><shortdesc>
+	 A comparator for alphabetic order of String objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for alphabetic order of <codeph>String</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 
+	 var c1:AlphabeticComparator = new AlphabeticComparator(AlphabeticComparison.LOWER_CASE_FIRST);
+	 
+	 c1.compare("a", "a")                      // 0
+	 c1.compare("a", "b")                      // -1
+	 c1.compare("b", "a")                      // 1
+	 c1.compare("a", "A")                      // -1
+	 c1.compare("A", "a")                      // 1
+	 c1.compare("comparison", "comparison")    // 0
+	 c1.compare("comparison", "comParison")    // -1
+	 c1.compare("comParison", "comparison")    // 1
+	 c1.compare("comparison", "Comparison")    // -1
+	 c1.compare("Comparison", "comparison")    // 1
+	 c1.compare("between", "strings")          // -1
+	 c1.compare("between", "Strings")          // -1
+	 c1.compare("Between", "strings")          // -1
+	 c1.compare("Between", "Strings")          // -1
+	 c1.compare("between", "between")          // 0
+	 c1.compare("between", "betweena")         // -1
+	 c1.compare("betweena", "betweenA")        // -1
+	 c1.compare("betweenA", "betweena")        // 1
+	 c1.compare("TestA", "TestB")              // -1
+	 c1.compare("TestB", "TestA")              // 1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 
+	 var c2:AlphabeticComparator = new AlphabeticComparator(AlphabeticComparison.UPPER_CASE_FIRST);
+	 
+	 c2.compare("a", "a")                      // 0
+	 c2.compare("a", "b")                      // -1
+	 c2.compare("b", "a")                      // 1
+	 c2.compare("a", "A")                      // 1
+	 c2.compare("A", "a")                      // -1
+	 c2.compare("comparison", "comparison")    // 0
+	 c2.compare("comparison", "comParison")    // 1
+	 c2.compare("comParison", "comparison")    // -1
+	 c2.compare("comparison", "Comparison")    // 1
+	 c2.compare("Comparison", "comparison")    // -1
+	 c2.compare("between", "strings")          // -1
+	 c2.compare("between", "Strings")          // -1
+	 c2.compare("Between", "strings")          // -1
+	 c2.compare("Between", "Strings")          // -1
+	 c2.compare("between", "between")          // 0
+	 c2.compare("between", "betweena")         // -1
+	 c2.compare("betweena", "betweenA")        // 1
+	 c2.compare("betweenA", "betweena")        // -1
+	 c2.compare("TestA", "TestB")              // -1
+	 c2.compare("TestB", "TestA")              // 1
+	 </codeblock>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.AlphabeticComparator;
+	 
+	 var c3:AlphabeticComparator = new AlphabeticComparator(AlphabeticalComparison.CASE_INSENSITIVE);
+	 
+	 c3.compare("a", "a")                      // 0
+	 c3.compare("a", "b")                      // -1
+	 c3.compare("b", "a")                      // 1
+	 c3.compare("a", "A")                      // 0
+	 c3.compare("A", "a")                      // 0
+	 c3.compare("comparison", "comparison")    // 0
+	 c3.compare("comparison", "comParison")    // 0
+	 c3.compare("comParison", "comparison")    // 0
+	 c3.compare("comparison", "Comparison")    // 0
+	 c3.compare("Comparison", "comparison")    // 0
+	 c3.compare("between", "strings")          // -1
+	 c3.compare("between", "Strings")          // -1
+	 c3.compare("Between", "strings")          // -1
+	 c3.compare("Between", "Strings")          // -1
+	 c3.compare("between", "between")          // 0
+	 c3.compare("between", "betweena")         // -1
+	 c3.compare("betweena", "betweenA")        // 0
+	 c3.compare("betweenA", "betweena")        // 0
+	 c3.compare("TestA", "TestB")              // -1
+	 c3.compare("TestB", "TestA")              // 1
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#AlphabeticalComparison"><linktext>AlphabeticalComparison</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:AlphabeticalComparator"><apiName>AlphabeticalComparator</apiName><shortdesc>
+		 Constructor, creates a new AlphabeticComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If the 'comparison' argument is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiParam><apiItemName>comparison</apiItemName><apiOperationClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiOperationClassifier><apiDesc>	Indicates which type of comparison will be used.
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>AlphabeticComparator</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#AlphabeticalComparison"><linktext>AlphabeticalComparison</linktext></link></related-links></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments is <codeph>null</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>String</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the string representation of this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>the string representation of the this object.
+		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the string representation of this object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system.comparators:AlphabeticalComparator:comparison:get"><apiName>comparison</apiName><shortdesc>
+		 Defines the type of comparison to be used.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system.comparators:AlphabeticalComparison</apiValueClassifier><apiException><apiDesc>If is assigned a <codeph>null</codeph> value.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException></apiValueDef><apiDesc>
+		 Defines the type of comparison to be used.
+		 </apiDesc></apiValueDetail><related-links><link href="org.as3coreaddendum.system.comparators.xml#AlphabeticalComparison"><linktext>AlphabeticalComparison</linktext></link></related-links></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:PriorityIndexComparator"><apiName>PriorityIndexComparator</apiName><shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IPriority and org.as3coreaddendum.system.IIndexable interfaces, comparing the priority and index properties.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IPriority</codeph> and <codeph>org.as3coreaddendum.system.IIndexable</codeph> interfaces, comparing the <codeph>priority</codeph> and <codeph>index</codeph> properties.
+	 <p>This comparator is util when you want to sort the objects by priority, but if the priority of the two objects are equal, the <codeph>index</codeph> property of the objects are compared to decide wich object comes before.</p>
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link><link href="org.as3coreaddendum.system.xml#IIndexable"><linktext>IIndexable</linktext></link><link href="org.as3coreaddendum.system.xml#IPriority"><linktext>IPriority</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:PriorityIndexComparator:PriorityIndexComparator"><apiName>PriorityIndexComparator</apiName><shortdesc>
+		 Constructor, creates a new PriorityIndexComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PriorityIndexComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:PriorityIndexComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments does not implements the <codeph>IPriority</codeph> or <codeph>IIndexable</codeph> interfaces.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer or a positive integer as the priority of the first argument is greater than or less than the second. If the priority of the arguments are equal, returns a negative integer, zero, or a positive integer as the index of the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:PriorityComparator"><apiName>PriorityComparator</apiName><shortdesc>
+	 A comparator for objects that implements the org.as3coreaddendum.system.IPriority interface, comparing the priority property.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for objects that implements the <codeph>org.as3coreaddendum.system.IPriority</codeph> interface, comparing the <codeph>priority</codeph> property.
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator"><linktext>IComparator</linktext></link><link href="org.as3coreaddendum.system.xml#IPriority"><linktext>IPriority</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system.comparators:PriorityComparator:PriorityComparator"><apiName>PriorityComparator</apiName><shortdesc>
+		 Constructor, creates a new PriorityComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>PriorityComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:PriorityComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments does not implements the <codeph>IPriority</codeph> interface.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the priority of the first argument is greater than, equal to, or less than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Number</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system.comparators:DateComparator"><apiName>DateComparator</apiName><shortdesc>
+	 A comparator for Date objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparator</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 A comparator for <codeph>Date</codeph> objects.
+	 
+	 </apiDesc><example>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.comparators.DateComparator;
+	 
+	 var c:DateComparator = new DateComparator();
+	 
+	 var d1:Date = new Date(2010, 04, 09);
+	 var d2:Date = new Date(2010, 04, 10);
+	 var d3:Date = new Date(2009, 04, 10);
+	 var d4:Date = new Date(1980, 01, 15);
+	 
+	 c.compare(d1, d1)    // 0
+	 c.compare(d1, d2)    // -1
+	 c.compare(d2, d1)    // 1
+	 c.compare(d2, d3)    // 1
+	 c.compare(d3, d2)    // -1
+	 c.compare(d1, d4)    // 1
+	 c.compare(d4, d1)    // -1
+	 
+	 </codeblock>
+	 
+	 </example></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system.comparators:DateComparator:DateComparator"><apiName>DateComparator</apiName><shortdesc>
+		 Constructor, creates a new StringComparator object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>StringComparator</codeph> object.
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system.comparators:DateComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Performs the comparison between the two arguments.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>	if any of the arguments is not of type <codeph>Date</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>The first <codeph>Date</codeph> object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>The second <codeph>Date</codeph> object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs the comparison between the two arguments.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier></apiPackage><apiPackage id="org.as3coreaddendum.system"><apiName>org.as3coreaddendum.system</apiName><apiDetail/><apiClassifier id="org.as3coreaddendum.system:StringCase"><apiName>StringCase</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for string case.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for string case.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system:StringCase:StringCase"><apiName>StringCase</apiName><shortdesc>
+		 Constructor, creates a new StringCase object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new <codeph>StringCase</codeph> object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system:StringCase:INSENSITIVE"><apiName>INSENSITIVE</apiName><shortdesc>
+		 Defines the constant that indicates that any logic performed against a given String should ignore its case.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:StringCase</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that any logic performed against a given <codeph>String</codeph> should ignore its case.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:StringCase:SENSITIVE"><apiName>SENSITIVE</apiName><shortdesc>
+		 Defines the constant that indicates that any logic performed against a given String should consider its case.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:StringCase</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that any logic performed against a given <codeph>String</codeph> should consider its case.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IEquatable"><apiName>IEquatable</apiName><shortdesc>
+	 This interface defines that a class can evaluate equality of instances.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines that a class can evaluate equality of instances.
+	 <p>A class that implements this interface provides an arbitrary evaluation of equality with another object.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IEquatable:org.as3coreaddendum.system:IEquatable:equals"><apiName>equals</apiName><shortdesc>
+		 Performs an arbitrary, specific evaluation of equality between this object and the other object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>true</codeph> if the arbitrary evaluation considers the objects equal.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>other</apiItemName><apiType value="any"/><apiDesc>	The object to be compared for equality.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Performs an arbitrary, specific evaluation of equality between this object and the <codeph>other</codeph> object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ISortable"><apiName>ISortable</apiName><shortdesc>
+	 A class that implements this interface indicates that it can be sorted by the sort() method.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 A class that implements this interface indicates that it can be sorted by the <codeph>sort()</codeph> method.
+	 <p>Usually the classes that implement this interface are collections of some sort.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:ISortable:org.as3coreaddendum.system:ISortable:sort"><apiName>sort</apiName><shortdesc>
+		 Sorts the objects within this class.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The return value depends on whether you pass any arguments, as described in the following list:
+		 <ul>
+		 <li>If you specify a value of 4 or Array.UNIQUESORT for the <codeph>options</codeph> argument and two or more elements being sorted have identical sort fields, returns a value of 0 and does not modify the array.</li>
+		 <li>If you specify a value of 8 or Array.RETURNINDEXEDARRAY for the options parameter, an array is returned that reflects the results of the sort and the array is not modified.</li>
+		 <li>Otherwise, nothing is returned and the array is modified to reflect the sort order.</li>
+		 </ul>
+		 </apiDesc><apiType value="Array"/></apiReturn><apiParam><apiItemName>compare</apiItemName><apiType value="Function"/><apiData>null</apiData><apiDesc>	A comparison function used to determine the sorting order of elements in an array. For more info see <codeph>IComparator.compare</codeph>.
+		 </apiDesc></apiParam><apiParam><apiItemName>options</apiItemName><apiType value="uint"/><apiData>0</apiData><apiDesc>	One or more numbers or defined constants, separated by the | (bitwise OR) operator, that change the behavior of the sort from the default.
+		 The following values are acceptable for <codeph>options</codeph>:
+		 <ul>
+		 <li>1 or Array.CASEINSENSITIVE</li>
+		 <li>2 or Array.DESCENDING</li>
+		 <li>4 or Array.UNIQUESORT</li>
+		 <li>8 or Array.RETURNINDEXEDARRAY</li>
+		 <li>16 or Array.NUMERIC</li>
+		 </ul>
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Sorts the objects within this class.
+		 <p>By default, <codeph>Array.sort()</codeph> works in the following way:</p>
+		 <p>
+		 <ul>
+		 <li>Sorting is case-sensitive (Z precedes a).</li>
+		 <li>Sorting is ascending (a precedes b).</li>
+		 <li>The array is modified to reflect the sort order; multiple elements that have identical sort fields are placed consecutively in the sorted array in no particular order.</li>
+		 <li>All elements, regardless of data type, are sorted as if they were strings, so 100 precedes 99, because "1" is a lower string value than "9".</li>
+		 </ul>
+		 </p>
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparator/compare()"><linktext>IComparator.compare()</linktext></link></related-links></apiOperation><apiValue id="org.as3coreaddendum.system:ISortable:org.as3coreaddendum.system:ISortable:comparator:get"><apiName>comparator</apiName><shortdesc>
+		 Defines the IComparator object to be used in the comparison.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiValueClassifier>org.as3coreaddendum.system:IComparator</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the <codeph>IComparator</codeph> object to be used in the comparison.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:ISortable:org.as3coreaddendum.system:ISortable:options:get"><apiName>options</apiName><shortdesc>
+		 Defines the options to be used automatically to sort.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="uint"/></apiValueDef><apiDesc>
+		 Defines the options to be used automatically to sort.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:NumericRounding"><apiName>NumericRounding</apiName><shortdesc>
+	 The enumeration class that defines the acceptable values for numeric rounding.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>org.as3coreaddendum.system:Enum</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 The enumeration class that defines the acceptable values for numeric rounding.
+	 <p>This is a type-safe enumeration class, which means there is no possibility of creating instances externally.
+	 All acceptable values will be created automaticaly by this class internaly, through its constants.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiConstructor id="org.as3coreaddendum.system:NumericRounding:NumericRounding"><apiName>NumericRounding</apiName><shortdesc>
+		 Constructor, creates a new NumericRounding object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If there is an attempt to instantiation outside the internal code of this class. All acceptable values will be created automaticaly by this class internaly, through the constants. There's no possibility to use this constructor externally.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new NumericRounding object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiValue id="org.as3coreaddendum.system:NumericRounding:CEIL"><apiName>CEIL</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should be rounded up.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should be rounded up.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:NumericRounding:FLOOR"><apiName>FLOOR</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should be rounded down.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should be rounded down.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:NumericRounding:NONE"><apiName>NONE</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should not be rounded.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should not be rounded.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:NumericRounding:ROUND"><apiName>ROUND</apiName><shortdesc>
+		 Defines the constant that indicates that a numeric value should be rounded down or up, whichever is closer.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiAccess value="public"/><apiStatic/><apiData>unknown</apiData><apiValueClassifier>org.as3coreaddendum.system:NumericRounding</apiValueClassifier></apiValueDef><apiDesc>
+		 Defines the constant that indicates that a numeric value should be rounded down or up, whichever is closer.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ISerializable"><apiName>ISerializable</apiName><shortdesc>
+	 Allows an object to control its own serialization.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Allows an object to control its own serialization.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:ISerializable:org.as3coreaddendum.system:ISerializable:toSource"><apiName>toSource</apiName><shortdesc>
+		 Returns the source code String representation of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The source code <codeph>String</codeph> representation of the object.
+ 		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the source code <codeph>String</codeph> representation of the object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IComparable"><apiName>IComparable</apiName><shortdesc>
+	 This interface imposes a total ordering on the objects of each class that implements it.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface imposes a total ordering on the objects of each class that implements it.
+	 This ordering is referred to as the class's <i>natural ordering</i>, and the class's compareTo method is referred to as its <i>natural comparison method</i>.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IComparable:org.as3coreaddendum.system:IComparable:compareTo"><apiName>compareTo</apiName><shortdesc>
+		 Compares this object with the specified object for order.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>if the specified object's type prevents it from being compared to this object.
+		 </apiDesc><apiItemName>ClassCastError</apiItemName><apiOperationClassifier>org.as3coreaddendum.errors:ClassCastError</apiOperationClassifier></apiException><apiReturn><apiDesc>a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o</apiItemName><apiType value="any"/><apiDesc>	 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares this object with the specified object for order.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ICloneable"><apiName>ICloneable</apiName><shortdesc>
+	 A class that implements this interface indicates that it can be cloned by the clone() method.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 A class that implements this interface indicates that it can be cloned by the <codeph>clone()</codeph> method.
+	 <p>The implementation of the <codeph>clone()</codeph> method should return a shallow copy of the object, copying every possible property.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:ICloneable:org.as3coreaddendum.system:ICloneable:clone"><apiName>clone</apiName><shortdesc>
+		 Creates and return a shallow copy of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>If this object should not be cloned.
+ 		 </apiDesc><apiItemName>CloneNotSupportedError</apiItemName><apiOperationClassifier>org.as3coreaddendum.errors:CloneNotSupportedError</apiOperationClassifier></apiException><apiReturn><apiDesc>A new object that is a shallow copy of this instance.
+		 </apiDesc><apiType value="any"/></apiReturn></apiOperationDef><apiDesc>
+		 Creates and return a shallow copy of the object.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IDisposable"><apiName>IDisposable</apiName><shortdesc>
+	 This interface exposes a way to tell to an object that it is no longer needed.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface exposes a way to tell to an object that it is no longer needed.
+	 <p>When the <codeph>dispose()</codeph> method is invoked on an object, it should stop all its processes and kill all its references to another objects, explicitly controlling the lifecycle of all its dependencies.
+	 If the dependency also implements this interface, its <codeph>dispose()</codeph> method should be called by this object.</p>
+	 <p>If the object has a parent class (base class) and the parent class also implements this interface, the <codeph>dispose()</codeph> method of the parent class should be called, propagating this action through the hierarchy of parents.</p>
+	 <p>If the <codeph>dispose()</codeph> method is called more than once, the object should ignore all calls after the first one, without throwing an error.</p>
+	 <p>Since the <codeph>dispose()</codeph> method was called, the object just wait to be released from memory by the garbage collection process.</p>
+	 <p>The object should throw the org.as3coreaddendum.errors.ObjectDisposedError if some method is called after the <codeph>dispose()</codeph> method was called, indicating an illegal operation.</p>
+	 
+	 </apiDesc></apiClassifierDetail><related-links><link href="org.as3coreaddendum.errors.xml#ObjectDisposedError"><linktext>ObjectDisposedError</linktext></link></related-links><apiOperation id="org.as3coreaddendum.system:IDisposable:org.as3coreaddendum.system:IDisposable:dispose"><apiName>dispose</apiName><shortdesc>
+		 Dispose the object to be garbage collected.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Dispose the object to be garbage collected.
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IComparator"><apiName>IComparator</apiName><shortdesc>
+	 A comparison function, which imposes a total ordering on some collection of objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 A comparison function, which imposes a <i>total ordering</i> on some collection of objects.
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IComparator:org.as3coreaddendum.system:IComparator:compare"><apiName>compare</apiName><shortdesc>
+		 Compares its two arguments for order.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>A negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second. 
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o1</apiItemName><apiType value="any"/><apiDesc>			the first object to be compared.
+		 </apiDesc></apiParam><apiParam><apiItemName>o2</apiItemName><apiType value="any"/><apiDesc>		the second object to be compared. 
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares its two arguments for order. Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+		 
+		 </apiDesc></apiOperationDetail></apiOperation></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IIndexable"><apiName>IIndexable</apiName><shortdesc>
+	 This interface defines a contract for objects that contains an index.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines a contract for objects that contains an index.
+	 <p>It can be used, for example, by objects that can be found or sorted by its index.</p>
+	 <p>If the object also implements <codeph>flash.events.IEventDispatcher</codeph> interface, it is highly recommended that the object dispatches <codeph>org.as3coreaddendum.events.IndexEvent</codeph> when its <codeph>index</codeph> setter is invoked.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.system:IIndexable:org.as3coreaddendum.system:IIndexable:index:get"><apiName>index</apiName><shortdesc>
+		 Defines the index of the object.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines the index of the object.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:Enum"><apiName>Enum</apiName><shortdesc>
+	 This is the base class for implementation of enumeration objects.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseInterface>org.as3coreaddendum.system:IComparable</apiBaseInterface><apiBaseInterface>org.as3coreaddendum.system:IEquatable</apiBaseInterface><apiBaseInterface>org.as3coreaddendum.system:ISerializable</apiBaseInterface><apiBaseClassifier>Object</apiBaseClassifier></apiClassifierDef><apiDesc>
+	 This is the base class for implementation of enumeration objects.
+	 <p>This class shouldn't be instantiated directly, rather than enumeration classes must extend this class.</p>
+	 <p><b>What is an Enumerated Type?</b></p>
+	 <p>An Enumerated Type is a data type that consists of a pre-defined set of values. Each enumerator (constant) is a value.
+	 An Enumerated Type groups a set of interrelated logical values.</p>
+	 <p>Actionscript 3.0 doesn't implements Enumerated types. Rather, its uses a class with only constants to define a set of interrelated logical values.</p>
+	 <p>One example is the <codeph>flash.display.StageAlign</codeph> class. It is the set of logical values acceptable for the <codeph>flash.display.Stage.align</codeph> property.</p>
+	 <p>But even without the support of Actionscript 3.0 for Enumerated types you can simulate this functionality extending this Enum class.</p>
+	 
+	 <p><b>Why use an Enumerated Type rather than a class with constants?</b></p>
+	 <p>Following the example above, if you open the Actionscript 3.0 Language Reference and quickly look at the class <codeph>flash.display.Stage</codeph> and see the <codeph>align</codeph> property, you will note that its type is <codeph>String</codeph>.
+	 So you cannot immediatly know what values you can assign to it. Only after discovering that there is a class <codeph>flash.display.StageAlign</codeph> you note that these are the acceptable values.
+	 So this is the first problem with this approach.</p>
+	 <p>The second problem is that you really can assign any <codeph>String</codeph> to the <codeph>align</codeph> property.
+	 Nothing guarantees you will pass the values that are actually in the <codeph>flash.display.StageAlign</codeph> class.
+	 Nor will there be any error at compile time that say that something is wrong.</p>
+	 <p>But if instead of using this approach was used Enumeration types, these two problems would become two good points.</p>
+	 <p>First, looking at the Actionscript 3.0 Language Reference you would see that the property <codeph>align</codeph> is of the type <codeph>StageAlign</codeph>.
+	 Automatically you check this class and see how to use it to assign a value for the <codeph>align</codeph> property.</p>
+	 <p>Even better, if you make a mistake the compiler will warn you.
+	 You will no longer able to send an invalid value for the property.</p>
+	 <p>But even with this approach remains a problem to be solved. The client of your code can still create instances of your Enumerated Type and use them when needed.
+	 In most cases this is undesirable, because you have already defined the set of acceptable values through constants in its Enumerated Type.</p>
+	 <p>To resolve this problem exists a solution: the type-safe enum pattern. It is described with an example at the end of the page.</p>
+	 <p>You can also check the class NumericRounding listed in the section "See also" below.</p>
+	 <p>So to summarize the benefits of using Enumerated types: they make your code (or API) more readable and safe.</p>
+	 
+	 </apiDesc><example>
+	 
+	 <b>Simple Enumerated Type</b>
+	 <p>Suppose that we have an API that make loading of files.
+	 The acceptable file types that the API can load can be defined by an Enumerated Type.
+	 In this example the name of the Enumerated Type will be FileType. Note that you don't need to use the suffix "Enum" in its name.</p>
+	 <p>Then we define the types that the API can load. In this example the API can load just image, swf and mp3 files.
+	 So we have just three constants, one to each file type.</p>
+	 <p>When we want to load a file, we use the appropriate constant to tell the API what type of file will be loaded.
+	 If you need a file type that doesn't exists in the Enumerated Type, this means that the API doesn't support that file type.</p>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.Enum;
+	 
+	 public class FileType extends Enum
+	 {
+	 
+	      public static const IMAGE   :FileType = new FileType("Image", 0);
+	      public static const SWF     :FileType = new FileType("SWF", 1);
+	      public static const MP3     :FileType = new FileType("MP3", 2);
+	 
+	      public function FileType(name:String, ordinal:int)
+	      {
+	           super(name, ordinal);
+	      }
+	 }
+	 </codeblock>
+	 
+	 <b>Type-safe Enumerated Type</b>
+	 <p>In the above example, if the user of the API need to load a file type that doesn't exists in the Enumerated Type, it could instantiate a new object FileType with the desired type, as in the example below:</p>
+	 <codeblock rev="3.0">
+	 import FileType;
+	 
+	 var videoFileType:FileType = new FileType("Video", 3);
+	 </codeblock>
+	 
+	 <p>This behavior would be wrong, but still allowed by the technical point of view.
+	 This would create the illusion that the user can create new types at runtime and send them to the API.</p>
+	 <p>To prevent this mistake, we can implement a pattern named type-safe enum.
+	 This pattern will prevents the user create new types, throwing a runtime error.</p>
+	 <p>There are some ways to do this, we will see just one below:</p>
+	 
+	 <codeblock rev="3.0">
+	 import org.as3coreaddendum.system.Enum;
+	 
+	 public class FileType extends Enum
+	 {
+	 
+	      public static const IMAGE   :FileType = new FileType("Image", 0);
+	      public static const SWF     :FileType = new FileType("SWF", 1);
+	      public static const MP3     :FileType = new FileType("MP3", 2);
+	 
+	      private static var _created:Boolean = false;
+	 
+	      {
+	           _created = true;
+	      }
+	 
+	      public function FileType(name:String, ordinal:int)
+	      {
+	           super(name, ordinal);
+	           if (_created) throw new IllegalOperationError("The set of acceptable values by this Enumerated Type has already been created internally.");
+	      }
+	 }
+	 </codeblock>
+	 
+	 <p>What happens above is that when the FileType is loaded in the Flash Player memory at runtime, first all the static members are initialized.
+	 After that the <i>static code block</i> is executed:</p>
+	 
+	 <codeblock rev="3.0">
+	 {
+	      _created = true;
+	 }
+	 </codeblock>
+	 
+	 <p>So first all the constants are initialized with the FileType instances because the <codeph>_created</codeph> static variable is <codeph>false</codeph> and then immediately after that the <codeph>_created</codeph> is set to <codeph>true</codeph>.
+	 Thus no more instances can be created.</p>
+	 <p>Your Enumerated Type is safe to be used only with the set of values pre-defined by you.</p>
+	 
+	 </example></apiClassifierDetail><related-links><link href="org.as3coreaddendum.errors.xml#InvalidEnumArgumentError"><linktext>InvalidEnumArgumentError</linktext></link><link href="org.as3coreaddendum.system.xml#IComparable"><linktext>IComparable</linktext></link><link href="org.as3coreaddendum.system.xml#IEquatable"><linktext>IEquatable</linktext></link><link href="org.as3coreaddendum.system.xml#ISerializable"><linktext>ISerializable</linktext></link></related-links><apiConstructor id="org.as3coreaddendum.system:Enum:Enum"><apiName>Enum</apiName><shortdesc>
+		 Constructor, creates a new Enum object.</shortdesc><prolog/><apiConstructorDetail><apiConstructorDef><apiAccess value="public"/><apiException><apiDesc>	If the <codeph>name</codeph> argument is <codeph>null</codeph> or an empty <codeph>String</codeph>.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiException><apiDesc>	If this class is instantiated directly, in other words, if there is <b>not</b> another class extending this class.
+		 </apiDesc><apiItemName>IllegalOperationError</apiItemName><apiOperationClassifier>IllegalOperationError</apiOperationClassifier></apiException><apiParam><apiItemName>name</apiItemName><apiType value="String"/><apiDesc>			The name of this enumeration constant.
+		 </apiDesc></apiParam><apiParam><apiItemName>ordinal</apiItemName><apiType value="int"/><apiDesc>		The ordinal of this enumeration constant, that is its position in the enum declaration (where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiParam></apiConstructorDef><apiDesc>
+		 Constructor, creates a new Enum object.
+		 
+		 </apiDesc></apiConstructorDetail></apiConstructor><apiOperation id="org.as3coreaddendum.system:Enum:compareTo"><apiName>compareTo</apiName><shortdesc>
+		 Compares this enum with the specified object for order.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiException><apiDesc>If the type of the argument <codeph>o</codeph> is other than this exactly enum type instance.
+		 </apiDesc><apiItemName>ArgumentError</apiItemName><apiOperationClassifier>ArgumentError</apiOperationClassifier></apiException><apiReturn><apiDesc>a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+		 </apiDesc><apiType value="int"/></apiReturn><apiParam><apiItemName>o</apiItemName><apiType value="any"/><apiDesc>The target object to be compared.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares this enum with the specified object for order.
+		 <p>Enum constants are only comparable to other enum constants of the same enum type. The natural order implemented by this method is the order in which the constants are declared.</p>
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#IComparable"><linktext>IComparable</linktext></link></related-links></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:equals"><apiName>equals</apiName><shortdesc>
+		 Compares the target object for equality with this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc><codeph>true</codeph> if the specified object is equal to this enum constant.
+		 </apiDesc><apiType value="Boolean"/></apiReturn><apiParam><apiItemName>other</apiItemName><apiType value="any"/><apiDesc>The object to be compared for equality with this object.
+		 </apiDesc></apiParam></apiOperationDef><apiDesc>
+		 Compares the target object for equality with this object.
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#IEquatable"><linktext>IEquatable</linktext></link></related-links></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:toSource"><apiName>toSource</apiName><shortdesc>
+		 
+		 Returns the source code String representation of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The source code <codeph>String</codeph> representation of the object.
+ 		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 
+		 Returns the source code <codeph>String</codeph> representation of the object.
+		 
+		 </apiDesc></apiOperationDetail><related-links><link href="org.as3coreaddendum.system.xml#ISerializable"><linktext>ISerializable</linktext></link></related-links></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:toString"><apiName>toString</apiName><shortdesc>
+		 Returns the name of this enum constant, as contained in the declaration.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The name of this enum constant.
+ 		 </apiDesc><apiType value="String"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the name of this enum constant, as contained in the declaration.
+		 <p>This method may be overridden, though it typically isn't necessary or desirable. An enum type should override this method when a more "programmer-friendly" string form exists.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiOperation id="org.as3coreaddendum.system:Enum:valueOf"><apiName>valueOf</apiName><shortdesc>
+		 Returns the primitive value of the object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiDesc>The primitive value of the object. In this case, the <codeph>ordinal</codeph> value.
+ 		 </apiDesc><apiType value="int"/></apiReturn></apiOperationDef><apiDesc>
+		 Returns the primitive value of the object.
+		 <p>This method is called automatically by the Flash Player every time an arithmetic operation occur. Thus, it's possible to perform these operations to check the position between two or more enum constants.</p>
+		 
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system:Enum:name:get"><apiName>name</apiName><shortdesc>
+		 The name of this enum constant exactly as supplied by the constructor.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The name of this enum constant exactly as supplied by the constructor.
+		 <p><b>Most programmers should use the <codeph>toString()</codeph> method in preference to this one, as the <codeph>toString()</codeph> method may return a more user-friendly name.</b> This property is designed primarily for use in specialized situations where correctness depends on getting the exact name.</p>
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="org.as3coreaddendum.system:Enum:ordinal:get"><apiName>ordinal</apiName><shortdesc>
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="int"/></apiValueDef><apiDesc>
+		 The ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero).
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IInitializable"><apiName>IInitializable</apiName><shortdesc>
+	 Defines an interface to initialize the object.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 Defines an interface to initialize the object.
+	 <p>Classes that need to be initialized before being used can implement this interface to define an initialization pattern.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiOperation id="org.as3coreaddendum.system:IInitializable:org.as3coreaddendum.system:IInitializable:initialize"><apiName>initialize</apiName><shortdesc>
+		 Initializes this object.</shortdesc><prolog/><apiOperationDetail><apiOperationDef><apiAccess value="public"/><apiReturn><apiType value="void"/></apiReturn></apiOperationDef><apiDesc>
+		 Initializes this object.
+		 </apiDesc></apiOperationDetail></apiOperation><apiValue id="org.as3coreaddendum.system:IInitializable:org.as3coreaddendum.system:IInitializable:isInitialized:get"><apiName>isInitialized</apiName><shortdesc>
+		 Defines if the object is initialized or not.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="read"/><apiType value="Boolean"/></apiValueDef><apiDesc>
+		 Defines if the object is initialized or not.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:ITypeable"><apiName>ITypeable</apiName><shortdesc>
+	 This interface defines a contract for objects that specify a type.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines a contract for objects that specify a type. A type can be anything, e.g. a <codeph>Class</codeph>, a <codeph>Function</codeph>, etc.
+	 <p>It can be used, for example, by collections that restrict the type of its elements.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.system:ITypeable:org.as3coreaddendum.system:ITypeable:type:get"><apiName>type</apiName><shortdesc>
+		 Defines the type.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="any"/></apiValueDef><apiDesc>
+		 Defines the type.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier><apiClassifier id="org.as3coreaddendum.system:IPriority"><apiName>IPriority</apiName><shortdesc>
+	 This interface defines a contract for objects that contains a priority.</shortdesc><prolog><author>Flávio Silva
+	 </author><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiInterface/><apiAccess value="public"/><apiStatic/><apiBaseClassifier/></apiClassifierDef><apiDesc>
+	 This interface defines a contract for objects that contains a priority.
+	 <p>If the object also implements <codeph>flash.events.IEventDispatcher</codeph> interface, it is highly recommended that the object dispatches <codeph>org.as3coreaddendum.events.PriorityEvent</codeph> when its <codeph>priority</codeph> setter is invoked.</p>
+	 
+	 </apiDesc></apiClassifierDetail><apiValue id="org.as3coreaddendum.system:IPriority:org.as3coreaddendum.system:IPriority:priority:get"><apiName>priority</apiName><shortdesc>
+		 Defines the priority of the object.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 Defines the priority of the object.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage></allClasses>
