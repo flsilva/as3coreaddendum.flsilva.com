@@ -42,7 +42,10 @@ require "zurb-foundation"
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
+
+# Pretty URLs
 activate :directory_indexes
+page "/docs/*", :directory_index => false
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -57,6 +60,14 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.user = "flsilva"
+  deploy.host = "66.228.57.112"
+  deploy.path = "/var/www/as3coreaddendum.org"
+  deploy.clean = true
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -66,6 +77,10 @@ configure :build do
   activate :minify_javascript
 
   activate :gzip
+  activate :asset_hash, :ignore => %r{^docs/.*}
+
+  # Pretty up Slim output
+  set :slim, :pretty => true
 
   # Enable cache buster
   # activate :cache_buster
@@ -77,7 +92,6 @@ configure :build do
   # First: gem install middleman-smusher
   require "middleman-smusher"
   activate :smusher
-  activate :asset_hash
 
   # Or use a different image path
   # set :http_path, "/Content/images/"

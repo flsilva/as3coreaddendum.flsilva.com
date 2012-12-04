@@ -13,6 +13,16 @@
 # Ignore Sass' cache
 /.sass-cache
 
+# Vim
+*.swp
+*.swo
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
 # Linux
 .*
 !.gitignore
