@@ -47,6 +47,7 @@ activate :automatic_image_sizes
 activate :directory_indexes
 page "/docs/*", :directory_index => false
 page "google496e6b73c411bbe3.html", :directory_index => false
+page "sitemap.xml", :layout => false
 
 # Methods defined in the helpers block are available in templates
 # helpers do
